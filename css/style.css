@@ -11,10 +11,13 @@ body{
 header{
   height: 100px;
   width: 100vw;
-  background-color: #c9acb5;
+  background-color: #fffef8;
   box-shadow: 0px 0px 0px 5px /*#275A53*/ #284140;
   position: fixed;
   z-index: 1;
+  left: 0;
+  top: 0;
+  right: 0;
 }
 h1{
   font-size: 46px;
@@ -24,13 +27,6 @@ p{
 }
 
 nav {
-  height: 100px;
-  background-color: #fffef8;
-  position: fixed;
-  left: 0;
-  top: 0;
-  right: 0;
-  z-index: 10;
   text-align: right;
 }
 nav ul {
@@ -40,7 +36,6 @@ nav ul {
 }
 nav ul li{
   display: inline-block;
-  line-height: 50px;
   margin: 0 5%;
 }
 nav ul li a{
