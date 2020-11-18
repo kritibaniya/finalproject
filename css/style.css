@@ -133,23 +133,28 @@ nav ul li a:hover{
 footer{
   height: 50vh;
   width: 100vw;
-  display: inline;
+  display: inline-block;
 }
 
 .leftbox{
   width: 30vw;
   height: 50vh;
-  float: left;
+  /*float: left;*/
   background-color: purple;
+/*  left: 0;
+  bottom: 0;*/
 }
 .middlebox{
   width: 30vw;
   height: 50vh;
   background-color: green;
+  /*bottom: 0;*/
 }
 .rightbox{
   width: 30vw;
   height: 50vh;
-  float: right;
+  /*float: right;*/
   background-color: red;
+/*  right: 0;
+  bottom: 0;*/
 }
