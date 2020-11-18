@@ -1,0 +1,10 @@
+*{
+  margin: 0;
+  overflow-x: hidden;
+}
+
+body{
+/*background-color:#c9acb5;*/
+  background-color: #fffef8;
+  font-family: 'Merriweather', serif;
+}

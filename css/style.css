@@ -14,21 +14,47 @@ header{
   background-color: #c9acb5;
   box-shadow: 0px 0px 0px 5px /*#275A53*/ #284140;
   position: fixed;
-  /*font-family: 'Comfortaa', cursive;*/
+  z-index: 1;
+}
+h1{
+  font-size: 46px;
+}
+p{
+  font-size: 36px;
 }
 
-nav ul li{
+nav {
+  height: 100px;
+  background-color: #fffef8;
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 10;
+  text-align: right;
+}
+nav ul {
   float: right;
-  display:inline;
-  padding: 0 5%;
-  font-size: 1.5em;
-
+  list-style: none;
+  width: 100%;
 }
-
-nav a{
-  text-decoration: none;
-  color: #284140;
+nav ul li{
+  display: inline-block;
+  line-height: 50px;
+  margin: 0 5%;
+}
+nav ul li a{
+  position: relative;
   font-weight: bold;
+  padding: 5px 0;
+  color: black;
+  font-size: 22px;
+  text-decoration:none;
+}
+nav ul li a:hover{
+  text-decoration: underline;
+  text-decoration-color: #284140;
+  text-decoration-style: 3px solid;
 }
 
 .showcase{
@@ -58,9 +84,28 @@ nav a{
   top: 80%;
   left: 55%;
 }
-#app p {
-  float: right;
+#content{
+  width: 100vw;
+  height: 100vh;
 }
+.app{
+  background-color: rgba(255, 255, 255, 0.8);
+  position: relative;
+  padding: 20px;
+}
+.app p{
+  padding: 40px;
+  margin-right: 800px;
+}
+
+.app img{
+  margin: 0px;
+  float: right;
+  /*width: 30vw;*/
+  height: auto;
+}
+
+
 /*body{
   /*background-color: #E0D5C7; #EBE5DB* #b9b4b8 #b2d8e7
 
