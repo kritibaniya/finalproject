@@ -14,8 +14,8 @@ body{
 header{
   height: 100px;
   width: 100vw;
-  background-color: #fffef8;
-  box-shadow: 0px 0px 0px 5px /*#275A53*/ #284140;
+  background-color: #284140;
+  box-shadow: 0px 0px 0px 5px #284140;
   position: fixed;
   z-index: 1;
   left: 0;
@@ -31,11 +31,11 @@ p{
 
 nav {
   text-align: right;
+  width: 25%;
 }
 nav ul {
   float: right;
-  list-style: none;
-  width: 100%;
+  list-style: none
 }
 nav ul li{
   display: inline-block;
@@ -45,13 +45,13 @@ nav ul li a{
   position: relative;
   font-weight: bold;
   padding: 5px 0;
-  color: black;
+  color: #fffef8;
   font-size: 25px;
   text-decoration:none;
 }
 nav ul li a:hover{
   text-decoration: underline;
-  text-decoration-color: #284140;
+  text-decoration-color: #fffef8;
   text-decoration-style: 3px solid;
 }
 footer{
