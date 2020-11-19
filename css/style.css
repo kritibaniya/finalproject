@@ -6,16 +6,14 @@
 }
 
 body{
-/*background-color:#c9acb5;*/
-  background-color: #fffef8;
   font-family: 'Merriweather', serif;
-
+  background-color: #fffef8;
 }
 header{
   height: 100px;
   width: 100vw;
   background-color: #fffef8;
-  box-shadow: 0px 0px 0px 5px /*#275A53*/ #284140;
+  box-shadow: 0px 0px 0px 5px #284140;
   position: fixed;
   z-index: 1;
   left: 0;
@@ -91,7 +89,6 @@ nav ul li a:hover{
   margin-top: 15vh;
 }
 .all1{
-  background-color: rgba(255, 255, 255, 0.8);
   position: relative;
   padding: 20px;
 }
@@ -110,9 +107,9 @@ nav ul li a:hover{
   float: right;
   width: 40vw;
   height: auto;
+  border: solid 10px #284140;
 }
 .all2{
-  background-color: rgba(255, 255, 255, 0.8);
   position: relative;
   padding: 20px;
 }
@@ -131,6 +128,7 @@ nav ul li a:hover{
   float: left;
   width: 40vw;
   height: auto;
+  border: solid 10px #284140;
 }
 
 footer{
@@ -147,7 +145,7 @@ footer p{
   width: 30vw;
   height: 45vh;
   display: inline-block;
-  border-top: solid 3px #000;
+  border-top: solid 3px #284140;
 }
 .leftbox a{
   display: block;
@@ -156,6 +154,12 @@ footer p{
   color: black;
   font-size: 25px;
   text-decoration:none;
+}
+.leftbox a:hover{
+  color: #284140;
+  text-decoration: underline;
+  text-decoration-style: solid 3px;
+  text-decoration-color: #284140;
 }
 .middlebox{
   width: 30vw;
@@ -166,13 +170,19 @@ footer p{
   width: 2.5vw;
   height: 5vh;
 }
+.middlebox a{
+  text-decoration: none;
+}
 
 .rightbox{
   width: 30vw;
   height: 45vh;
   display: inline-block;
-  border-top: solid 3px #000;
+  border-top: solid 3px #284140;
 }
-.rightbox p{
+.rightbox h3{
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 25px;
   margin-top: 2vh;
 }
