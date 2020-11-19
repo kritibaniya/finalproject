@@ -31,11 +31,11 @@ p{
 
 nav {
   text-align: right;
-  width: 25%;
 }
 nav ul {
   float: right;
-  list-style: none
+  list-style: none;
+  width: 100%;
 }
 nav ul li{
   display: inline-block;

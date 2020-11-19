@@ -29,11 +29,11 @@ p{
 
 nav {
   text-align: right;
-  width: 25%;
 }
 nav ul {
   float: right;
-  list-style: none
+  list-style: none;
+  width: 100%;
 }
 nav ul li{
   display: inline-block;
@@ -53,9 +53,10 @@ nav ul li a:hover{
   text-decoration-style: 3px solid;
 }
 
-.logo{
-  width: 20%;
-}
+/*.logo img{
+  width: inherit;
+  height: inherit;
+}*/
 
 .showcase{
   background-image: url(../bilder/showcase.jpg);
