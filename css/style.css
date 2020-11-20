@@ -189,7 +189,7 @@ footer p{
 
 .vertical{
   border-left: 3px solid #284140;
-  height: 130px;
+  height: 20vh;
   position: absolute;
   left: 45vw;
 }
@@ -219,6 +219,11 @@ footer p{
   font-size: 25px;
   margin-top: 2vh;
 }
+.mobimg{
+  display: none;
+}
+
+/*MOBIL VERSJON*/
 @media screen and (max-width: 800px){
   *{
     margin: 0;
@@ -246,7 +251,7 @@ footer p{
     font-size: 46px;
   }
   p{
-    font-size: 29px;
+    font-size: 18px;
   }
   header .logo{
     justify-content: center;
@@ -314,49 +319,41 @@ footer p{
   }
   #content{
     width: 100vw;
-    height: 100vh;
+    height: auto;
+    display: inline-block;
   }
-  .problem{
-    margin-top: 15vh;
-  }
+
   .all1{
     background-color: red;
-    position: relative;
-    padding: 20px;
-  }
-  .all1 p{
-    padding: 40px;
-    margin-right: 40vw;
-    margin-left: 5vw;
   }
   .all1 h1{
-    padding: 40px;
-    margin-left: 5vw;
+    margin: 0;
+  }
+  .all1 p{
+    width: 100vw;
+    margin: 0;
+  }
+  .all1 img{
+    display: none;
   }
 
-  .all1 img{
-    margin: 0px;
-    float: right;
-    height: auto;
-    border: solid 10px #284140;
-  }
   .all2{
-    position: relative;
-    padding: 20px;
-  }
-  .all2 p{
-    padding: 40px;
-    margin-left: 40vw;
-    margin-right: 5vw;
+    background-color: orange;
   }
   .all2 h1{
-    padding: 40px;
-    margin-left: 40vw;
+    margin: 0;
+  }
+  .all2 p{
+    width: 100vw;
+    margin: 0;
+  }
+  .all2 img{
+    display: none;
   }
 
-  .all2 img{
+  .mobimg{
+    display: inline-block;
     margin: 0px;
-    float: left;
     height: auto;
     border: solid 10px #284140;
   }
@@ -418,12 +415,6 @@ footer p{
     color: #284140;
   }
 
-  .copyright{
-    font-size: 1em;
-    font-weight: bold;
-    color: #284140;
-  }
-
   .rightbox{
     width: 30vw;
     height: 40vh;
@@ -435,5 +426,11 @@ footer p{
     text-decoration: underline;
     font-size: 25px;
     margin-top: 2vh;
+  }
+
+  .copyright{
+    font-size: 1em;
+    font-weight: bold;
+    color: #284140;
   }
 }
