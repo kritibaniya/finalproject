@@ -103,7 +103,7 @@ nav ul li a:hover {
   margin-top: 15vh;
 }
 .all1{
-  background-color: red;
+/*  background-color: red;*/
   position: relative;
   padding: 20px;
 }
@@ -222,7 +222,9 @@ footer p{
 .mobimg{
   display: none;
 }
-
+.rightbox .icons{
+  display: none;
+}
 /*MOBIL VERSJON*/
 @media screen and (max-width: 800px){
   *{
@@ -323,9 +325,6 @@ footer p{
     display: inline-block;
   }
 
-  .all1{
-    background-color: red;
-  }
   .all1 h1{
     margin: 0;
   }
@@ -337,9 +336,6 @@ footer p{
     display: none;
   }
 
-  .all2{
-    background-color: orange;
-  }
   .all2 h1{
     margin: 0;
   }
@@ -355,6 +351,7 @@ footer p{
     display: inline-block;
     margin: 0px;
     height: auto;
+    width: 100vw;
     border: solid 10px #284140;
   }
 
@@ -407,14 +404,10 @@ footer p{
     position: absolute;
     left: 45vw;
   }
-  .icons{
-    margin: 10px;
-    font-size: 2.5em;
-  }
-  .icons a{
-    color: #284140;
-  }
 
+  .middlebox .icons{
+    display: none;
+  }
   .rightbox{
     width: 30vw;
     height: 40vh;
@@ -427,6 +420,17 @@ footer p{
     font-size: 25px;
     margin-top: 2vh;
   }
+  .rightbox .about{
+    display: none;
+  }
+  .rightbox .icons{
+      display: inline-block;
+      margin: 10px;
+      font-size: 2.5em;
+    }
+    .rightbox .icons a{
+      color: #284140;
+    }
 
   .copyright{
     font-size: 1em;
