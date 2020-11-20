@@ -24,33 +24,40 @@ h1{
   font-size: 46px;
 }
 p{
-  font-size: 36px;
+  font-size: 29px;
 }
-
 nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 10;
   text-align: right;
 }
 nav ul {
   float: right;
+  margin-right: 25px;
   list-style: none;
   width: 100%;
 }
 nav ul li{
   display: inline-block;
-  margin: 0 5%;
+  line-height: 50px;
+  margin: 0 3%;
 }
 nav ul li a{
   position: relative;
   font-weight: bold;
   padding: 5px 0;
-  color: #fffef8;
-  font-size: 25px;
+  color: white;
+  font-size: 22px;
   text-decoration:none;
 }
-nav ul li a:hover{
+nav ul li a:hover {
   text-decoration: underline;
-  text-decoration-color: #fffef8;
+  text-decoration-color: white;
   text-decoration-style: 3px solid;
+  color: #cc5200;
 }
 
 /*.logo img{

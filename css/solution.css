@@ -9,8 +9,16 @@ body{
 /*background-color:#c9acb5;*/
   background-color: #fffef8;
   font-family: 'Merriweather', serif;
-
 }
+
+h1{
+  font-size: 30px;
+}
+p{
+  font-size: 23px;
+}
+
+/* Menu */
 header{
   height: 100px;
   width: 100vw;
@@ -22,38 +30,56 @@ header{
   top: 0;
   right: 0;
 }
-h1{
-  font-size: 46px;
-}
-p{
-  font-size: 36px;
-}
-
+/* Start of Navbar */
 nav {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  z-index: 10;
   text-align: right;
-  width: 25%;
 }
 nav ul {
   float: right;
-  list-style: none
+  margin-right: 25px;
+  list-style: none;
+  width: 100%;
 }
 nav ul li{
   display: inline-block;
-  margin: 0 5%;
+  line-height: 50px;
+  margin: 0 3%;
 }
 nav ul li a{
   position: relative;
   font-weight: bold;
   padding: 5px 0;
-  color: #fffef8;
-  font-size: 25px;
+  color: white;
+  font-size: 22px;
   text-decoration:none;
 }
-nav ul li a:hover{
+nav ul li a:hover {
   text-decoration: underline;
-  text-decoration-color: #fffef8;
+  text-decoration-color: white;
   text-decoration-style: 3px solid;
+  color: #cc5200;
 }
+/* End of navbar */
+
+.showcase {
+  height: 100vh;
+  width: 100vw;
+  background-color: #DEB997;
+}
+
+.content {
+  margin-left: 22%;
+  margin-right: 22%;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+/* Footer */
 footer{
   height: 50vh;
   width: 100vw;
