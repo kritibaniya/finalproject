@@ -100,6 +100,7 @@ nav ul li a:hover {
   margin-top: 15vh;
 }
 .all1{
+  background-color: red;
   position: relative;
   padding: 20px;
 }
@@ -116,7 +117,6 @@ nav ul li a:hover {
 .all1 img{
   margin: 0px;
   float: right;
-  width: 40vw;
   height: auto;
   border: solid 10px #284140;
 }
@@ -137,7 +137,6 @@ nav ul li a:hover {
 .all2 img{
   margin: 0px;
   float: left;
-  width: 40vw;
   height: auto;
   border: solid 10px #284140;
 }
@@ -176,13 +175,23 @@ footer p{
   width: 30vw;
   height: 45vh;
   display: inline-block;
+  align-content: center;
+  align-self: center;
+  text-align: center;
 }
+
 .middlebox img{
-  width: 2.5vw;
-  height: 5vh;
+
 }
 .middlebox a{
   text-decoration: none;
+}
+
+.vertical{
+  border-left: 6px solid #284140;
+  height: 200px;
+  position: absolute;
+
 }
 
 .rightbox{
