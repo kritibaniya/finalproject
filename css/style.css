@@ -201,11 +201,11 @@ footer p{
   color: #284140;
 }
 .copyright{
+  margin: 0px;
   font-size: 1em;
   font-weight: bold;
   color: #284140;
-  border: 3px solid green;
-
+  text-align: center;
 }
 
 .rightbox{
