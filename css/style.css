@@ -62,6 +62,8 @@ nav ul li a:hover {
   text-decoration-style: 3px solid;
   color: #cc5200;
 }
+ @media screen and (max-width:870px) {
+ }
 
 /*.logo img{
   width: inherit;
