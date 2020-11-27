@@ -17,8 +17,7 @@ p{
 font-size: 1.9em;
 }
 
-/* HEADER */
-
+/*-------------------HEADER--------------------*/
 header{
   height: 110px;
   width: 100vw;
@@ -30,7 +29,7 @@ header{
   z-index: 1;
   overflow: hidden;
 }
-
+/*----------HEADER LEFTBOX----------*/
 header .leftbox{
   width: 30vw;
   height: 65px;
@@ -42,17 +41,29 @@ header .leftbox nav{
   left: 0;
 }
 
-header .middlebox img{
-  height: 100px;
-  width: auto;
+header .leftbox nav{
+  left: 0;
+  margin-right: 2vw;
 }
 
+header .leftbox nav a{
+  margin-right: 4vw;
+  margin-left: 4vw;
+}
+
+/*----------HEADER MIDDLEBOX----------*/
 header .middlebox{
   display: inline-block;
   width: 30vw;
   height: 110px;
 }
 
+header .middlebox img{
+  height: 100px;
+  width: auto;
+}
+
+/*----------HEADER RIGHTBOX----------*/
 header .rightbox{
   width: 30vw;
   height: 65px;
@@ -69,21 +80,14 @@ header .rightbox nav a{
   margin-right: 4vw;
   margin-left: 4vw;
 }
+/*-------------------END HEADER--------------------*/
 
-header .leftbox nav{
-  left: 0;
-  margin-right: 2vw;
-}
-
-header .leftbox nav a{
-  margin-right: 4vw;
-  margin-left: 4vw;
-}
-
+/*------------------NAVBAR-------------------*/
 nav{
   position: fixed;
   z-index: 10;
 }
+
 nav li {
   list-style: none;
   display: inline-block;
@@ -110,13 +114,13 @@ nav a:hover{
   text-decoration: underline;
   opacity: inherit;
 }
+/*------------------NAVBAR END-------------------*/
 
-/* END HEADER */
-
-/*MOBILE NAVBAR*/
+/*------------------RESPONSIVE NAVBAR-------------------*/
 .mobilhead{
   display: none;
 }
+
 #nav-toggle {
   position: absolute;
   top: -100px;
@@ -165,10 +169,19 @@ nav a:hover{
 .mobilhead .icon-close .close p:hover{
   text-decoration: underline solid;
 }
+/*------------------END RESPONSIVE NAVBAR-------------------*/
 
-/* END OF MOBILE NAVBAR */
+/*------------------MAIN PART OF BODY-------------------*/
+/*---------SHOWCASE----------*/
+#showcase{
+ width: 100vw;
+ height: 85vh;
+ padding-top: 15vh;
+ padding-left: 10vw;
+ padding-right: 10vw;
+}
 
-/* CONTENT */
+/*---------#CONTENT----------*/
 #content{
   width: 100vw;
   height: 60vh;
@@ -176,38 +189,39 @@ nav a:hover{
   padding-left: 10vw;
   padding-right: 10vw;
 }
- #showcase{
-  width: 100vw;
-  height: 85vh;
-  padding-top: 15vh;
-  padding-left: 10vw;
-  padding-right: 10vw;
-}
 
-#content .app{
-  padding-top: 0;
-}
-.app img{
-  float: right;
-}
+/*---------PROBLEM----------*/
 .problem {
   background-color: #eee3dd;
   padding-top: 15vh;
 }
-
-.future{
-  background-color: #eee3dd;
-  padding-top: 15vh;
-}
-
+/*---------SOLUTION----------*/
+/*---------SPACE----------*/
 .space{
   width: 100vw;
   height: 20vh;
   background-color: #eee3dd;
 }
+/*---------APP----------*/
+.app{
+  padding-top: 0;
+}
 
-/* END OF CONTENT */
-/* READ MORE - button*/
+.app img{
+  float: right;
+}
+
+.mobimg{
+  display: none;
+}
+/*---------FUTURE----------*/
+.future{
+  background-color: #eee3dd;
+  padding-top: 15vh;
+}
+/*------------------END MAIN PART OF BODY-------------------*/
+
+/*------------------READ MORE - BUTTON-------------------*/
 .button {
  background-color:  #c65f39;
  border: none;
@@ -246,10 +260,9 @@ nav a:hover{
   opacity: 1;
   right: 0;
 }
+/*------------------END OF READ MORE BUTTON-------------------*/
 
-/* END OF READ-MORE BUTTON */
-
-/* FOOTER */
+/*------------------FOOTER-------------------*/
 footer{
   height: 50vh;
   width: 100vw;
@@ -261,12 +274,15 @@ footer{
 footer p{
   font-size: 24px;
 }
+
+/*---------FOOTER LEFTBOX----------*/
 footer .leftbox{
   width: 30vw;
   height: 40vh;
   display: inline-block;
   border-top: solid 3px #284140;
 }
+
 footer .leftbox a{
   display: block;
   margin: 2vh 0 2vh 0;
@@ -275,12 +291,15 @@ footer .leftbox a{
   font-size: 25px;
   text-decoration:none;
 }
+
 footer .leftbox a:hover{
   color: #284140;
   text-decoration: underline;
   text-decoration-style: solid 3px;
   text-decoration-color: #284140;
 }
+
+/*---------FOOTER MIDDLEBOX----------*/
 footer .middlebox{
   width: 30vw;
   height: 45vh;
@@ -321,6 +340,7 @@ footer .middlebox a{
 
 }
 
+/*---------FOOTER RIGHTBOX----------*/
 footer .rightbox{
   width: 30vw;
   height: 40vh;
@@ -333,17 +353,16 @@ footer .rightbox h3{
   font-size: 25px;
   margin-top: 2vh;
 }
-.mobimg{
-  display: none;
-}
+
 .rightbox .icons{
   display: none;
 }
-/* END OF FOOTER */
+/*------------------END FOOTER-------------------*/
 
 
-/*mindre navbar VERSJON*/
+/*------------------HEADER FOR A SCREEN WITH MAX-WIDTH 1200PX-------------------*/
 @media screen and (max-width: 1200px){
+  /*-------------------HEADER--------------------*/
   header{
     height: 100px;
     width: 100vw;
@@ -354,7 +373,7 @@ footer .rightbox h3{
     position: fixed;
     z-index: 1;
   }
-
+  /*---------DEKSTOP HEADER----------*/
   header .leftbox{
     display: none;
   }
@@ -368,16 +387,17 @@ footer .rightbox h3{
   nav{
     display: none;
   }
-
-  header .mobilhead img{
-    float: left;
-    height: 90px;
-  }
+  /*---------LOGO----------*/
   .mobilhead{
     display: inline-flex;
     width: 100vw;
   }
 
+  .mobilhead img{
+    float: left;
+    height: 90px;
+  }
+  /*---------NAVBAR LINKS----------*/
   .mobilhead .links {
     float: right;
     position: fixed;
@@ -397,7 +417,11 @@ footer .rightbox h3{
     transition: all .5s ease-in-out;
     align-items: center;
     text-align: center;
-}
+  }
+
+  .mobilhead .links li {
+    list-style: none;
+  }
 
   .mobilhead .links a {
     display: block;
@@ -411,6 +435,16 @@ footer .rightbox h3{
     transition: all ease 0.5s;
     text-decoration: none;
   }
+
+  .mobilhead a:visited {
+    color: #fff;
+    }
+
+  .mobilhead .links a:hover{
+    color: #c65f39;
+    text-decoration: 3px underline;
+  }
+  /*---------HAMBURGER NAVBAR LINES + OPEN/CLOSE----------*/
   .mobilhead .links label {
     display: block;
     padding: 1em;
@@ -420,19 +454,6 @@ footer .rightbox h3{
     justify-content: space-around;
     align-items: center;
     text-align: center;
-  }
-
-  .mobilhead a:visited {
-    color: #fff;
-    }
-
-  .mobilhead .links a:hover{
-    color: #c65f39;
-    text-decoration: 3px underline;
-  /*  background-color: #000;*/
-  }
-  .mobilhead .links li {
-    list-style: none;
   }
 
   .mobilhead :checked ~ .links {
