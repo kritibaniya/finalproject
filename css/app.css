@@ -171,6 +171,76 @@ nav a:hover{
 }
 /*------------------END RESPONSIVE NAVBAR-------------------*/
 
+/*------------------MAIN PART OF BODY-------------------*/
+/*---------SHOWCASE----------*/
+#showcase{
+ width: 100vw;
+ height: 85vh;
+ padding-top: 15vh;
+ padding-left: 10vw;
+ padding-right: 10vw;
+}
+
+/*---------#CONTENT----------*/
+#content{
+  width: 100vw;
+  height: auto;
+  padding: 15vh 10vw 15vh 10vw;
+}
+
+#content img{
+  width: 150px;
+  height: auto;
+  border: 3px solid #284040;
+  right: 0;
+}
+
+#content .img{
+  display: block;
+  width: 35vw;
+  height: auto;
+  float: right;
+}
+
+#content p{
+  float: left;
+  width: 40vw;
+}
+.mobimg{
+  display: none;
+}
+/*---------APP1(SIGN IN/SIGN UP)----------*/
+.app1 {
+  background-color: #eee3dd;
+  padding-top: 15vh;
+}
+/*---------APP2(FOOD LIST)----------*/
+/*---------SPACE----------*/
+.space{
+  width: 100vw;
+  height: 20vh;
+  background-color: #eee3dd;
+}
+/*---------APP3(UPLOAD/CHOOSE)----------*/
+.app{
+  padding-top: 0;
+}
+
+.app img{
+  float: right;
+}
+
+.mobimg{
+  display: none;
+}
+/*---------APP4(FUTURE)----------*/
+.app4{
+  background-color: #eee3dd;
+  padding-top: 15vh;
+}
+
+/*------------------END MAIN PART OF BODY-------------------*/
+
 /*------------------FOOTER-------------------*/
 footer{
   height: 50vh;
@@ -383,4 +453,28 @@ footer .rightbox h3{
   .mobilhead :checked ~ .icon-burger .line:nth-child(3){
     transform: translateY(-10px) rotate(-225deg);
   }
+
+  /*--CONTENT--*/
+  #content{
+    width: 100vw;
+    height: auto;
+    padding: 15vh 10vw 15vh 10vw;
+  }
+
+  #content .img{
+    display: none;
+  }
+
+  #content .mobimg{
+    display: inline-block;
+    align-items: center;
+    align-content: center;
+    align-self: center;
+  }
+
+  #content p{
+    width: 100vw;
+    padding-right: 20vw;
+  }
+
 }
