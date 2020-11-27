@@ -3,43 +3,71 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="../css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <title>UNEAT</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <title>NEAT</title>
+    <link rel="icon" type="image/png" href=images/logo.png>
+    <title></title>
   </head>
-
   <body>
     <header>
-      <!-- Logo -->
-      <div class="logo">
-          <img src="../bilder/grønnlogo.png" alt="neat">
+      <div class="leftbox">
+        <nav>
+          <ul>
+            <li> <a href="#">Problem</a> </li>
+            <li> <a href="#">Solution</a> </li>
+          </ul>
+        </nav>
       </div>
-      <!-- Navbar -->
 
-      <nav>
+      <div class="middlebox">
+          <img src="images/logogrønn.jpg" alt="">
+      </div>
+
+      <div class="rightbox">
+        <nav>
+          <ul>
+            <li> <a href="#">The App</a> </li>
+            <li> <a href="#">Our Future</a> </li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- navbar for mobile version -->
+      <div class="mobilhead">
+        <input id="nav-toggle" type="checkbox">
+          <img src="images/logogrønn.jpg" alt="">
 
           <ul class="links">
-          <li> <a href="#problem">Problem</a> </li>
-          <li> <a href="#solution">Solution</a> </li>
-          <li> <a href="#app">The App</a> </li>
-          <li> <a href="#future">Future</a> </li>
-        </ul>
-      </nav>
+            <li> <a href="#">Problem</a> </li>
+            <li> <a href="#">Solution</a> </li>
+            <li> <a href="#">The App</a> </li>
+            <li> <a href="#">Our Future</a> </li>
+            <li>
+              <label for="nav-toggle" class="icon-close">
+                <div class="line close"> <p>Close</p> </div>
+              </label>
+            </li>
+          </ul>
+
+          <label for="nav-toggle" class="icon-burger">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </label>
+
+      </div>
     </header>
 
-    <!-- End of Navbar -->
-
-    <div class="showcase" id="showcase">
-      <h1>What would you do with the rest?</h1>
-      <h2>Hint: Give away to The Next person </h2>
+    <div class="showcase" id="content">
+      <h1>you stupid u dont eat,<br> we take food we eat</h1>
+      <h1>Have any leftover food? <br> Share it and be apart of a new future </h1>
+      <h1>have extra food and help clean the society?</h1>
+      <h1>lead society to a more eco friendly future</h1>
     </div>
 
-    <div class="all1 problem" id="content">
+    <div class="problem" id="content">
       <h1>Problem</h1>
-      <img src="../bilder/rikitgproblem.jpg" alt="idk">
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
         eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad
         minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
@@ -47,14 +75,12 @@
         voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
         sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
         mollit anim id est laborum.</p>
-    </div>
-    <div class="mobimg">
-      <img src="../bilder/rikitgproblem.jpg" alt="idk">
+        <br>
+        <a href="#" class="button"><span>Read more</span></a>
     </div>
 
-    <div class="all2 solution" id="content">
+    <div class="solution" id="content">
       <h1>Solution</h1>
-      <img src="../bilder/riktigfoodtruck.jpg" alt="idk">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
         eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad
         minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
@@ -62,14 +88,15 @@
         voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
         sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
         mollit anim id est laborum.</p>
+        <br>
+      <a href="#" class="button"><span>Read more</span></a>
     </div>
-    <div class="mobimg">
-      <img src="../bilder/riktigfoodtruck.jpg" alt="idk">
-    </div>
+    <div class="space">
 
-    <div class="all1 app" id="content">
+    </div>
+    <div class="app" id="content">
       <h1>The App</h1>
-      <img src="../bilder/riktigapp.jpg" alt="idk">
+      <img src="images/riktigapp.jpg" alt="">
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
         eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad
         minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
@@ -77,14 +104,15 @@
         voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
         sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
         mollit anim id est laborum.</p>
-    </div>
-    <div class="mobimg">
-      <img src="../bilder/riktigapp.jpg" alt="idk">
+        <br>
+        <a href="#" class="button"><span>Read more</span></a>
+        <div class="mobimg">
+          <img src="images/riktigapp.jpg" alt="">
+        </div>
     </div>
 
     <div class="all2 future" id="content">
       <h1>Our Next Step</h1>
-      <img src="../bilder/riktigfuture.jpg" alt="idk">
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
         eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad
         minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
@@ -92,60 +120,35 @@
         voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
         sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
         mollit anim id est laborum.</p>
+        <br>
+        <a href="#" class="button"><span>Read more</span></a>
     </div>
-    <div class="mobimg">
-      <img src="../bilder/riktigfuture.jpg" alt="idk">
-    </div>
+
 
     <footer>
-      <div class="row">
-      <div class="leftbox">
-        <a href="#showcase">Back to the top</a>
-        <a href="#sources">Sources</a>
-        <a href="#FAQ">FAQ</a>
-      </div>
+         <div class="leftbox">
+           <a href="#sources">Sources</a>
+           <a href="#FAQ">FAQ</a>
+           <a href="#" class="button"><span>Back to the top</span></a>
+         </div>
 
-      <div class="middlebox">
-        <img src="../bilder/logo.png" alt="">
-      <div class="icons">
-        <a href="https://www.instagram.com" target="_blank">
-          <i class="fa fa-instagram" aria-hidden="true"></i></a>
-        <a href="https://www.facebook.com" target="_blank">
-          <i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-        <a href="https://www.snapchat.com" target="_blank">
-          <i class="fa fa-snapchat-square" aria-hidden="true"></i></a>
-        <a href="https://www.youtube.com" target="_blank">
-          <i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-      </div>
+         <div class="middlebox">
+           <img src="images/logohvit.png" alt="">
 
-      <div class=" vertical"></div>
-      </div>
+         <div class=" vertical"></div>
+         </div>
 
-      <div class="rightbox">
-        <div class="about">
-          <h3>About us</h3>
-          <br>
-          <p>We are four students, studying Computer Science at Oslo Metropolitan
-            Univeristy. All of us have been impacted by the hunger in the world,
-            and it is something we want to reduce. But the first step to reducing
-            world hunger, is to start reducing the local issues with food waste.
-            This is why we decided to focus on this goal, and this project.</p>
-        </div>
-        <div class="icons">
-          <a href="https://www.instagram.com" target="_blank">
-            <i class="fa fa-instagram" aria-hidden="true"></i></a>
-          <a href="https://www.facebook.com" target="_blank">
-            <i class="fa fa-facebook-official" aria-hidden="true"></i></a>
-          <a href="https://www.snapchat.com" target="_blank">
-            <i class="fa fa-snapchat-square" aria-hidden="true"></i></a>
-          <a href="https://www.youtube.com" target="_blank">
-            <i class="fa fa-youtube-play" aria-hidden="true"></i></a>
-        </div>
-      </div>
-      <div class="copyright">
-          <p> Copyright © 2020 The Neat</p>
-      </div>
-    </footer>
-
+         <div class="rightbox">
+           <div class="about">
+             <h3>About us</h3>
+             <br>
+             <p>We are four students, studying Computer Science at Oslo Metropolitan
+               Univeristy. All of us have been impacted by the hunger in the world,
+               and it is something we want to reduce. But the first step to reducing
+               world hunger, is to start reducing the local issues with food waste.
+               This is why we decided to focus on this goal, and this project.</p>
+           </div>
+         </div>
+       </footer>
   </body>
-  </html>
+</html>
