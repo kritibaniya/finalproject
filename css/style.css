@@ -28,6 +28,7 @@ header{
   align-self: center;
   position: fixed;
   z-index: 1;
+  overflow: hidden;
 }
 
 header .leftbox{
@@ -61,6 +62,22 @@ header .rightbox{
 
 header .rightbox nav{
   right: 0;
+  margin-right: 2vw;
+}
+
+header .rightbox nav a{
+  margin-right: 4vw;
+  margin-left: 4vw;
+}
+
+header .leftbox nav{
+  left: 0;
+  margin-right: 2vw;
+}
+
+header .leftbox nav a{
+  margin-right: 4vw;
+  margin-left: 4vw;
 }
 
 nav{
@@ -76,8 +93,8 @@ nav a{
   display: inline-block;
   color: #fff;
   padding-top: 0.5em;
-  margin-right:4.5em ;
-  margin-left:4.5em ;
+  margin-right: 5vw;
+  margin-left: 5vw;
   font-size: 1.6em;
   font-weight: bold;
   transition: all ease 0.5s;
@@ -159,6 +176,14 @@ nav a:hover{
   padding-left: 10vw;
   padding-right: 10vw;
 }
+ #showcase{
+  width: 100vw;
+  height: 85vh;
+  padding-top: 15vh;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
 #content .app{
   padding-top: 0;
 }
@@ -317,8 +342,8 @@ footer .rightbox h3{
 /* END OF FOOTER */
 
 
-/*MOBIL VERSJON*/
-@media screen and (max-width: 800px){
+/*mindre navbar VERSJON*/
+@media screen and (max-width: 1200px){
   header{
     height: 100px;
     width: 100vw;
@@ -435,4 +460,7 @@ footer .rightbox h3{
     height: auto;
   }
 }
-/* END OF MOBILE VERSION 800PX */
+/* END OF MOBILE VERSION 1200PX */
+@media screen and (max-width: 800px){
+/*  hihi yoyo*/
+}
