@@ -27,8 +27,17 @@ p{
   font-size: 29px;
 }
 header .logo{
-  align-items: center;
+float: left;
 }
+header .logo img {
+display: inline-block;
+vertical-align: bottom;
+}
+
+picture {
+  display: inline-block;
+}
+
 nav {
   position: fixed;
   left: 0;
