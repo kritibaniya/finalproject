@@ -171,6 +171,45 @@ nav a:hover{
 }
 /*------------------END RESPONSIVE NAVBAR-------------------*/
 
+
+/*------------------ SHOWCASE-------------------*/
+#showcase {
+  height: 100vh;
+  width: 100vw;
+  background-color: #DEB997;
+}
+/*------------------ END OF SHOWCASE-------------------*/
+
+
+/*------------------ CONTENT-------------------*/
+.content {
+  margin-left: 22%;
+  margin-right: 22%;
+  margin-top: 70px;
+  margin-bottom: 70px;
+}
+
+#next {
+  margin: 0;
+  margin-bottom: 30px;
+  height:100%;
+  /*background-color: #e5e4df;*/
+  /*background-color: #fffbe6;*/
+  background-color: #eee3dd;
+}
+#next p{
+  margin-left: 22%;
+  margin-right: 22%;
+}
+#next h1{
+  margin-left: 22%;
+  margin-right: 22%;
+  margin-top: 30px;
+}
+
+/*------------------ END OF CONTENT-------------------*/
+
+
 /*------------------FOOTER-------------------*/
 footer{
   height: 50vh;
