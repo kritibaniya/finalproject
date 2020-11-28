@@ -8,13 +8,14 @@
 body{
   margin: 0;
   color: black;
+  line-height: 1.5;
 }
 h1{
-  font-size: 2.6em;
+  font-size: 2.7em;
 }
 
 p{
-font-size: 1.9em;
+font-size: 1.4em;
 }
 
 /*-------------------HEADER--------------------*/
@@ -191,20 +192,26 @@ nav a:hover{
 
 #next {
   margin: 0;
-  margin-bottom: 30px;
-  height:100%;
-  /*background-color: #e5e4df;*/
-  /*background-color: #fffbe6;*/
   background-color: #eee3dd;
 }
-#next p{
-  margin-left: 22%;
-  margin-right: 22%;
-}
-#next h1{
-  margin-left: 22%;
-  margin-right: 22%;
+.ourStep {
+  float: left;
+  margin-left: 50px;
   margin-top: 30px;
+  width: 50vw;
+  height: auto;
+}
+.box{
+  padding-top: 100px;
+  padding-bottom: 30px;
+  width: 40vw;
+  height: auto;
+  float: right;
+}
+.picture {
+  max-width: 100%;
+  height: auto;
+
 }
 
 /*------------------ END OF CONTENT-------------------*/
@@ -423,3 +430,23 @@ footer .rightbox h3{
     transform: translateY(-10px) rotate(-225deg);
   }
 }
+  /*---------END OF FOOTER----------*/
+
+/*------------------CONTENT FOR A SCREEN WITH MAX-WIDTH 1200PX-------------------*/
+@media screen and (max-width: 1200px){
+
+  .content{
+    margin: 20px;
+  }
+  .ourStep {
+    float: none;
+    width: 95%;
+    margin: 20px;
+  }
+  .box{
+    padding: 0;
+    width: 100%;
+    float: none;
+    text-align: center;
+}
+/*------------------END OF CONTENT FOR A SCREEN WITH MAX-WIDTH 1200PX-------------------*/
