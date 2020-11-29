@@ -620,7 +620,6 @@ footer .rightbox h3{
     width: 35vw;
   }*/
   #showcase {
-   display: flex;
    margin: auto;
    padding-top: 10px;
    width: 100vw;

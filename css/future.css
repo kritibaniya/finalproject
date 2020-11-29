@@ -101,7 +101,6 @@ nav a{
   margin-left: 5vw;
   font-size: 1.6em;
   font-weight: bold;
-  transition: all ease 0.5s;
   text-decoration: none;
 }
 
@@ -176,95 +175,94 @@ nav a:hover{
 #showcase{
  width: 100vw;
  height: 100vh;
- background-image: url(../bilder/app/showcase22.jpg);
- background-size: cover;
- background-repeat: no-repeat;
- background-position: center;
- background-attachment: fixed;
- justify-content: center;
- align-items: center;
-}
-#showcase img{
-  float: right;
-  width: 750px;
-  right: 0;
-}
-
-#showcase p{
-  float: left;
-  margin-top: 300px;
+ padding-left: 10vw;
+ padding-right: 10vw;
 }
 
 /*---------#CONTENT----------*/
 #content{
   width: 100vw;
-  height: auto;
-  padding: 15vh 10vw 15vh 10vw;
+  height: 60vh;
+  padding-top: 15vh;
+  padding-left: 10vw;
+  padding-right: 10vw;
 }
 
-#content img{
-  /*width: 208px;
-  height: auto;*/
-  border: 3px solid #284040;
-  right: 0;
+/*---------PROBLEM----------*/
+.problem {
+  /* background-color: #eee3dd; */
+  padding-top: 15vh;
 }
-
-#content .img{
-  display: block;
-  width: 35vw;
-  height: auto;
-  float: right;
+/*---------SOLUTION----------*/
+.solution{
+  background-color: #eee3dd;
 }
-
-#content p{
-  float: left;
-  width: 40vw;
-}
-
-#content a{
-  color: #c65f39;
-  text-decoration: none;
-}
-
-#content a:hover{
-  color: #284040;
-  text-decoration: underline;
-  text-decoration-style: solid 3px;
-  transition: all ease 0.5s;
-}
-
-#content a:visited{
-  color: #c65f39;
-}
-.mobimg{
+/*---------SPACE----------*/
+.space{
   display: none;
+  width: 100vw;
+  height: 20vh;
+  background-color: #eee3dd;
 }
+/*---------APP----------*/
 .app{
   padding-top: 0;
 }
 
-.app img{
+.app .appimg{
   float: right;
 }
-/*---------APP2(SIGN IN/SIGN UP)----------*/
-.app1 {
+
+.app .mobimg{
+  display: none;
+}
+/*---------FUTURE----------*/
+.future{
   background-color: #eee3dd;
   padding-top: 15vh;
 }
-.app3{
-  background-color: #eee3dd;
-  padding-top: 15vh;
+/*------------------END MAIN PART OF BODY-------------------*/
+
+/*------------------READ MORE - BUTTON-------------------*/
+.button {
+ background-color:  #c65f39;
+ border: none;
+ color: white;
+ padding: 8px 25px;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ font-size: 1.4em;
+ font-weight: bold;
+ margin: 4px 2px;
+ border-radius: 1.5em;
+ z-index: -1;
 }
-/*---------APP5(FUTURE)----------*/
-.app5{
-  background-color: #eee3dd;
-  padding-top: 15vh;
-}
-#content .app5 p{
-  width: 100vw;
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
 }
 
-/*------------------END MAIN PART OF BODY-------------------*/
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+/*------------------END OF READ MORE BUTTON-------------------*/
 
 /*------------------FOOTER-------------------*/
 footer{
@@ -274,9 +272,7 @@ footer{
   margin-right: 5vw;
   margin-left: 5vw;
   overflow: hidden;
-  margin-top: 2.5%;
 }
-
 footer p{
   font-size: 24px;
 }
@@ -319,6 +315,7 @@ footer .leftbox .icons{
   background-color: #e65c00;
   border-radius: 30%;
 }
+
 
 /*---------FOOTER MIDDLEBOX----------*/
 footer .middlebox{
@@ -379,6 +376,7 @@ footer .rightbox h3{
   display: none;
 }
 /*------------------END FOOTER-------------------*/
+
 
 /*------------------HEADER FOR A SCREEN WITH MAX-WIDTH 1200PX-------------------*/
 @media screen and (max-width: 1200px){
@@ -496,34 +494,18 @@ footer .rightbox h3{
     transform: translateY(-10px) rotate(-225deg);
   }
 
-  /*--CONTENT--*/
   #content{
     width: 100vw;
     height: auto;
-    padding: 15vh 10vw 15vh 10vw;
   }
-
-  #content .img{
-    display: none;
+  /*---------SHOWCASE----------*/
+/*  #showcase img{
+     margin-top: 40%;
+    width: 40vw;
   }
-
-  #content .mobimg{
-    display: inline-block;
-    align-items: center;
-    align-content: center;
-    align-self: center;
-  }
-
-  #content .monimg img{
-    width: 150px;
-  }
-
-  #content p{
-    width: 100vw;
-    padding-right: 20vw;
-  }
-
-  /*-------------------FOOTER--------------------*/
+  #showcase p{
+    width: 35vw;
+  }*/
   footer{
     height: 35vh;
     width: 100vw;
@@ -611,6 +593,28 @@ footer .rightbox h3{
   p{
     font-size: 1.4em;
   }
+  /*---------SHOWCASE----------*/
+  /*#showcase img{
+    margin-top: 40%;
+  }
+  #showcase p{
+    width: 35vw;
+  }*/
+  #showcase {
+   padding-top: 10px;
+   width: 100vw;
+   height: 100vh;
+ }
+  /*---------THE APP----------*/
+  .app .appimg{
+    display: none;
+  }
+
+  .mobimg{
+    display: block;
+    background-color: red;
+  }
+  /*------------------FOOTER-------------------*/
   footer{
     height: 30vh;
     width: 100vw;
