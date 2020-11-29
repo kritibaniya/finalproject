@@ -195,6 +195,22 @@ left: 50%;
   margin-left: 10vw;
   margin-right: 10vw;
 }
+
+ a{
+  color: #c65f39;
+  text-decoration: none;
+}
+
+ a:hover{
+  color: #284040;
+  text-decoration: underline;
+  text-decoration-style: solid 3px;
+  transition: all ease 0.5s;
+}
+
+ a:visited{
+  color: #c65f39;
+}
 *{
   box-sizing: border-box;
 }
