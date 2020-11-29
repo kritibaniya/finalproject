@@ -190,24 +190,23 @@ nav a:hover{
   margin-bottom: 70px;
 }
 
-/*PRITI HAR LAGT INN*/
+/*-----------PRITI HAR LAGT INN-------------*/
 .content a{
-  color: #000;
+  color: #c65f39;
   text-decoration: none;
 }
 
 .content a:hover{
-  color: #c65f39;
+  color: #284040;
   text-decoration: underline;
   text-decoration-style: solid 3px;
   transition: all ease 0.5s;
 }
 
 .content a:visited{
-  color: #000;
-  text-decoration: none;
+  color: #c65f39;
 }
-/*END PRITI HAR LAGT INN*/
+/*---------------END PRITI HAR LAGT INN*----------*/
 
 #society ul{
 font-size: 1.4em;
