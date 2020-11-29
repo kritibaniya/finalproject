@@ -247,7 +247,7 @@ nav a:hover{
 
 /*------------------FOOTER-------------------*/
 footer{
-  height: 50vh;
+  height: 40vh;
   width: 100vw;
   position: relative;
   margin-right: 5vw;
@@ -496,12 +496,11 @@ footer .rightbox h3{
   }
   /* Footer */
   footer{
-    height: 50vh;
+    height: 35vh;
     width: 100vw;
     position: relative;
     margin-right: 5vw;
     margin-left: 5vw;
-    margin-top: 10%;
   }
   footer p{
     font-size: 24px;
@@ -659,7 +658,7 @@ footer .rightbox h3{
   footer .rightbox .about p{
     font-size: 1em;
   }
-  
+
   .copyright{
     font-size: 1em;
     font-weight: bold;
