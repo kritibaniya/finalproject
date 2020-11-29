@@ -167,9 +167,8 @@ nav a:hover{
 /*----------CONTAINER----------*/
 
 .container{
-  width: 100%;
-  padding: 0;
-  margin: 0;
+  margin: 13vh 5vw 5vh;
+  border: #eee3dd 10px solid;
 }
 
 /*----------CONTENT----------*/
@@ -184,9 +183,7 @@ h1{
 }
 
 .content{
-  width: 30vw;
-  padding-top: 50vh;
-  margin-top: 50vh;
+width: 85vw;
 }
 
 h3{
