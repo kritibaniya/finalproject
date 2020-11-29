@@ -176,9 +176,26 @@ nav a:hover{
 /*------------------ SHOWCASE-------------------*/
 #showcase {
   height: 100vh;
-  width: 100vw;
-  background-color: #DEB997;
+  background-color: #eee3dd;
 }
+.showcase-text {
+  padding: 200px 0;
+  width: 60%;
+  float: left;
+  margin-top: 200px;
+  margin-left: 20px;
+}
+.img-sharingApple{
+  max-width: 100%;
+  height: auto;
+  padding: 400px 0;
+  height: 50vh;
+  float: right;
+  margin-right: 100px;
+  height: auto;
+}
+
+
 /*------------------ END OF SHOWCASE-------------------*/
 
 
@@ -190,7 +207,6 @@ nav a:hover{
   margin-bottom: 70px;
 }
 
-/*-----------PRITI HAR LAGT INN-------------*/
 .content a{
   color: #c65f39;
   text-decoration: none;
@@ -206,7 +222,6 @@ nav a:hover{
 .content a:visited{
   color: #c65f39;
 }
-/*---------------END PRITI HAR LAGT INN*----------*/
 
 #society ul{
 font-size: 1.4em;
@@ -241,7 +256,7 @@ font-size: 1.4em;
 
 /*------------------FOOTER-------------------*/
 footer{
-  height: 50vh;
+  height: 40vh;
   width: 100vw;
   position: relative;
   margin-right: 5vw;
@@ -274,6 +289,9 @@ footer .leftbox a:hover{
   text-decoration: underline;
   text-decoration-style: solid 3px;
   text-decoration-color: #284140;
+}
+footer .leftbox .icons{
+  display: none;
 }
 
 /*---------FOOTER MIDDLEBOX----------*/
@@ -454,6 +472,46 @@ footer .rightbox h3{
 }
   /*---------END OF FOOTER----------*/
 
+/*------------------SHOWCASE FOR A SCREEN WITH MAX-WIDTH 1200PX-------------------*/
+@media screen and (max-width: 1200px){
+  .img-sharingApple{
+    margin-top: auto;
+    float: none;
+    padding: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .showcase-text{
+    float: none;
+    padding: 0;
+    margin-right: 50%;
+    width: 100%;
+    background-color: pink;
+  }
+  .showcase-text h1{
+    font-size: 1.9em;
+  }
+}
+/*.showcase-text {
+  padding: 200px 0;
+  width: 60%;
+  float: left;
+  margin-top: 200px;
+  margin-left: 20px;
+}
+.img-sharingApple{
+  max-width: 100%;
+  height: auto;
+  padding: 400px 0;
+  height: 50vh;
+  float: right;
+  margin-right: 100px;
+  height: auto;
+}*/
+
+/*------------------END OF SHOWCASE FOR A SCREEN WITH MAX-WIDTH 1200PX-------------------*/
+
 /*------------------CONTENT FOR A SCREEN WITH MAX-WIDTH 1200PX-------------------*/
 @media screen and (max-width: 1200px){
 
@@ -472,3 +530,175 @@ footer .rightbox h3{
     text-align: center;
 }
 /*------------------END OF CONTENT FOR A SCREEN WITH MAX-WIDTH 1200PX-------------------*/
+footer{
+  height: 35vh;
+  width: 100vw;
+  position: relative;
+  margin-right: 5vw;
+  margin-left: 5vw;
+}
+footer p{
+  font-size: 24px;
+}
+/*---------FOOTER LEFTBOX----------*/
+footer.leftbox{
+  width: 30vw;
+  height: 40vh;
+  display: inline-block;
+  border-top: solid 3px #284140;
+}
+footer.leftbox .footlink a{
+  display: block;
+  margin: 2vh 0 2vh 0;
+  font-weight: bold;
+  color: black;
+  font-size: 25px;
+  text-decoration:none;
+}
+footer.leftbox a:hover{
+  color: #284140;
+  text-decoration: underline;
+  text-decoration-style: solid 3px;
+  text-decoration-color: #284140;
+}
+footer .leftbox .icons{
+margin: 10px;
+font-size: 2.5em;
+
+}
+footer .leftbox .icons a{
+  color: #284140;
+  display: inline-block;
+}
+/*---------FOOTER MIDDLEBOX----------*/
+footer.middlebox{
+  width: 30vw;
+  height: 45vh;
+  display: inline-block;
+  align-content: center;
+  align-self: center;
+  text-align: center;
+}
+
+footer.middlebox a{
+  text-decoration: none;
+}
+footer .middlebox .icons{
+  display: none;
+}
+footer .middlebox img{
+  max-height: 50px;
+}
+
+.vertical{
+  border-left: 3px solid #284140;
+  height: 20vh;
+  position: absolute;
+  left: 45vw;
+}
+
+.copyright{
+  font-size: 1em;
+  font-weight: bold;
+  color: #284140;
+  border: 3px solid green;
+}
+/*---------FOOTER RIGHTBOX----------*/
+footer.rightbox{
+  width: 30vw;
+  height: 40vh;
+}
+footer .rightbox .about p{
+  font-size: 1.3em;
+}
+/*------------------END FOOTER-------------------*/
+}
+@media screen and (max-width: 800px){
+p{
+  font-size: 1.4em;
+}
+footer{
+  height: 30vh;
+  width: 100vw;
+  position: relative;
+  margin-right: 5vw;
+  margin-left: 5vw;
+  margin-top: 10%;
+}
+
+/*---------FOOTER LEFTBOX----------*/
+footer .leftbox{
+  width: 30vw;
+  height: 40vh;
+  display: inline-block;
+  border-top: solid 3px #284140;
+}
+footer .leftbox .footlink a{
+  display: block;
+  margin: 2vh 0 2vh 0;
+  font-weight: bold;
+  color: black;
+  font-size: 15px;
+  text-decoration:none;
+}
+footer .leftbox a:hover{
+  color: #284140;
+  text-decoration: underline;
+  text-decoration-style: solid 3px;
+  text-decoration-color: #284140;
+}
+footer .leftbox .icons{
+margin: 10px;
+font-size: 2.5em;
+display: inline-block;
+
+}
+footer .icons a{
+  font-size: 17px;
+  color: #284140;
+  display: inline-block;
+}
+/*---------FOOTER MIDDLEBOX----------*/
+footer .middlebox{
+  width: 30vw;
+  height: 45vh;
+  display: inline-block;
+  align-content: center;
+  align-self: center;
+  text-align: center;
+}
+
+footer .middlebox a{
+  text-decoration: none;
+}
+footer .middlebox .icons{
+  display: none;
+}
+footer .middlebox img{
+  max-height: 35px;
+}
+
+.vertical{
+  border-left: 3px solid #284140;
+  height: 20vh;
+  position: absolute;
+  left: 45vw;
+}
+
+/*---------FOOTER RIGHTBOX----------*/
+footer.rightbox{
+  width: 30vw;
+  height: 40vh;
+}
+footer .rightbox .about p{
+  font-size: 1em;
+}
+
+.copyright{
+  font-size: 1em;
+  font-weight: bold;
+  color: #284140;
+  border: 3px solid green;
+}
+/*------------------END FOOTER-------------------*/
+}
