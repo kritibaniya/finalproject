@@ -1,20 +1,13 @@
 *{
   scroll-behavior: smooth;
   overflow-x: hidden;
-  margin: 0;
   box-sizing: border-box;
 }
 
 body{
   margin: 0;
+  padding: 0;
   color: black;
-}
-h1{
-  font-size: 2.6em;
-}
-
-p{
-font-size: 1.9em;
 }
 
 /*-------------------HEADER--------------------*/
@@ -171,9 +164,51 @@ nav a:hover{
 }
 /*------------------END RESPONSIVE NAVBAR-------------------*/
 
+/*----------CONTAINER----------*/
+
+.container{
+  margin: 13vh 5vw 5vh;
+  border: #eee3dd 10px solid;
+}
+
+/*----------CONTENT----------*/
+
+
+h1{
+  font-size: 2.0em;
+  padding-top: 5vh;
+  padding-bottom: 2vh;
+  text-decoration: underline;
+  text-align: center;
+}
+
+.content{
+width: 85vw;
+}
+
+h3{
+  font-size: 1.8em;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+
+.content p{
+  font-size: 1.6em;
+  line-height: 1.6em;
+}
+
+
+/*----------END CONTENT----------*/
+
+
+
+/*----------END CONTAINER----------*/
+
+
+
 /*------------------FOOTER-------------------*/
 footer{
-  height: 50vh;
+  height: 40vh;
   width: 100vw;
   position: relative;
   margin-right: 5vw;
@@ -206,6 +241,10 @@ footer .leftbox a:hover{
   text-decoration: underline;
   text-decoration-style: solid 3px;
   text-decoration-color: #284140;
+}
+
+footer .leftbox .icons{
+  display: none;
 }
 
 /*---------FOOTER MIDDLEBOX----------*/
@@ -246,7 +285,6 @@ footer .middlebox a{
   font-weight: bold;
   color: #284140;
   border: 3px solid green;
-
 }
 
 /*---------FOOTER RIGHTBOX----------*/
@@ -383,4 +421,175 @@ footer .rightbox h3{
   .mobilhead :checked ~ .icon-burger .line:nth-child(3){
     transform: translateY(-10px) rotate(-225deg);
   }
+  footer{
+    height: 35vh;
+    width: 100vw;
+    position: relative;
+    margin-right: 5vw;
+    margin-left: 5vw;
+  }
+  footer p{
+    font-size: 24px;
+  }
+  /*---------FOOTER LEFTBOX----------*/
+  footer.leftbox{
+    width: 30vw;
+    height: 40vh;
+    display: inline-block;
+    border-top: solid 3px #284140;
+  }
+  footer.leftbox .footlink a{
+    display: block;
+    margin: 2vh 0 2vh 0;
+    font-weight: bold;
+    color: black;
+    font-size: 25px;
+    text-decoration:none;
+  }
+  footer.leftbox a:hover{
+    color: #284140;
+    text-decoration: underline;
+    text-decoration-style: solid 3px;
+    text-decoration-color: #284140;
+  }
+  footer .leftbox .icons{
+  margin: 10px;
+  font-size: 2.5em;
+
+  }
+  footer .leftbox .icons a{
+    color: #284140;
+    display: inline-block;
+  }
+  /*---------FOOTER MIDDLEBOX----------*/
+  footer.middlebox{
+    width: 30vw;
+    height: 45vh;
+    display: inline-block;
+    align-content: center;
+    align-self: center;
+    text-align: center;
+  }
+
+  footer.middlebox a{
+    text-decoration: none;
+  }
+  footer .middlebox .icons{
+    display: none;
+  }
+  footer .middlebox img{
+    max-height: 50px;
+  }
+
+  .vertical{
+    border-left: 3px solid #284140;
+    height: 20vh;
+    position: absolute;
+    left: 45vw;
+  }
+
+  .copyright{
+    font-size: 1em;
+    font-weight: bold;
+    color: #284140;
+    border: 3px solid green;
+  }
+/*---------FOOTER RIGHTBOX----------*/
+  footer.rightbox{
+    width: 30vw;
+    height: 40vh;
+  }
+  footer .rightbox .about p{
+    font-size: 1.3em;
+  }
+  /*------------------END FOOTER-------------------*/
+}
+@media screen and (max-width: 800px){
+  p{
+    font-size: 1.4em;
+  }
+  footer{
+    height: 30vh;
+    width: 100vw;
+    position: relative;
+    margin-right: 5vw;
+    margin-left: 5vw;
+    margin-top: 10%;
+  }
+
+  /*---------FOOTER LEFTBOX----------*/
+  footer .leftbox{
+    width: 30vw;
+    height: 40vh;
+    display: inline-block;
+    border-top: solid 3px #284140;
+  }
+  footer .leftbox .footlink a{
+    display: block;
+    margin: 2vh 0 2vh 0;
+    font-weight: bold;
+    color: black;
+    font-size: 15px;
+    text-decoration:none;
+  }
+  footer .leftbox a:hover{
+    color: #284140;
+    text-decoration: underline;
+    text-decoration-style: solid 3px;
+    text-decoration-color: #284140;
+  }
+  footer .leftbox .icons{
+  margin: 10px;
+  font-size: 2.5em;
+  display: inline-block;
+
+  }
+  footer .icons a{
+    font-size: 17px;
+    color: #284140;
+    display: inline-block;
+  }
+  /*---------FOOTER MIDDLEBOX----------*/
+  footer .middlebox{
+    width: 30vw;
+    height: 45vh;
+    display: inline-block;
+    align-content: center;
+    align-self: center;
+    text-align: center;
+  }
+
+  footer .middlebox a{
+    text-decoration: none;
+  }
+  footer .middlebox .icons{
+    display: none;
+  }
+  footer .middlebox img{
+    max-height: 35px;
+  }
+
+  .vertical{
+    border-left: 3px solid #284140;
+    height: 20vh;
+    position: absolute;
+    left: 45vw;
+  }
+
+  /*---------FOOTER RIGHTBOX----------*/
+  footer.rightbox{
+    width: 30vw;
+    height: 40vh;
+  }
+  footer .rightbox .about p{
+    font-size: 1em;
+  }
+
+  .copyright{
+    font-size: 1em;
+    font-weight: bold;
+    color: #284140;
+    border: 3px solid green;
+  }
+  /*------------------END FOOTER-------------------*/
 }
