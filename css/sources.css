@@ -229,8 +229,6 @@ nav a:hover{
 
 .side-nav h1{
   color: #284040;
-  text-decoration: underline;
-  text-decoration-style: 3px solid;
   text-decoration-color: #c65f39;
   font-size: 2.0em;
   text-transform: uppercase;
@@ -260,7 +258,7 @@ nav a:hover{
   position: relative;
   float: right;
   width: 70vw;
-
+  margin-top: 5vh;
 }
 
 /*h2{
@@ -283,18 +281,12 @@ h2 {
   text-align: center;
   border-radius: 50px;
   border: 5px solid #284040;
-  margin-top: 15vh;
+  margin-top: 10vh;
 }
 
-
-h3{
-  font-size: 1.8em;
-  padding-top: 5vh;
-  padding-bottom: 2vh;
-}
 
 .list {
-  padding-bottom: 2vh;
+  margin-top: 3vh;
 }
 
 .list li {
@@ -303,7 +295,9 @@ h3{
 }
 
 .list li b {
-  text-transform: uppercase;
+  color:  #c65f39;
+  font-size: 1.2em;
+  text-decoration: underline;
 }
 
 .list em{
@@ -317,14 +311,21 @@ text-decoration: none;
 }
 
 .list li a:visited{
-  color: black;
+  color: #c65f39;
 }
 
 .list li a:hover{
-  color: #000;
+  color: #284040;
   text-decoration: underline;
   text-decoration-style: solid 3px;
   transition: all ease 0.3s;
+}
+
+h3 {
+  margin-top: 5vh;
+  margin-left: 5vh;
+  font-size: 2.0em;
+  color: #284040;
 }
 
 .list:nth-child(odd){
@@ -372,6 +373,17 @@ footer .leftbox a:hover{
 
 footer .leftbox .icons{
   display: none;
+}
+
+.fa-arrow-up{
+  width: 50px;
+  height: 29px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  background-color: #e65c00;
+  border-radius: 30%;
 }
 
 /*---------FOOTER MIDDLEBOX----------*/
