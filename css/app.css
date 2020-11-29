@@ -216,6 +216,22 @@ nav a:hover{
   float: left;
   width: 40vw;
 }
+
+#content a{
+  color: #c65f39;
+  text-decoration: none;
+}
+
+#content a:hover{
+  color: #284040;
+  text-decoration: underline;
+  text-decoration-style: solid 3px;
+  transition: all ease 0.5s;
+}
+
+#content a:visited{
+  color: #c65f39;
+}
 .mobimg{
   display: none;
 }
