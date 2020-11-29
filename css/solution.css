@@ -176,9 +176,26 @@ nav a:hover{
 /*------------------ SHOWCASE-------------------*/
 #showcase {
   height: 100vh;
-  width: 100vw;
-  background-color: #DEB997;
+  background-color: #eee3dd;
 }
+.showcase-text {
+  padding: 200px 0;
+  width: 60%;
+  float: left;
+  margin-top: 200px;
+  margin-left: 20px;
+}
+.img-sharingApple{
+  max-width: 100%;
+  height: auto;
+  padding: 400px 0;
+  height: 50vh;
+  float: right;
+  margin-right: 100px;
+  height: auto;
+}
+
+
 /*------------------ END OF SHOWCASE-------------------*/
 
 
@@ -190,7 +207,6 @@ nav a:hover{
   margin-bottom: 70px;
 }
 
-/*-----------PRITI HAR LAGT INN-------------*/
 .content a{
   color: #c65f39;
   text-decoration: none;
@@ -206,7 +222,6 @@ nav a:hover{
 .content a:visited{
   color: #c65f39;
 }
-/*---------------END PRITI HAR LAGT INN*----------*/
 
 #society ul{
 font-size: 1.4em;
@@ -453,6 +468,46 @@ footer .rightbox h3{
   }
 }
   /*---------END OF FOOTER----------*/
+
+/*------------------SHOWCASE FOR A SCREEN WITH MAX-WIDTH 1200PX-------------------*/
+@media screen and (max-width: 1200px){
+  .img-sharingApple{
+    margin-top: auto;
+    float: none;
+    padding: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .showcase-text{
+    float: none;
+    padding: 0;
+    margin-right: 50%;
+    width: 100%;
+    background-color: pink;
+  }
+  .showcase-text h1{
+    font-size: 1.9em;
+  }
+}
+/*.showcase-text {
+  padding: 200px 0;
+  width: 60%;
+  float: left;
+  margin-top: 200px;
+  margin-left: 20px;
+}
+.img-sharingApple{
+  max-width: 100%;
+  height: auto;
+  padding: 400px 0;
+  height: 50vh;
+  float: right;
+  margin-right: 100px;
+  height: auto;
+}*/
+
+/*------------------END OF SHOWCASE FOR A SCREEN WITH MAX-WIDTH 1200PX-------------------*/
 
 /*------------------CONTENT FOR A SCREEN WITH MAX-WIDTH 1200PX-------------------*/
 @media screen and (max-width: 1200px){
