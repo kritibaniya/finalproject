@@ -189,6 +189,9 @@ nav a:hover{
   margin-top: 70px;
   margin-bottom: 70px;
 }
+#society ul{
+font-size: 1.4em;
+}
 
 #next {
   margin: 0;
@@ -198,10 +201,11 @@ nav a:hover{
   float: left;
   margin-left: 50px;
   margin-top: 30px;
+  margin-bottom: 15px;
   width: 50vw;
   height: auto;
 }
-.box{
+.picture-box{
   padding-top: 100px;
   padding-bottom: 30px;
   width: 40vw;
@@ -211,7 +215,6 @@ nav a:hover{
 .picture {
   max-width: 100%;
   height: auto;
-
 }
 
 /*------------------ END OF CONTENT-------------------*/
@@ -443,7 +446,7 @@ footer .rightbox h3{
     width: 95%;
     margin: 20px;
   }
-  .box{
+  .picture-box{
     padding: 0;
     width: 100%;
     float: none;
