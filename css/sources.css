@@ -375,6 +375,17 @@ footer .leftbox .icons{
   display: none;
 }
 
+.fa-arrow-up{
+  width: 50px;
+  height: 29px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  background-color: #e65c00;
+  border-radius: 30%;
+}
+
 /*---------FOOTER MIDDLEBOX----------*/
 footer .middlebox{
   width: 30vw;
