@@ -175,10 +175,7 @@ nav a:hover{
 /*---------SHOWCASE----------*/
 #showcase{
  width: 100vw;
- height: 100vh;/*
- padding-left: 10vw;
- padding-right: 10vw;
- margin-top: 10%;*/
+ height: 100vh;
  background-image: url(../bilder/app/showcase22.jpg);
 }
 #showcase img{
@@ -236,7 +233,14 @@ nav a:hover{
 .mobimg{
   display: none;
 }
-/*---------APP1(SIGN IN/SIGN UP)----------*/
+.app{
+  padding-top: 0;
+}
+
+.app img{
+  float: right;
+}
+/*---------APP2(SIGN IN/SIGN UP)----------*/
 .app1 {
   background-color: #eee3dd;
   padding-top: 15vh;
@@ -245,29 +249,13 @@ nav a:hover{
   background-color: #eee3dd;
   padding-top: 15vh;
 }
-/*---------APP2(FOOD LIST)----------*/
-/*---------SPACE----------*/
-.space{
-  width: 100vw;
-  height: 20vh;
-  background-color: #eee3dd;
-}
-/*---------APP3(UPLOAD/CHOOSE)----------*/
-.app{
-  padding-top: 0;
-}
-
-.app img{
-  float: right;
-}
-
-.mobimg{
-  display: none;
-}
-/*---------APP4(FUTURE)----------*/
+/*---------APP5(FUTURE)----------*/
 .app5{
   background-color: #eee3dd;
   padding-top: 15vh;
+}
+#content .app5 p{
+  width: 100vw;
 }
 
 /*------------------END MAIN PART OF BODY-------------------*/
@@ -520,19 +508,16 @@ footer .rightbox h3{
     align-self: center;
   }
 
+  #content .monimg img{
+    width: 150px;
+  }
+
   #content p{
     width: 100vw;
     padding-right: 20vw;
   }
-/*
-  footer .rightbox .icons{
-    margin: 10px;
-    font-size: 2.5em;
-  }
-  footer .rightbox .icons a{
-    color: #284140;
-  }
-  /* Footer */
+
+  /*-------------------FOOTER--------------------*/
   footer{
     height: 35vh;
     width: 100vw;
