@@ -169,7 +169,7 @@ nav a:hover{
 
 /*----------SIDE-NAV----------*/
 .container{
-  margin: 13vh 5vw 5vh;
+  padding: 16vh 5vw 5vh;
 }
 
 /*.side-nav {
@@ -212,8 +212,9 @@ nav a:hover{
   position: fixed;
   float: left;
   width: 15vw;
-  height: 40vh;
+  height: 35vh;
   background-color: #eee3dd;
+  border: #284040 3px solid;
 }
 
 .side-nav ul{
@@ -226,6 +227,10 @@ nav a:hover{
 }
 
 .side-nav h1{
+  color: #284040;
+  text-decoration: underline;
+  text-decoration-style: 3px solid;
+  text-decoration-color: #c65f39;
   font-size: 2.0em;
   text-transform: uppercase;
   padding-bottom: 2vh;
@@ -257,10 +262,11 @@ nav a:hover{
 }
 
 h2{
+  color: #c65f39;
   font-size: 2.0em;
   padding-top: 2vh;
   padding-bottom: 2vh;
-  text-decoration: underline;
+  text-decoration: #284140 underline;
 }
 
 h3{
@@ -275,18 +281,17 @@ h3{
 
 .list li {
   font-size: 1.6em;
-  /*font-style: italic;*/
   line-height: 1.6em;
 }
 
 .list em{
-  font-style: italic;
+  font-style: normal;
   font-weight: bold;
 }
 
 .list li a{
-  color: black;
-  text-decoration: none;
+color: #eee3dd;
+text-decoration: none;
 }
 
 .list li a:visited{
@@ -294,7 +299,7 @@ h3{
 }
 
 .list li a:hover{
-  color: #c65f39;
+  color: #000;
   text-decoration: underline;
   text-decoration-style: solid 3px;
   transition: all ease 0.3s;
