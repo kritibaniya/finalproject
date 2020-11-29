@@ -177,23 +177,7 @@ nav a:hover{
 #showcase {
   height: 100vh;
   background-color: #eee3dd;
-}
-.showcase-text {
-  padding: 200px 0;
-  width: 60%;
-  float: left;
-  margin-top: 200px;
-  margin-left: 20px;
-}
-.img-sharingApple{
-  max-width: 100%;
-  height: auto;
-  padding: 400px 0;
-  height: 50vh;
-  float: right;
-  margin-right: 100px;
-  height: auto;
-}
+
 
 
 /*------------------ END OF SHOWCASE-------------------*/
@@ -473,9 +457,9 @@ footer .rightbox h3{
   /*---------END OF FOOTER----------*/
 
 /*------------------SHOWCASE FOR A SCREEN WITH MAX-WIDTH 1200PX-------------------*/
-@media screen and (max-width: 1200px){
-  .img-sharingApple{
-    margin-top: auto;
+@media screen and (max-width: 1200px){}
+/*  .img-sharingApple{
+    margin-top:30%;;
     float: none;
     padding: 0;
     display: block;
@@ -484,9 +468,10 @@ footer .rightbox h3{
   }
   .showcase-text{
     float: none;
+    width: 99%;
     padding: 0;
-    margin-right: 50%;
-    width: 100%;
+    margin-right: 90px;
+    margin-left: 10px;
     background-color: pink;
   }
   .showcase-text h1{
