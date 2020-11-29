@@ -201,8 +201,9 @@ nav a:hover{
 /*---------#CONTENT----------*/
 #content{
   width: 100vw;
-  height: 60vh;
-  padding-top: 15vh;
+  height: auto;
+  padding-top: 7vh;
+  padding-bottom: 7vh;
   padding-left: 10vw;
   padding-right: 10vw;
 }
