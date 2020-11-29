@@ -170,7 +170,6 @@ nav a:hover{
 /*----------SIDE-NAV----------*/
 .container{
   margin: 13vh 5vw 5vh;
-  border: #eee3dd 10px solid;
 }
 
 /*.side-nav {
@@ -255,7 +254,6 @@ nav a:hover{
   display: block;
   float: right;
   width: 70vw;
-  border: #eee3dd 10px solid;
 }
 
 h2{
