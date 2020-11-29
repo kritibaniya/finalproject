@@ -174,11 +174,22 @@ nav a:hover{
 /*---------SHOWCASE----------*/
 #showcase{
  width: 100vw;
- height: 85vh;
- padding-top: 15vh;
+ height: 100vh;
+ /* padding-top: 15vh; */
  padding-left: 10vw;
  padding-right: 10vw;
  background-color: #eee3dd
+}
+
+#showcase img{
+  float: right;
+  width: 850px;
+  right: 0;
+}
+
+#showcase p{
+  float: left;
+  margin-top: 300px;
 }
 
 /*---------#CONTENT----------*/
