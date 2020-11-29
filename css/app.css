@@ -175,10 +175,11 @@ nav a:hover{
 /*---------SHOWCASE----------*/
 #showcase{
  width: 100vw;
- height: 100vh;
+ height: 100vh;/*
  padding-left: 10vw;
  padding-right: 10vw;
- margin-top: 10%;
+ margin-top: 10%;*/
+ background-image: url(../bilder/app/showcase22.jpg);
 }
 #showcase img{
   float: right;
