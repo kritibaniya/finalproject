@@ -208,7 +208,7 @@ h3{
 
 /*------------------FOOTER-------------------*/
 footer{
-  height: 50vh;
+  height: 40vh;
   width: 100vw;
   position: relative;
   margin-right: 5vw;
@@ -422,12 +422,11 @@ footer .rightbox h3{
     transform: translateY(-10px) rotate(-225deg);
   }
   footer{
-    height: 50vh;
+    height: 35vh;
     width: 100vw;
     position: relative;
     margin-right: 5vw;
     margin-left: 5vw;
-    margin-top: 10%;
   }
   footer p{
     font-size: 24px;

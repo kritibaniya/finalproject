@@ -240,7 +240,7 @@ font-size: 1.4em;
 
 /*------------------FOOTER-------------------*/
 footer{
-  height: 50vh;
+  height: 40vh;
   width: 100vw;
   position: relative;
   margin-right: 5vw;
@@ -516,12 +516,11 @@ footer .rightbox h3{
 }
 /*------------------END OF CONTENT FOR A SCREEN WITH MAX-WIDTH 1200PX-------------------*/
 footer{
-  height: 50vh;
+  height: 35vh;
   width: 100vw;
   position: relative;
   margin-right: 5vw;
   margin-left: 5vw;
-  margin-top: 10%;
 }
 footer p{
   font-size: 24px;
