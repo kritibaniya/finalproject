@@ -203,7 +203,7 @@ nav a:hover{
 }
 
 /*---------#CONTENT----------*/
-#content{
+.content{
   width: 100vw;
   height: auto;
   padding-top: 7vh;
@@ -213,27 +213,27 @@ nav a:hover{
 }
 
 /*---------PROBLEM----------*/
-.problem {
+#problem {
   padding-top: 15vh;
 }
 /*---------SOLUTION----------*/
-.solution{
+#solution{
   background-color: #eee3dd;
 }
 /*---------APP----------*/
-.app{
+#app{
   padding-top: 0;
 }
 
-.app .appimg{
+#app .appimg{
   float: right;
 }
 
-.app .mobimg{
+#app .mobimg{
   display: none;
 }
 /*---------FUTURE----------*/
-.future{
+#future{
   background-color: #eee3dd;
   padding-top: 15vh;
 }
@@ -531,7 +531,7 @@ footer .rightbox h3{
   }
 
   /*---------------------------CONTENT----------------------------*/
-  #content{
+  .content{
     width: 100vw;
     height: auto;
   }
