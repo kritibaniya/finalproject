@@ -11,10 +11,12 @@ body{
 }
 h1{
   font-size: 2.6em;
+  line-height: 1.6;
 }
 
 p{
 font-size: 1.9em;
+line-height: 1.6;
 }
 
 /*-------------------HEADER--------------------*/
@@ -519,11 +521,7 @@ footer .rightbox h3{
     transform: translateY(-10px) rotate(-225deg);
   }
 
-  #content{
-    width: 100vw;
-    height: auto;
-  }
-  /*---------SHOWCASE----------*/
+  /*---------------------------SHOWCASE----------------------------*/
   #showcase img{
     max-width: 60%;
     padding-top: 20vh;
@@ -532,6 +530,14 @@ footer .rightbox h3{
     font-size: 1.6em;
     padding-top: 15vh;
   }
+
+  /*---------------------------CONTENT----------------------------*/
+  #content{
+    width: 100vw;
+    height: auto;
+  }
+
+  /*---------------------------FOOTER----------------------------*/
   footer{
     height: 35vh;
     width: 100vw;
