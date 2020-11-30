@@ -389,7 +389,6 @@ footer .middlebox a{
   font-weight: bold;
   color: #284140;
   border: 3px solid green;
-
 }
 
 /*---------FOOTER RIGHTBOX----------*/
@@ -420,7 +419,6 @@ footer .rightbox h3{
     position: absolute;
     float: none;
     margin-top: 150px;
-
   }
   .content {
     margin-top: 400px;
