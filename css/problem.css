@@ -189,9 +189,9 @@ nav a:hover{
 #showcase img{
   float: right;
   right: 0;
-  max-width: 100%;
+  max-width: 70%;
   height: auto;
-  padding-top: 15vh;
+  padding-top: 10vh;
 }
 
 #showcase p{
