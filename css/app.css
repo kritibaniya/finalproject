@@ -248,28 +248,22 @@ nav a:hover{
 .mobimg{
   display: none;
 }
-.app{
-  padding-top: 0;
-}
 
-.app img{
-  float: right;
-}
 /*---------APP2(SIGN IN/SIGN UP)----------*/
-.app1 {
+#app1 {
   background-color: #eee3dd;
   padding-top: 15vh;
 }
-.app3{
+#app3{
   background-color: #eee3dd;
   padding-top: 15vh;
 }
 /*---------APP5(FUTURE)----------*/
-.app5{
+#app5{
   background-color: #eee3dd;
   padding-top: 15vh;
 }
-.content .app5 p{
+.content #app5 p{
   width: 100vw;
   float:none;
 }
