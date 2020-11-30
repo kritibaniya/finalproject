@@ -190,38 +190,8 @@ nav a:hover{
   padding-right: 10vw;
 }
 
-/*---------PROBLEM----------*/
-.problem {
-  /* background-color: #eee3dd; */
-  padding-top: 15vh;
-}
-/*---------SOLUTION----------*/
-.solution{
-  background-color: #eee3dd;
-}
-/*---------SPACE----------*/
-.space{
-  display: none;
-  width: 100vw;
-  height: 20vh;
-  background-color: #eee3dd;
-}
-/*---------APP----------*/
-.app{
-  padding-top: 0;
-}
-
-.app .appimg{
-  float: right;
-}
-
-.app .mobimg{
-  display: none;
-}
-/*---------FUTURE----------*/
-.future{
-  background-color: #eee3dd;
-  padding-top: 15vh;
+#content .solution{
+  background-color: none;
 }
 /*------------------END MAIN PART OF BODY-------------------*/
 
