@@ -177,25 +177,33 @@ nav a:hover{
  height: 100vh;
  padding-left: 10vw;
  padding-right: 10vw;
- background-color: #eee3dd
+ background-color: #eee3dd;
+ background-image: url(../bilder/showcase_.png);
+ background-size: cover;
+ background-repeat: no-repeat;
+ background-position: center;
+ background-attachment: fixed;
+ justify-content: center;
+ align-items: center;
 }
 
-#showcase img{
+/*#showcase img{
   float: right;
-  width: 850px;
+  width: 40vw;;
   right: 0;
 }
 
 #showcase p{
   float: left;
   margin-top: 300px;
-}
+}*/
 
 /*---------#CONTENT----------*/
 #content{
   width: 100vw;
-  height: 60vh;
-  padding-top: 15vh;
+  height: auto;
+  padding-top: 7vh;
+  padding-bottom: 7vh;
   padding-left: 10vw;
   padding-right: 10vw;
 }
@@ -221,11 +229,11 @@ nav a:hover{
   padding-top: 0;
 }
 
-.app img{
+.app .appimg{
   float: right;
 }
 
-.mobimg{
+.app .mobimg{
   display: none;
 }
 /*---------FUTURE----------*/
@@ -510,7 +518,14 @@ footer .rightbox h3{
     width: 100vw;
     height: auto;
   }
-
+  /*---------SHOWCASE----------*/
+/*  #showcase img{
+     margin-top: 40%;
+    width: 40vw;
+  }
+  #showcase p{
+    width: 35vw;
+  }*/
   footer{
     height: 35vh;
     width: 100vw;
@@ -598,6 +613,36 @@ footer .rightbox h3{
   p{
     font-size: 1.4em;
   }
+  /*---------SHOWCASE----------*/
+  /*#showcase img{
+    margin-top: 40%;
+  }
+  #showcase p{
+    width: 35vw;
+  }*/
+  #showcase {
+   margin: auto;
+   padding-top: 10px;
+   width: 100vw;
+   height: 100vh;
+   background-image: url(../bilder/showcase_.png);
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+   background-attachment: fixed;
+   justify-content: center;
+   align-items: center;
+ }
+  /*---------THE APP----------*/
+  .app .appimg{
+    display: none;
+  }
+
+  .mobimg{
+    display: block;
+    background-color: red;
+  }
+  /*------------------FOOTER-------------------*/
   footer{
     height: 30vh;
     width: 100vw;
