@@ -174,16 +174,18 @@ nav a:hover{
 
 .side-nav {
   position: fixed;
-  float: left;
   margin-top: 20vh;
-  width: 15vw;
-  height: 35vh;
+  width: auto;
+  padding-right: 15px;
+  padding-bottom: 10px;
+  height: auto;
   background-color: #eee3dd;
   border: #284040 3px solid;
 }
 
 .side-nav ul{
   padding-top: 3vh;
+  margin-left: 2px;
 }
 
 .side-nav li {
@@ -408,6 +410,46 @@ footer .rightbox h3{
   display: none;
 }
 /*------------------END FOOTER-------------------*/
+
+/*------------------CONTENT FOR A SCREEN WITH MAX-WIDTH 1200PX-------------------*/
+@media screen and (max-width: 1200px){
+  .side-nav{
+    width: 90%;
+    position: absolute;
+    float: none;
+    margin-top: 150px;
+
+  }
+  .content {
+    margin-top: 400px;
+    float: none;
+    align-items: center;
+    padding: 10px;
+    width: 100%;
+  }
+}
+/*------------------END CONTENT FOR A SCREEN WITH MAX-WIDTH 1200PX-------------------*/
+
+/*------------------CONTENT FOR A SCREEN WITH MAX-WIDTH 800PX-------------------*/
+@media screen and (max-width: 800px){
+  .content ul{
+    font-size: 0.7em;
+  }
+  .content {
+    margin-top: 300px;
+  }
+  .side-nav ul{
+    font-size: 0.7em;
+    margin-bottom: 7px;
+  }
+  .side-nav ul h1{
+    font-size: 1.9em;
+  }
+  body h2{
+    font-size: 1.3em;
+  }
+}
+/*------------------END CONTENT FOR A SCREEN WITH MAX-WIDTH 800PX-------------------*/
 
 /*------------------HEADER FOR A SCREEN WITH MAX-WIDTH 1200PX-------------------*/
 @media screen and (max-width: 1200px){

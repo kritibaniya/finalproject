@@ -188,6 +188,12 @@ nav a:hover{
   width: 100vw;
   text-align: center;
 }
+#showcase b{
+  color: #e36802;
+}
+#showcase d{
+  color: #d23014;
+}
 .showcase-img{
   width: 100%;
   margin-top: 50px;

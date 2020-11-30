@@ -639,3 +639,16 @@ footer .rightbox h3{
   }
   /*------------------END FOOTER-------------------*/
 }
+/*------------------CONTENT FOR A SCREEN WITH MAX-WIDTH 800PX-------------------*/
+@media screen and (max-width: 800px){
+  .content p{
+    font-size: 1.3em;
+  }
+  .content h3{
+    font-size: 1.5em;
+  }
+  .container h1{
+    font-size: 1.3em;
+  }
+}
+/*------------------END CONTENT FOR A SCREEN WITH MAX-WIDTH 800PX-------------------*/
