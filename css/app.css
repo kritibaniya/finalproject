@@ -176,14 +176,16 @@ nav a:hover{
 #showcase{
  width: 100vw;
  height: 100vh;
- background-image: url(../bilder/app/showcase22.jpg);
- background-size: cover;
+ background-image: url(../bilder/app/showcase23.jpg);
+ /* background-size: cover; */
  background-repeat: no-repeat;
  background-position: center;
  background-attachment: fixed;
  justify-content: center;
  align-items: center;
+ overflow-y: hidden;
 }
+
 #showcase img{
   float: right;
   width: 750px;
@@ -319,7 +321,8 @@ footer .leftbox .icons{
 .fa-arrow-up{
   color: #fff;
   width: 50px;
-  height: 30px;
+  height: 50px;
+  padding-top: 10px;
   line-height: 2.0em;
   cursor: pointer;
   text-align: center;
