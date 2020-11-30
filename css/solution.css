@@ -183,11 +183,13 @@ nav a:hover{
   width: 100vw;
   height: 100vh;
   background-color: #e0ebeb;
+  overflow-y: hidden;
 }
 .showcase-text {
-  padding-top: 200px;
+  padding-top: 180px;
   width: 100vw;
   text-align: center;
+  overflow-y: hidden;
 }
 #showcase b{
   color: #e36802;
@@ -198,6 +200,7 @@ nav a:hover{
 .showcase-img{
   width: 100%;
   margin-top: 50px;
+  padding-bottom: 20px;
 
 }
 .img-sharingApple{
@@ -241,31 +244,6 @@ nav a:hover{
 #society ul{
 font-size: 1.4em;
 line-height: 1.6;
-}
-
-/*---------- OUR NEXT STEP - PARAGRAPH----------*/
-#next {
-  margin: 0;
-  background-color: #eee3dd;
-}
-.ourStep {
-  float: left;
-  margin-left: 50px;
-  margin-top: 30px;
-  margin-bottom: 15px;
-  width: 50vw;
-  height: auto;
-}
-.picture-box{
-  padding-top: 100px;
-  padding-bottom: 30px;
-  width: 40vw;
-  height: auto;
-  float: right;
-}
-.picture {
-  max-width: 100%;
-  height: auto;
 }
 
 /*------------------ END CONTENT-------------------*/
