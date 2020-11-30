@@ -479,6 +479,7 @@ h2{
 
 /*-------Division of content end-------------------*/
 
+
 /*------------------FOOTER-------------------*/
 footer{
   height: 40vh;
@@ -487,6 +488,8 @@ footer{
   margin-right: 5vw;
   margin-left: 5vw;
   overflow: hidden;
+  margin-top: 2.5%;
+
 }
 footer p{
   font-size: 24px;
@@ -537,6 +540,7 @@ footer .leftbox .icons{
   background-color: #284140;
   border-radius: 30%;
 }
+
 /*---------FOOTER MIDDLEBOX----------*/
 footer .middlebox{
   width: 30vw;
@@ -598,7 +602,6 @@ footer .rightbox h3{
 
 .rightbox .icons{
   display: none;
-}
 }
 /*------------------END FOOTER-------------------*/
 
@@ -723,7 +726,7 @@ footer .rightbox h3{
   }
 
 
-    /*---------FOOTER ----------*/
+  /*---------------------------FOOTER----------------------------*/
   footer{
     height: 35vh;
     width: 100vw;
@@ -797,13 +800,15 @@ footer .rightbox h3{
     color: #284140;
     border: 3px solid green;
   }
-/*---------FOOTER RIGHTBOX----------*/
+  /*---------FOOTER RIGHTBOX----------*/
   footer.rightbox{
     width: 30vw;
     height: 40vh;
   }
   footer .rightbox .about p{
     font-size: 1.3em;
+  }
+  /*------------------END FOOTER-------------------*/
   }
 }
   /*------------------END FOOTER-------------------*/
@@ -812,6 +817,7 @@ footer .rightbox h3{
   p{
     font-size: 1.4em;
   }
+  /*------------------FOOTER-------------------*/
   footer{
     height: 30vh;
     width: 100vw;
@@ -846,6 +852,7 @@ footer .rightbox h3{
   margin: 10px;
   font-size: 2.5em;
   display: inline-block;
+
   }
   footer .icons a{
     font-size: 17px;
@@ -894,5 +901,6 @@ footer .rightbox h3{
     color: #284140;
     border: 3px solid green;
   }
+  /*------------------END FOOTER-------------------*/
 }
   /*------------------END FOOTER-------------------*/
