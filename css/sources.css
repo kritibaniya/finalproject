@@ -169,49 +169,13 @@ nav a:hover{
 
 /*----------SIDE-NAV----------*/
 .container{
-  padding: 0 5vw 0 5vw;
+  padding: 0 5vw 5vh 5vw;
 }
-
-/*.side-nav {
-  position: fixed;
-  float: left;
-  width: 20vw;
-  top: 20vh;
-  left: 2vw;
-  background-color: #eee3dd
-}
-
-.side-nav li {
-  color: #000;
-  list-style: none;
-}
-
-.side-nav h1{
-  font-size: 30px;
-  text-transform: uppercase;
-  padding-bottom: 2%;
-}*/
-
-/*.side-nav {
-  position: sticky;
-  float: left;
-  width: 15vw;
-  height: 100vh;
-  top: 15vh;
-  left: 5vw;
-  background-color: #eee3dd
-}
-
-.side-nav ul{
-  position: fixed;
-  padding-top: 18vh;
-}
-*/
 
 .side-nav {
   position: fixed;
   float: left;
-  margin-top: 15vh;
+  margin-top: 20vh;
   width: 15vw;
   height: 35vh;
   background-color: #eee3dd;
@@ -229,7 +193,6 @@ nav a:hover{
 
 .side-nav h1{
   color: #284040;
-  text-decoration-color: #c65f39;
   font-size: 2.0em;
   text-transform: uppercase;
   padding-bottom: 2vh;
@@ -258,18 +221,8 @@ nav a:hover{
   position: relative;
   float: right;
   width: 70vw;
-  margin-top: 5vh;
+  margin-top: 10vh;
 }
-
-/*h2{
-  color: #fff;
-  width: 13vw;
-  font-size: 2.0em;
-  padding-top: 3vh;
-  padding-bottom: 2vh;
-  text-transform: uppercase;
-  border: #284140 10solid;
-}*/
 
 h2 {
   color: #284040;
@@ -280,13 +233,14 @@ h2 {
   text-transform: uppercase;
   text-align: center;
   border-radius: 50px;
-  border: 5px solid #284040;
+  border: 3px solid #284040;
   margin-top: 10vh;
+  padding: 2vh 0 2vh 0;
+
 }
 
-
 .list {
-  margin-top: 3vh;
+  margin-top: 5vh;
 }
 
 .list li {
@@ -297,7 +251,6 @@ h2 {
 .list li b {
   color:  #c65f39;
   font-size: 1.2em;
-  text-decoration: underline;
 }
 
 .list em{
@@ -328,7 +281,7 @@ h3 {
   color: #284040;
 }
 
-.list:nth-child(odd){
+.list:nth-child(even){
   background-color: #eee3dd;
 }
 
@@ -359,20 +312,37 @@ footer .leftbox a{
   display: block;
   margin: 2vh 0 2vh 0;
   font-weight: bold;
-  color: black;
-  font-size: 25px;
+  color: #284140;
+  font-size: 1.8em;
   text-decoration:none;
 }
 
 footer .leftbox a:hover{
-  color: #284140;
+  color: #c65f39;
   text-decoration: underline;
   text-decoration-style: solid 3px;
-  text-decoration-color: #284140;
+  text-decoration-color: #c65f39;
+}
+
+footer .leftbox i:hover{
+  background-color: #c65f39;
 }
 
 footer .leftbox .icons{
   display: none;
+}
+
+.fa-arrow-up{
+  color: #fff;
+  width: 50px;
+  height: 30px;
+  line-height: 2.0em;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  background-color: #284140;
+  border-radius: 30%;
 }
 
 /*---------FOOTER MIDDLEBOX----------*/
@@ -408,6 +378,9 @@ footer .middlebox a{
 .icons a{
   color: #284140;
 }
+.icons a:hover{
+  color: #c65f39;
+}
 .copyright{
   font-size: 1em;
   font-weight: bold;
@@ -424,6 +397,7 @@ footer .rightbox{
   border-top: solid 3px #284140;
 }
 footer .rightbox h3{
+  color: #284140;
   font-weight: bold;
   text-decoration: underline;
   font-size: 25px;
