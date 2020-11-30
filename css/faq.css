@@ -278,7 +278,8 @@ footer .leftbox .icons{
 .fa-arrow-up{
   color: #fff;
   width: 50px;
-  height: 30px;
+  height: 50px;
+  padding-top: 10px;
   line-height: 2.0em;
   cursor: pointer;
   text-align: center;
@@ -639,3 +640,16 @@ footer .rightbox h3{
   }
   /*------------------END FOOTER-------------------*/
 }
+/*------------------CONTENT FOR A SCREEN WITH MAX-WIDTH 800PX-------------------*/
+@media screen and (max-width: 800px){
+  .content p{
+    font-size: 1.3em;
+  }
+  .content h3{
+    font-size: 1.5em;
+  }
+  .container h1{
+    font-size: 1.3em;
+  }
+}
+/*------------------END CONTENT FOR A SCREEN WITH MAX-WIDTH 800PX-------------------*/

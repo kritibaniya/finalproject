@@ -11,10 +11,12 @@ body{
 }
 h1{
   font-size: 2.6em;
+  line-height: 1.6;
 }
 
 p{
 font-size: 1.9em;
+line-height: 1.6;
 }
 
 /*-------------------HEADER--------------------*/
@@ -177,7 +179,7 @@ nav a:hover{
  height: 100vh;
  padding-left: 10vw;
  padding-right: 5vw;
- background-color: #eee3dd;
+ background-color: #e0ebeb;
  overflow-y: hidden;
 }
 
@@ -191,11 +193,17 @@ nav a:hover{
 
 #showcase p{
   margin-top: 25%;
-  font-size: 2em;
+  font-size: 3em;
+  color: #284040;
+}
+
+#showcase b{
+  color: #c65f39;
+  font-weight: normal;
 }
 
 /*---------#CONTENT----------*/
-#content{
+.content{
   width: 100vw;
   height: auto;
   padding-top: 7vh;
@@ -205,35 +213,27 @@ nav a:hover{
 }
 
 /*---------PROBLEM----------*/
-.problem {
-  /* background-color: #eee3dd; */
+#problem {
   padding-top: 15vh;
 }
 /*---------SOLUTION----------*/
-.solution{
-  background-color: #eee3dd;
-}
-/*---------SPACE----------*/
-.space{
-  display: none;
-  width: 100vw;
-  height: 20vh;
+#solution{
   background-color: #eee3dd;
 }
 /*---------APP----------*/
-.app{
+#app{
   padding-top: 0;
 }
 
-.app .appimg{
+#app .appimg{
   float: right;
 }
 
-.app .mobimg{
+#app .mobimg{
   display: none;
 }
 /*---------FUTURE----------*/
-.future{
+#future{
   background-color: #eee3dd;
   padding-top: 15vh;
 }
@@ -328,7 +328,8 @@ footer .leftbox .icons{
 .fa-arrow-up{
   color: #fff;
   width: 50px;
-  height: 30px;
+  height: 50px;
+  padding-top: 10px;
   line-height: 2.0em;
   cursor: pointer;
   text-align: center;
@@ -519,18 +520,23 @@ footer .rightbox h3{
     transform: translateY(-10px) rotate(-225deg);
   }
 
-  #content{
-    width: 100vw;
-    height: auto;
-  }
-  /*---------SHOWCASE----------*/
+  /*---------------------------SHOWCASE----------------------------*/
   #showcase img{
     max-width: 60%;
     padding-top: 20vh;
   }
   #showcase p{
     font-size: 1.6em;
+    padding-top: 15vh;
   }
+
+  /*---------------------------CONTENT----------------------------*/
+  .content{
+    width: 100vw;
+    height: auto;
+  }
+
+  /*---------------------------FOOTER----------------------------*/
   footer{
     height: 35vh;
     width: 100vw;
@@ -642,9 +648,14 @@ footer .rightbox h3{
     display: none;
   }
 
-  .mobimg{
+  .app .mobimg{
     display: block;
-    background-color: red;
+  }
+
+  .app .mobimg img{
+    max-width: 100%;
+    height: auto;
+    float: right;
   }
   /*------------------FOOTER-------------------*/
   footer{

@@ -15,6 +15,7 @@ h1{
 
 p{
 font-size: 1.9em;
+line-height: 1.6em;
 }
 
 /*-------------------HEADER--------------------*/
@@ -177,10 +178,11 @@ nav a:hover{
  height: 100vh;
  padding-left: 10vw;
  padding-right: 10vw;
+ background-color: #e0ebeb;
 }
 
 /*---------#CONTENT----------*/
-#content{
+.content{
   width: 100vw;
   height: 60vh;
   padding-top: 15vh;
@@ -188,38 +190,8 @@ nav a:hover{
   padding-right: 10vw;
 }
 
-/*---------PROBLEM----------*/
-.problem {
-  /* background-color: #eee3dd; */
-  padding-top: 15vh;
-}
-/*---------SOLUTION----------*/
-.solution{
-  background-color: #eee3dd;
-}
-/*---------SPACE----------*/
-.space{
-  display: none;
-  width: 100vw;
-  height: 20vh;
-  background-color: #eee3dd;
-}
-/*---------APP----------*/
-.app{
-  padding-top: 0;
-}
-
-.app .appimg{
-  float: right;
-}
-
-.app .mobimg{
-  display: none;
-}
-/*---------FUTURE----------*/
-.future{
-  background-color: #eee3dd;
-  padding-top: 15vh;
+.content #solution{
+  background-color: none;
 }
 /*------------------END MAIN PART OF BODY-------------------*/
 
@@ -312,7 +284,8 @@ footer .leftbox .icons{
 .fa-arrow-up{
   color: #fff;
   width: 50px;
-  height: 30px;
+  height: 50px;
+  padding-top: 10px;
   line-height: 2.0em;
   cursor: pointer;
   text-align: center;
@@ -503,7 +476,7 @@ footer .rightbox h3{
     transform: translateY(-10px) rotate(-225deg);
   }
 
-  #content{
+  .content{
     width: 100vw;
     height: auto;
   }
