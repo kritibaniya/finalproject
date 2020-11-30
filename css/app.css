@@ -262,6 +262,9 @@ nav a:hover{
 }
 #content .app5 p{
   width: 100vw;
+  float:none;
+  left: 0;
+  right: 0;
 }
 
 /*------------------END MAIN PART OF BODY-------------------*/
