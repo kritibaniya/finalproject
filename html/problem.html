@@ -4,114 +4,212 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="../css/problem.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
-    <title>The App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Problem</title>
+    <link rel="icon" type="image/png" href=../bilder/favicon2.png>
   </head>
 
   <body>
     <header>
-      <!-- Logo -->
-      <div class="logo">
-        <img src="hihi lol" alt="">
-      </div>
-      <!-- Navbar -->
-      <nav>
-        <input id="nav-toggle" type="checkbox">
-
-        <ul class="links">
-          <li> <a href="#problem">Problem</a> </li>
-          <li> <a href="#solution">Solution</a> </li>
-          <li> <a href="#app">The App</a> </li>
-          <li> <a href="#future">Future</a> </li>
-        </ul>
-
-        <label for="nav-toggle" class="icon-burger">
-         <div class="line"></div>
-         <div class="line"></div>
-         <div class="line"></div>
-       </label>
-      </nav>
-    </header>
-
-    <!-- End of Navbar -->
-
-    <div class="showcase">
-      <h1>What would you do with the rest?</h1>
-      <h2>Hint: Give away to The Next person </h2>
-    </div>
-
-    <div id="problem" class="content">
-      <h1>Problem</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-        eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-        ex ea commodo consequat.Duis aute irure dolor in reprehenderit in
-        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.</p>
-    </div>
-
-    <div id="solution" class="content">
-      <h1>Solution</h1>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-        eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-        ex ea commodo consequat.Duis aute irure dolor in reprehenderit in
-        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.</p>
-    </div>
-
-    <div id="app" class="content">
-      <h1>The App</h1>
-      <img src="../bilder/phone.jpg" alt="idk">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-        eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-        ex ea commodo consequat.Duis aute irure dolor in reprehenderit in
-        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.</p>
-    </div>
-
-    <div id="future" class="content">
-      <h1>Our Next Step</h1>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-        eiusmodtempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-        minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-        ex ea commodo consequat.Duis aute irure dolor in reprehenderit in
-        voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-        sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
-        mollit anim id est laborum.</p>
-    </div>
-
-    <footer>
+      <!--DESKTOP HEADER-->
       <div class="leftbox">
-        <a href="#showcase">Back to the top</a>
-        <a href="#sources">Sources</a>
-        <a href="#FAQ">FAQ</a>
+        <nav>
+          <ul>
+            <li> <a href="problem.html">Problem</a> </li>
+            <li> <a href="solution.html">Solution</a> </li>
+          </ul>
+        </nav>
       </div>
 
       <div class="middlebox">
-        <img src="Logo" alt="">
-        <!--<p>| <br> | <br> | <br> | <br> | <br> </p>-->
-        <a href="https://www.instagram.com" target="_blank"> <img src="../bilder/instalogo.png" alt=""> </a>
-        <a href="https://www.facebook.com/" target="_blank"> <img src="../bilder/facelogo.png" alt=""> </a>
-        <a href="https://www.snapchat.com" target="_blank"> <img src="../bilder/snaplogo.png" alt=""> </a>
-        <a href="https://www.youtube.com/" target="_blank"> <img src="../bilder/youtubelogo.png" alt=""> </a>
+        <a href="index.html"> <img src="../bilder/logogrønn.jpg" alt=""> </a>
       </div>
 
       <div class="rightbox">
-        <h3>About us</h3>
-        <br>
-        <p>We are four students, studying Computer Science at Oslo Metropolitan
-          Univeristy. All of us have been impacted by the hunger in the world,
-          and it is something we want to reduce. But the first step to reducing
-          world hunger, is to start reducing the local issues with food waste.
-          This is why we decided to focus on this goal, and this project.</p>
+        <nav>
+          <ul>
+            <li> <a href="app.html">The App</a> </li>
+            <li> <a href="solution.html#next">Our Future</a> </li>
+          </ul>
+        </nav>
       </div>
 
+      <!--RESPONSIVE HEADER-->
+
+    <div class="mobilhead">
+        <input id="nav-toggle" type="checkbox">
+          <a href="index.html"> <img src="../bilder/logogrønn.jpg" alt=""> </a>
+
+          <label for="nav-toggle" class="icon-burger" tabindex="0" >
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+          </label>
+
+          <ul class="links">
+            <li> <a href="problem.html">Problem</a> </li>
+            <li> <a href="solution.html">Solution</a> </li>
+            <li> <a href="app.html">The App</a> </li>
+            <li> <a href="solution.html#next">Our Future</a> </li>
+            <li>
+            <label for="nav-toggle" class="icon-close" tabindex="0">
+            <div class="line close"> <p>Close</p> </div>
+            </label>
+            </li>
+          </ul>
+
+
+      </div>
+    </header>
+
+    <!--SHOWCASE-->
+    <div id="showcase">
+      <h1> Do you find this picture problematic?</h1>
+    </div>
+
+    <!--PROBLEM-->
+  <div class="problem-content">
+  <div class="col-small-60 col-half-100">
+    <h1>UN's sustainable development goal</h1>
+      <p> “Ensure sustainable consumption and production patterns”
+          <a href="sources.html#source1" target="_blank">[source 1]</a> is twelfth
+          sustainable development goal set by the United Nation. It involves topic
+          like recycling, reuse, management of chemicals and much more. Another
+          underlying target is also to “halve per capita global food waste at
+          the retail and consumer levels and reduce food losses (…)”
+          <a href="sources.html#source1" target="_blank">[source 1]</a>. This is
+          what our project is based on and at the same time is contributing to
+          reach the goal set by UN. It will not only benefit us and our
+          generation, but also every upcoming generations and our whole mother
+          earth. We often feel like goals are easy to set but hard to accomplish.
+          However, we should always try our best because, it is the only way to succeed.
+          These goals might look very farfetched, but they are still feasible. </p>
+  </div>
+
+  <div class="col-small-40 col-half-100">
+    <img src="../bilder/problem/sustain.jpg" alt="">
+  </div>
+
+
+
+    <!--Why we chose this problem?-->
+    <div class=" col-small-60 col-half-100">
+      <h1>Why we chose this problem? </h1>
+        <p>Us from The Neat are passionate about taking care of our environment.
+          That is why we are concerned about global issue of food waste. Every
+          year we throw tons of edible food on garbage. When we waste food, we
+          are also wasting money, resources, farmers hard work and dedication.
+          Therefore, wasting food is somehow destruction of our world. </p>
+
+    </div>
+    <div class="col-small-40 col-half-100">
+      <iframe src="https://www.youtube.com/embed/IoCVrkcaH6Q?fbclid=IwAR0CBp25LffKUh8kvnfFLo5WJJiXP0teXHDiJfxR8srditqZCEDqYq60l3o">
+</iframe>
+    </div>
+
+  <!--Why is it important?-->
+    <div class="col-small-60 col-half-100">
+      <h1>Why is it important?</h1>
+      <p>It is super important to reduce food waste because we absolutely cannot
+         afford it. We need to properly utilize every grain produced because,
+         there are millions of people suffering from malnutrition and some are
+         even starving to death. </p>
+         <br>
+         <h2> Let’s do some calculation:</h2>
+           <ul>
+             <li>According to theworldscount.com<a href="sources.html#source2" target="_blank">[source 2]</a>, around 9 million people loses
+               their life due to startvation.</li>
+             <li>Numbers from undp.org shows that we waste more than 1.3trillion
+               tons of food a year<a href="sources.html#source3" target="_blank">[source 3]</a>.</li>
+              <li> If we divide 1.3 trillion by 9million we get 144444.4 tons
+                food per person.</li>
+           </ul>
+         </p>
+         <br>
+        <p>Our calculation shows that if we divided the wasted food to those 9
+           million who died. They would get 144444.4. tons of food per person. This
+           is clearly way above what a person eats in a year. Hence proved that
+           only if we were better at dividing food properly among us, no one
+           would have died due to starvation.
+         </p>
+    </div>
+<div class="col-small-40 col-half-100">
+  <img src="../bilder/problem/vekt.png" alt="">
+</div>
+
+        </div>
+          <footer>
+
+          <!--LEFT-BOX IN THE FOOTER-->
+         <div class="leftbox">
+           <a href="sources.html">[SOURCES]</a>
+           <a href="faq.html">[FAQ]</a>
+           <a  href="#showcase"><i class="fa fa-arrow-up" aria-hidden="true"></i></a>
+           <!--SOCIAL MEDIA ICONS IN THE FOOTER-->
+           <div class="icons">
+              <a href="https://www.instagram.com" target="_blank">
+                <i class="fa fa-instagram" aria-hidden="true"></i></a>
+              <a href="https://www.facebook.com" target="_blank">
+                <i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+              <a href="https://www.snapchat.com" target="_blank">
+                <i class="fa fa-snapchat-square" aria-hidden="true"></i></a>
+              <a href="https://www.youtube.com" target="_blank">
+                <i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+          </div>
+          <!--END SOCIAL MEDIA ICONS IN THE FOOTER-->
+         </div>
+         <!--END LEFT-BOX IN THE FOOTER-->
+
+
+         <!--MIDDLE-BOX IN THE FOOTER-->
+         <div class="middlebox">
+           <a href="index.html"> <img src="../bilder/logohvit.png" alt=""> </a>
+
+           <!--SOCIAL MEDIA ICONS IN THE FOOTER-->
+           <div class="icons">
+              <a href="https://www.instagram.com" target="_blank">
+                <i class="fa fa-instagram" aria-hidden="true"></i></a>
+              <a href="https://www.facebook.com" target="_blank">
+                <i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+              <a href="https://www.snapchat.com" target="_blank">
+                <i class="fa fa-snapchat-square" aria-hidden="true"></i></a>
+              <a href="https://www.youtube.com" target="_blank">
+                <i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+            </div>
+            <!--END SOCIAL MEDIA ICONS IN THE FOOTER-->
+
+            <!--CODE FOR VERTICAL LINE-->
+            <div class=" vertical"></div>
+            <!--END CODE FOR VERTICAL LINE-->
+
+         </div>
+         <!--END MIDDLE-BOX IN THE FOOTER-->
+
+
+         <!--RIGHT-BOX IN THE FOOTER-->
+         <div class="rightbox">
+
+           <!--ABOUT IN THE FOOTER-->
+           <div class="about">
+             <h3>About</h3>
+             <br>
+             <p>We are The Neat, and our job is to do our best to keep the earth
+               tidy and neat. The Neat is a well-developed app where you can
+               share your food with people near you. Hereby, we want to
+               accomplish less waste of food. We believe our small step will
+               contribute a lot in this huge issue of food waste.
+               Don’t waste your food and time, join us! </p>
+           </div>
+           <!--END ABOUT IN THE FOOTER-->
+
+
+        </div>
+        <!--END RIGHT-BOX IN THE FOOTER-->
+
     </footer>
+    <!--END FOOTER-->
+
   </body>
 </html>
