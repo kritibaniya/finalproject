@@ -11,10 +11,12 @@ body{
 }
 h1{
   font-size: 2.6em;
+  line-height: 1.6;
 }
 
 p{
-font-size: 1.9em;
+  font-size: 1.9em;
+  line-height: 1.6;
 }
 
 /*-------------------HEADER--------------------*/
@@ -176,25 +178,29 @@ nav a:hover{
 #showcase{
  width: 100vw;
  height: 100vh;
- background-image: url(../bilder/app/showcase23.jpg);
- /* background-size: cover; */
- background-repeat: no-repeat;
- background-position: center;
- background-attachment: fixed;
- justify-content: center;
- align-items: center;
+ padding-left: 10vw;
+ padding-right: 5vw;
+ background-color: #e0ebeb;
  overflow-y: hidden;
 }
 
 #showcase img{
   float: right;
-  width: 750px;
   right: 0;
+  max-width: 50%;
+  height: auto;
+  padding-top: 20vh;
 }
 
 #showcase p{
-  float: left;
-  margin-top: 300px;
+  margin-top: 25%;
+  font-size: 3em;
+  color: #284040;
+}
+
+#showcase b{
+  color: #c65f39;
+  font-weight: normal;
 }
 
 /*---------#CONTENT----------*/
@@ -266,8 +272,6 @@ nav a:hover{
 #content .app5 p{
   width: 100vw;
   float:none;
-  left: 0;
-  right: 0;
 }
 /*------------------END MAIN PART OF BODY-------------------*/
 
@@ -511,8 +515,18 @@ footer .rightbox h3{
   .mobilhead :checked ~ .icon-burger .line:nth-child(3){
     transform: translateY(-10px) rotate(-225deg);
   }
+  /*---------SHOWCASE----------*/
+  #showcase img{
+    max-width: 60%;
+    padding-top: 20vh;
+  }
 
-  /*--CONTENT--*/
+  #showcase p{
+    font-size: 1.6em;
+    padding-top: 15vh;
+  }
+
+  /*---------CONTENT----------*/
   #content{
     width: 100vw;
     height: auto;
@@ -627,6 +641,27 @@ footer .rightbox h3{
   p{
     font-size: 1.4em;
   }
+  /*------------------SHOWCASE------------------*/
+  #showcase {
+   margin: auto;
+   padding-top: 10px;
+   width: 100vw;
+   height: auto;
+   padding-bottom: 15%;
+
+ }
+ #showcase img{
+   padding-top: 20vh;
+   max-width: 60%;
+   /* float: none; */
+ }
+ #showcase p{
+   font-size: 1.2em;
+   padding-top: 15vh;
+ }
+
+
+  /*------------------FOOTER------------------*/
   footer{
     height: 30vh;
     width: 100vw;
