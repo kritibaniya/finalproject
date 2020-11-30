@@ -185,12 +185,15 @@ nav a:hover{
   background-color: #e0ebeb;
   overflow-y: hidden;
 }
+
 .showcase-text {
   line-height: 1.6;
   padding-top: 200px;
   width: 100vw;
+  color: #284040;
   text-align: center;
   overflow-y: hidden;
+  font-size: 2.3em;
 }
 #showcase b{
   color: #e36802;
@@ -494,10 +497,11 @@ footer .rightbox h3{
 
 /*------------------SHOWCASE FOR A SCREEN WITH MAX-WIDTH 1200PX-------------------*/
 @media screen and (max-width: 1200px){
-  .showcase-text h1{
-    font-size: 2.3em;
+  .showcase-text{
+    font-size: 1.4em;
     margin-left: 30px;
     margin-right: 30px;
+    padding-top: 170px;
   }
   .showcase-img{
     margin-top: 70px;
@@ -509,11 +513,10 @@ footer .rightbox h3{
 @media screen and (max-width: 800px){
 
   .showcase-text{
-    padding-top: 180px;
+    font-size: 1.3em;
+    width: 90%;
   }
-  .showcase-text h1{
-    font-size: 1.8em;
-  }
+
   .showcase-img{
     margin-top: 50px;
   }
@@ -525,10 +528,10 @@ footer .rightbox h3{
 
   .showcase-text{
     padding-top: 140px;
+    font-size: 0.8em;
+    width: 87%;
   }
-  .showcase-text h1{
-    font-size: 1.2em;
-  }
+
   .showcase-img{
     margin-top: 20px;
   }
