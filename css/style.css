@@ -171,6 +171,8 @@ nav a:hover{
 /*------------------END RESPONSIVE NAVBAR-------------------*/
 
 /*------------------MAIN PART OF BODY-------------------*/
+
+
 /*---------SHOWCASE----------*/
 #showcase{
  width: 100vw;
@@ -309,16 +311,20 @@ footer .leftbox a{
   display: block;
   margin: 2vh 0 2vh 0;
   font-weight: bold;
-  color: black;
-  font-size: 25px;
+  color: #284140;
+  font-size: 1.8em;
   text-decoration:none;
 }
 
 footer .leftbox a:hover{
-  color: #284140;
+  color: #c65f39;
   text-decoration: underline;
   text-decoration-style: solid 3px;
-  text-decoration-color: #284140;
+  text-decoration-color: #c65f39;
+}
+
+footer .leftbox i:hover{
+  background-color: #c65f39;
 }
 
 footer .leftbox .icons{
@@ -326,16 +332,17 @@ footer .leftbox .icons{
 }
 
 .fa-arrow-up{
+  color: #fff;
   width: 50px;
-  height: 29px;
+  height: 30px;
+  line-height: 2.0em;
   cursor: pointer;
   text-align: center;
   text-decoration: none;
   outline: none;
-  background-color: #e65c00;
+  background-color: #284140;
   border-radius: 30%;
 }
-
 
 /*---------FOOTER MIDDLEBOX----------*/
 footer .middlebox{
@@ -370,6 +377,9 @@ footer .middlebox a{
 .icons a{
   color: #284140;
 }
+.icons a:hover{
+  color: #c65f39;
+}
 .copyright{
   font-size: 1em;
   font-weight: bold;
@@ -386,6 +396,7 @@ footer .rightbox{
   border-top: solid 3px #284140;
 }
 footer .rightbox h3{
+  color: #284140;
   font-weight: bold;
   text-decoration: underline;
   font-size: 25px;
@@ -621,7 +632,6 @@ footer .rightbox h3{
     width: 35vw;
   }*/
   #showcase {
-   display: flex;
    margin: auto;
    padding-top: 10px;
    width: 100vw;

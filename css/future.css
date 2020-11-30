@@ -8,14 +8,13 @@
 body{
   margin: 0;
   color: black;
-  line-height: 1.5;
 }
 h1{
-  font-size: 2.7em;
+  font-size: 2.6em;
 }
 
 p{
-  font-size: 1.4em;
+font-size: 1.9em;
 }
 
 /*-------------------HEADER--------------------*/
@@ -97,12 +96,11 @@ nav li {
 nav a{
   display: inline-block;
   color: #fff;
-  padding-top: 0.3em;
+  padding-top: 0.5em;
   margin-right: 5vw;
   margin-left: 5vw;
   font-size: 1.6em;
   font-weight: bold;
-  transition: all ease 0.5s;
   text-decoration: none;
 }
 
@@ -115,7 +113,7 @@ nav a:hover{
   text-decoration: underline;
   opacity: inherit;
 }
-/*------------------END NAVBAR -------------------*/
+/*------------------NAVBAR END-------------------*/
 
 /*------------------RESPONSIVE NAVBAR-------------------*/
 .mobilhead{
@@ -172,92 +170,99 @@ nav a:hover{
 }
 /*------------------END RESPONSIVE NAVBAR-------------------*/
 
+/*------------------MAIN PART OF BODY-------------------*/
+/*---------SHOWCASE----------*/
+#showcase{
+ width: 100vw;
+ height: 100vh;
+ padding-left: 10vw;
+ padding-right: 10vw;
+}
 
-/*------------------ SHOWCASE-------------------*/
-#showcase {
+/*---------#CONTENT----------*/
+#content{
   width: 100vw;
-  height: 100vh;
+  height: 60vh;
+  padding-top: 15vh;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+/*---------PROBLEM----------*/
+.problem {
+  /* background-color: #eee3dd; */
+  padding-top: 15vh;
+}
+/*---------SOLUTION----------*/
+.solution{
   background-color: #eee3dd;
 }
-.showcase-text {
-  padding-top: 200px;
+/*---------SPACE----------*/
+.space{
+  display: none;
   width: 100vw;
-  text-align: center;
-}
-.showcase-img{
-  width: 100%;
-  margin-top: 50px;
-
-}
-.img-sharingApple{
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-
-/*------------------ END SHOWCASE-------------------*/
-
-
-/*------------------ CONTENT-------------------*/
-
-.content {
-  margin-left: 22%;
-  margin-right: 22%;
-  margin-top: 50px;
-  margin-bottom: 70px;
-}
-
-.content a{
-  color: #c65f39;
-  text-decoration: none;
-}
-
-.content a:hover{
-  color: #284040;
-  text-decoration: underline;
-  text-decoration-style: solid 3px;
-  transition: all ease 0.5s;
-}
-
-.content a:visited{
-  color: #c65f39;
-}
-
-/*----------HOW WILL IT HELP SOCIETY TOWARDS A GREADET DIRECTION - PARAGRAPH----------*/
-#society ul{
-font-size: 1.4em;
-}
-
-/*---------- OUR NEXT STEP - PARAGRAPH----------*/
-#next {
-  margin: 0;
+  height: 20vh;
   background-color: #eee3dd;
 }
-.ourStep {
-  float: left;
-  margin-left: 50px;
-  margin-top: 30px;
-  margin-bottom: 15px;
-  width: 50vw;
-  height: auto;
+/*---------APP----------*/
+.app{
+  padding-top: 0;
 }
-.picture-box{
-  padding-top: 100px;
-  padding-bottom: 30px;
-  width: 40vw;
-  height: auto;
+
+.app .appimg{
   float: right;
 }
-.picture {
-  max-width: 100%;
-  height: auto;
+
+.app .mobimg{
+  display: none;
+}
+/*---------FUTURE----------*/
+.future{
+  background-color: #eee3dd;
+  padding-top: 15vh;
+}
+/*------------------END MAIN PART OF BODY-------------------*/
+
+/*------------------READ MORE - BUTTON-------------------*/
+.button {
+ background-color:  #c65f39;
+ border: none;
+ color: white;
+ padding: 8px 25px;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ font-size: 1.4em;
+ font-weight: bold;
+ margin: 4px 2px;
+ border-radius: 1.5em;
+ z-index: -1;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
 }
 
-/*------------------ END CONTENT-------------------*/
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
 
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+/*------------------END OF READ MORE BUTTON-------------------*/
 
 /*------------------FOOTER-------------------*/
 footer{
@@ -358,6 +363,7 @@ footer .middlebox a{
   font-weight: bold;
   color: #284140;
   border: 3px solid green;
+
 }
 
 /*---------FOOTER RIGHTBOX----------*/
@@ -380,8 +386,10 @@ footer .rightbox h3{
 }
 /*------------------END FOOTER-------------------*/
 
+
 /*------------------HEADER FOR A SCREEN WITH MAX-WIDTH 1200PX-------------------*/
 @media screen and (max-width: 1200px){
+  /*-------------------HEADER--------------------*/
   header{
     height: 100px;
     width: 100vw;
@@ -402,6 +410,7 @@ footer .rightbox h3{
   header .middlebox{
     display: none;
   }
+
   nav{
     display: none;
   }
@@ -493,234 +502,210 @@ footer .rightbox h3{
   .mobilhead :checked ~ .icon-burger .line:nth-child(3){
     transform: translateY(-10px) rotate(-225deg);
   }
-}
 
-/*------------------END HEADER FOR A SCREEN WITH MAX-WIDTH 1200PX-------------------*/
-
-/*------------------SHOWCASE FOR A SCREEN WITH MAX-WIDTH 1200PX-------------------*/
-@media screen and (max-width: 1200px){
-  .showcase-text h1{
-    font-size: 1.9em;
-    margin-left: 30px;
-    margin-right: 30px;
+  #content{
+    width: 100vw;
+    height: auto;
   }
-}
-/*------------------END SHOWCASE FOR A SCREEN WITH MAX-WIDTH 1200PX-------------------*/
-
-/*------------------SHOWCASE FOR A SCREEN WITH MAX-WIDTH 800PX-------------------*/
-@media screen and (max-width: 800px){
-
-  .showcase-text{
-    padding-top: 180px;
+  /*---------SHOWCASE----------*/
+/*  #showcase img{
+     margin-top: 40%;
+    width: 40vw;
   }
-  .showcase-text h1{
-    font-size: 1.5em;
+  #showcase p{
+    width: 35vw;
+  }*/
+  footer{
+    height: 35vh;
+    width: 100vw;
+    position: relative;
+    margin-right: 5vw;
+    margin-left: 5vw;
   }
-}
-/*------------------END SHOWCASE FOR A SCREEN WITH MAX-WIDTH 800PX-------------------*/
+  footer p{
+    font-size: 24px;
+  }
+  /*---------FOOTER LEFTBOX----------*/
+  footer.leftbox{
+    width: 30vw;
+    height: 40vh;
+    display: inline-block;
+    border-top: solid 3px #284140;
+  }
+  footer.leftbox .footlink a{
+    display: block;
+    margin: 2vh 0 2vh 0;
+    font-weight: bold;
+    color: black;
+    font-size: 25px;
+    text-decoration:none;
+  }
+  footer.leftbox a:hover{
+    color: #284140;
+    text-decoration: underline;
+    text-decoration-style: solid 3px;
+    text-decoration-color: #284140;
+  }
+  footer .leftbox .icons{
+  margin: 10px;
+  font-size: 2.5em;
 
-
-/*------------------CONTENT FOR A SCREEN WITH MAX-WIDTH 1200PX-------------------*/
-@media screen and (max-width: 1200px){
-
-  .content{
-    margin: 20px;
   }
-  .content h1{
-    font-size: 2.3em;
+  footer .leftbox .icons a{
+    color: #284140;
+    display: inline-block;
   }
-  .ourStep {
-    float: none;
-    width: 95%;
-    margin: 20px;
-  }
-  .picture-box{
-    padding: 0;
-    width: 100%;
-    float: none;
+  /*---------FOOTER MIDDLEBOX----------*/
+  footer.middlebox{
+    width: 30vw;
+    height: 45vh;
+    display: inline-block;
+    align-content: center;
+    align-self: center;
     text-align: center;
   }
-}
-/*------------------END CONTENT FOR A SCREEN WITH MAX-WIDTH 1200PX-------------------*/
 
-/*------------------CONTENT FOR A SCREEN WITH MAX-WIDTH 1200PX-------------------*/
-@media screen and (max-width: 1200px){
-  .content h1{
-    font-size: 2em;
+  footer.middlebox a{
+    text-decoration: none;
   }
-}
-/*------------------END CONTENT FOR A SCREEN WITH MAX-WIDTH 1200PX-------------------*/
+  footer .middlebox .icons{
+    display: none;
+  }
+  footer .middlebox img{
+    max-height: 50px;
+  }
 
-/*------------------FOOTER-------------------*/
-footer{
-  height: 35vh;
-  width: 100vw;
-  position: relative;
-  margin-right: 5vw;
-  margin-left: 5vw;
-}
-footer p{
-  font-size: 24px;
-}
-/*---------FOOTER LEFTBOX----------*/
-footer.leftbox{
-  width: 30vw;
-  height: 40vh;
-  display: inline-block;
-  border-top: solid 3px #284140;
-}
-footer.leftbox .footlink a{
-  display: block;
-  margin: 2vh 0 2vh 0;
-  font-weight: bold;
-  color: black;
-  font-size: 25px;
-  text-decoration:none;
-}
-footer.leftbox a:hover{
-  color: #284140;
-  text-decoration: underline;
-  text-decoration-style: solid 3px;
-  text-decoration-color: #284140;
-}
-footer .leftbox .icons{
-margin: 10px;
-font-size: 2.5em;
-}
-footer .leftbox .icons a{
-  color: #284140;
-  display: inline-block;
-}
-/*---------FOOTER MIDDLEBOX----------*/
-footer.middlebox{
-  width: 30vw;
-  height: 45vh;
-  display: inline-block;
-  align-content: center;
-  align-self: center;
-  text-align: center;
-}
+  .vertical{
+    border-left: 3px solid #284140;
+    height: 20vh;
+    position: absolute;
+    left: 45vw;
+  }
 
-footer.middlebox a{
-  text-decoration: none;
-}
-footer .middlebox .icons{
-  display: none;
-}
-footer .middlebox img{
-  max-height: 50px;
-}
-
-.vertical{
-  border-left: 3px solid #284140;
-  height: 20vh;
-  position: absolute;
-  left: 45vw;
-}
-
-.copyright{
-  font-size: 1em;
-  font-weight: bold;
-  color: #284140;
-  border: 3px solid green;
-}
+  .copyright{
+    font-size: 1em;
+    font-weight: bold;
+    color: #284140;
+    border: 3px solid green;
+  }
 /*---------FOOTER RIGHTBOX----------*/
-footer.rightbox{
-  width: 30vw;
-  height: 40vh;
-}
-footer .rightbox .about p{
-  font-size: 1.3em;
-}
-/*------------------END FOOTER-------------------*/
-
-
-/*------------------FOOTER FOR A SCREEN WITH MAX-WIDTH 800PX-------------------*/
+  footer.rightbox{
+    width: 30vw;
+    height: 40vh;
+  }
+  footer .rightbox .about p{
+    font-size: 1.3em;
+  }
+  /*------------------END FOOTER-------------------*/
 }
 @media screen and (max-width: 800px){
-p{
-  font-size: 1.4em;
-}
-footer{
-  height: 30vh;
-  width: 100vw;
-  position: relative;
-  margin-right: 5vw;
-  margin-left: 5vw;
-  margin-top: 10%;
-}
-}
-/*---------FOOTER LEFTBOX----------*/
-footer .leftbox{
-  width: 30vw;
-  height: 40vh;
+  p{
+    font-size: 1.4em;
+  }
+  /*---------SHOWCASE----------*/
+  /*#showcase img{
+    margin-top: 40%;
+  }
+  #showcase p{
+    width: 35vw;
+  }*/
+  #showcase {
+   padding-top: 10px;
+   width: 100vw;
+   height: 100vh;
+ }
+  /*---------THE APP----------*/
+  .app .appimg{
+    display: none;
+  }
+
+  .mobimg{
+    display: block;
+    background-color: red;
+  }
+  /*------------------FOOTER-------------------*/
+  footer{
+    height: 30vh;
+    width: 100vw;
+    position: relative;
+    margin-right: 5vw;
+    margin-left: 5vw;
+    margin-top: 10%;
+  }
+
+  /*---------FOOTER LEFTBOX----------*/
+  footer .leftbox{
+    width: 30vw;
+    height: 40vh;
+    display: inline-block;
+    border-top: solid 3px #284140;
+  }
+  footer .leftbox .footlink a{
+    display: block;
+    margin: 2vh 0 2vh 0;
+    font-weight: bold;
+    color: black;
+    font-size: 15px;
+    text-decoration:none;
+  }
+  footer .leftbox a:hover{
+    color: #284140;
+    text-decoration: underline;
+    text-decoration-style: solid 3px;
+    text-decoration-color: #284140;
+  }
+  footer .leftbox .icons{
+  margin: 10px;
+  font-size: 2.5em;
   display: inline-block;
-  border-top: solid 3px #284140;
-}
-footer .leftbox .footlink a{
-  display: block;
-  margin: 2vh 0 2vh 0;
-  font-weight: bold;
-  color: black;
-  font-size: 15px;
-  text-decoration:none;
-}
-footer .leftbox a:hover{
-  color: #284140;
-  text-decoration: underline;
-  text-decoration-style: solid 3px;
-  text-decoration-color: #284140;
-}
-footer .leftbox .icons{
-margin: 10px;
-font-size: 2.5em;
-display: inline-block;
-}
-footer .icons a{
-  font-size: 17px;
-  color: #284140;
-  display: inline-block;
-}
-/*---------FOOTER MIDDLEBOX----------*/
-footer .middlebox{
-  width: 30vw;
-  height: 45vh;
-  display: inline-block;
-  align-content: center;
-  align-self: center;
-  text-align: center;
-}
 
-footer .middlebox a{
-  text-decoration: none;
-}
-footer .middlebox .icons{
-  display: none;
-}
-footer .middlebox img{
-  max-height: 35px;
-}
+  }
+  footer .icons a{
+    font-size: 17px;
+    color: #284140;
+    display: inline-block;
+  }
+  /*---------FOOTER MIDDLEBOX----------*/
+  footer .middlebox{
+    width: 30vw;
+    height: 45vh;
+    display: inline-block;
+    align-content: center;
+    align-self: center;
+    text-align: center;
+  }
 
-.vertical{
-  border-left: 3px solid #284140;
-  height: 20vh;
-  position: absolute;
-  left: 45vw;
-}
+  footer .middlebox a{
+    text-decoration: none;
+  }
+  footer .middlebox .icons{
+    display: none;
+  }
+  footer .middlebox img{
+    max-height: 35px;
+  }
 
-/*---------FOOTER RIGHTBOX----------*/
-footer.rightbox{
-  width: 30vw;
-  height: 40vh;
-}
-footer .rightbox .about p{
-  font-size: 1em;
-}
+  .vertical{
+    border-left: 3px solid #284140;
+    height: 20vh;
+    position: absolute;
+    left: 45vw;
+  }
 
-.copyright{
-  font-size: 1em;
-  font-weight: bold;
-  color: #284140;
-  border: 3px solid green;
+  /*---------FOOTER RIGHTBOX----------*/
+  footer.rightbox{
+    width: 30vw;
+    height: 40vh;
+  }
+  footer .rightbox .about p{
+    font-size: 1em;
+  }
+
+  .copyright{
+    font-size: 1em;
+    font-weight: bold;
+    color: #284140;
+    border: 3px solid green;
+  }
+  /*------------------END FOOTER-------------------*/
 }
-/*------------------END FOOTER FOR A SCREEN WITH MAX-WIDTH 800PX-------------------*/
