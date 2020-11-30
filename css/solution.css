@@ -186,7 +186,8 @@ nav a:hover{
   overflow-y: hidden;
 }
 .showcase-text {
-  padding-top: 180px;
+  line-height: 1.6;
+  padding-top: 200px;
   width: 100vw;
   text-align: center;
   overflow-y: hidden;
@@ -199,7 +200,7 @@ nav a:hover{
 }
 .showcase-img{
   width: 100%;
-  margin-top: 50px;
+  margin-top: 90px;
   padding-bottom: 20px;
 
 }
@@ -494,9 +495,12 @@ footer .rightbox h3{
 /*------------------SHOWCASE FOR A SCREEN WITH MAX-WIDTH 1200PX-------------------*/
 @media screen and (max-width: 1200px){
   .showcase-text h1{
-    font-size: 1.9em;
+    font-size: 2.3em;
     margin-left: 30px;
     margin-right: 30px;
+  }
+  .showcase-img{
+    margin-top: 70px;
   }
 }
 /*------------------END SHOWCASE FOR A SCREEN WITH MAX-WIDTH 1200PX-------------------*/
@@ -508,11 +512,28 @@ footer .rightbox h3{
     padding-top: 180px;
   }
   .showcase-text h1{
-    font-size: 1.5em;
+    font-size: 1.8em;
+  }
+  .showcase-img{
+    margin-top: 50px;
   }
 }
 /*------------------END SHOWCASE FOR A SCREEN WITH MAX-WIDTH 800PX-------------------*/
 
+/*------------------SHOWCASE FOR A SCREEN WITH MAX-WIDTH 540PX-------------------*/
+@media screen and (max-width: 540px){
+
+  .showcase-text{
+    padding-top: 140px;
+  }
+  .showcase-text h1{
+    font-size: 1.2em;
+  }
+  .showcase-img{
+    margin-top: 20px;
+  }
+}
+/*------------------END SHOWCASE FOR A SCREEN WITH MAX-WIDTH 540PX-------------------*/
 
 /*------------------CONTENT FOR A SCREEN WITH MAX-WIDTH 1200PX-------------------*/
 @media screen and (max-width: 1200px){
