@@ -206,25 +206,14 @@ nav a:hover{
 .content{
   width: 100vw;
   height: auto;
-  padding-top: 7vh;
-  padding-bottom: 7vh;
-  padding-left: 10vw;
-  padding-right: 10vw;
+  padding: 7vh 10vw;
 }
 
-/*---------PROBLEM----------*/
-#problem {
-  padding-top: 15vh;
-}
-/*---------SOLUTION----------*/
-#solution{
+.content:nth-child(even){
   background-color: #eee3dd;
 }
-/*---------APP----------*/
-#app{
-  padding-top: 0;
-}
 
+/*---------APP----------*/
 #app .appimg{
   float: right;
 }
@@ -232,11 +221,7 @@ nav a:hover{
 #app .mobimg{
   display: none;
 }
-/*---------FUTURE----------*/
-#future{
-  background-color: #eee3dd;
-  padding-top: 15vh;
-}
+
 /*------------------END MAIN PART OF BODY-------------------*/
 
 /*------------------READ MORE - BUTTON-------------------*/
@@ -288,6 +273,8 @@ footer{
   margin-right: 5vw;
   margin-left: 5vw;
   overflow: hidden;
+  margin-top: 2.5%;
+
 }
 footer p{
   font-size: 24px;
