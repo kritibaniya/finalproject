@@ -4,6 +4,10 @@
   margin: 0;
   box-sizing: border-box;
 }
+/**:focus {
+	outline: 5px solid orange;
+	outline-offset: 3px	;
+}*/
 
 body{
   margin: 0;
@@ -528,6 +532,7 @@ footer .rightbox h3{
   }
   .content h1{
     font-size: 2.3em;
+    margin-top: 15px;
   }
   .ourStep {
     float: none;
@@ -543,13 +548,14 @@ footer .rightbox h3{
 }
 /*------------------END CONTENT FOR A SCREEN WITH MAX-WIDTH 1200PX-------------------*/
 
-/*------------------CONTENT FOR A SCREEN WITH MAX-WIDTH 1200PX-------------------*/
-@media screen and (max-width: 1200px){
+/*------------------CONTENT FOR A SCREEN WITH MAX-WIDTH 800PX-------------------*/
+@media screen and (max-width: 800px){
   .content h1{
     font-size: 2em;
+    margin-top: 20px;
   }
 }
-/*------------------END CONTENT FOR A SCREEN WITH MAX-WIDTH 1200PX-------------------*/
+/*------------------END CONTENT FOR A SCREEN WITH MAX-WIDTH 800PX-------------------*/
 
 /*------------------FOOTER-------------------*/
 footer{
