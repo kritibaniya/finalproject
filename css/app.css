@@ -204,44 +204,44 @@ nav a:hover{
 }
 
 /*---------#CONTENT----------*/
-#content{
+.content{
   width: 100vw;
   height: auto;
   padding: 15vh 10vw 15vh 10vw;
 }
 
-#content img{
+.content img{
   /*width: 208px;
   height: auto;*/
   border: 3px solid #284040;
   right: 0;
 }
 
-#content .img{
+.content .img{
   display: block;
   width: 35vw;
   height: auto;
   float: right;
 }
 
-#content p{
+.content p{
   float: left;
   width: 40vw;
 }
 
-#content a{
+.content a{
   color: #c65f39;
   text-decoration: none;
 }
 
-#content a:hover{
+.content a:hover{
   color: #284040;
   text-decoration: underline;
   text-decoration-style: solid 3px;
   transition: all ease 0.5s;
 }
 
-#content a:visited{
+.content a:visited{
   color: #c65f39;
 }
 
@@ -269,7 +269,7 @@ nav a:hover{
   background-color: #eee3dd;
   padding-top: 15vh;
 }
-#content .app5 p{
+.content .app5 p{
   width: 100vw;
   float:none;
 }
@@ -527,28 +527,28 @@ footer .rightbox h3{
   }
 
   /*---------CONTENT----------*/
-  #content{
+  .content{
     width: 100vw;
     height: auto;
     padding: 15vh 10vw 15vh 10vw;
   }
 
-  #content .img{
+  .content .img{
     display: none;
   }
 
-  #content .mobimg{
+  .content .mobimg{
     display: inline-block;
     align-items: center;
     align-content: center;
     align-self: center;
   }
 
-  #content .monimg img{
+  .content .monimg img{
     width: 150px;
   }
 
-  #content p{
+  .content p{
     width: 100vw;
     padding-right: 20vw;
   }
