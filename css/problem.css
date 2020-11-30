@@ -35,11 +35,11 @@ header{
 display: inline-block;
   }
   /*---------LOGO----------*/
-.mobilhead{
-  display: inline-block;
-  position: relative;
-  float: left;
-}
+    .mobilhead{
+      display: inline-block;
+      position: relative;
+      float: left;
+    }
   .mobilhead img{
     padding-top: 15px;
     display: block;
@@ -173,6 +173,7 @@ display: inline-block;
 }
 .dekstop{
   display: block;
+}
 }
 
 /*----------HEADER LEFTBOX----------*/
@@ -586,6 +587,7 @@ footer .rightbox h3{
 .rightbox .icons{
   display: none;
 }
+}
 /*------------------END FOOTER-------------------*/
 
 /*------------------HEADER FOR A SCREEN WITH MAX-WIDTH 1200PX-------------------*/
@@ -791,6 +793,7 @@ footer .rightbox h3{
   footer .rightbox .about p{
     font-size: 1.3em;
   }
+}
   /*------------------END FOOTER-------------------*/
 }
 @media screen and (max-width: 800px){
@@ -831,7 +834,6 @@ footer .rightbox h3{
   margin: 10px;
   font-size: 2.5em;
   display: inline-block;
-
   }
   footer .icons a{
     font-size: 17px;
@@ -880,4 +882,5 @@ footer .rightbox h3{
     color: #284140;
     border: 3px solid green;
   }
+}
   /*------------------END FOOTER-------------------*/
