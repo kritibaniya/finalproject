@@ -13,7 +13,38 @@
 
   <body>
     <header>
+
+          <div class="mobilhead">
+            <img src="../bilder/logogrønn.jpg" alt="">
+          </div>
+            <a href="#main-menu"
+          id="main-menu-toggle"
+          class="menu-toggle">
+         <span class="fa fa-bars"></span>
+       </a>
+       <nav id="main-menu" class="main-menu" >
+         <a href="#main-menu-toggle"
+            id="main-menu-close"
+            class="menu-close">
+           <span class="fa fa-close"></span>
+         </a>
+         <ul >
+             <li> <a href="problem.html">Problem</a> </li>
+             <li> <a href="solution.html">Solution</a> </li>
+             <li> <a href="app.html">The App</a> </li>
+             <li> <a href="solution.html#next">Our Future</a> </li>
+             <li class="close"> <a href="#main-menu-toggle"
+                 class="backdrop"
+                 tabindex="-1">Close</a> </li>
+           </ul>
+
+       </nav>
+      <a href="#main-menu-toggle"
+          class="backdrop"
+          tabindex="-1"></a>
+            </div>
       <!--DESKTOP HEADER-->
+      <div class="dekstop">
       <div class="leftbox">
         <nav>
           <ul>
@@ -35,33 +66,9 @@
           </ul>
         </nav>
       </div>
-
+  </div>
       <!--RESPONSIVE HEADER-->
 
-    <div class="mobilhead">
-        <input id="nav-toggle" type="checkbox">
-          <a href="index.html"> <img src="../bilder/logogrønn.jpg" alt=""> </a>
-
-          <label for="nav-toggle" class="icon-burger" tabindex="0" >
-            <div class="line"></div>
-            <div class="line"></div>
-            <div class="line"></div>
-          </label>
-
-          <ul class="links">
-            <li> <a href="problem.html">Problem</a> </li>
-            <li> <a href="solution.html">Solution</a> </li>
-            <li> <a href="app.html">The App</a> </li>
-            <li> <a href="solution.html#next">Our Future</a> </li>
-            <li>
-            <label for="nav-toggle" class="icon-close" tabindex="0">
-            <div class="line close"> <p>Close</p> </div>
-            </label>
-            </li>
-          </ul>
-
-
-      </div>
     </header>
 
     <!--SHOWCASE-->
