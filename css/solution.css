@@ -277,7 +277,9 @@ footer{
   margin-right: 5vw;
   margin-left: 5vw;
   overflow: hidden;
+  margin-top: 2.5%;
 }
+
 footer p{
   font-size: 24px;
 }
@@ -317,7 +319,8 @@ footer .leftbox .icons{
 .fa-arrow-up{
   color: #fff;
   width: 50px;
-  height: 30px;
+  height: 50px;
+  padding-top: 10px;
   line-height: 2.0em;
   cursor: pointer;
   text-align: center;
@@ -368,6 +371,7 @@ footer .middlebox a{
   font-weight: bold;
   color: #284140;
   border: 3px solid green;
+
 }
 
 /*---------FOOTER RIGHTBOX----------*/
@@ -563,176 +567,183 @@ footer .rightbox h3{
 }
 /*------------------END CONTENT FOR A SCREEN WITH MAX-WIDTH 800PX-------------------*/
 
+/*------------------FOOTER FOR A SCREEN WITH MAX-WIDTH 1200PX-------------------*/
 /*------------------FOOTER-------------------*/
-footer{
-  height: 35vh;
-  width: 100vw;
-  position: relative;
-  margin-right: 5vw;
-  margin-left: 5vw;
-}
-footer p{
-  font-size: 24px;
-}
-/*---------FOOTER LEFTBOX----------*/
-footer.leftbox{
-  width: 30vw;
-  height: 40vh;
-  display: inline-block;
-  border-top: solid 3px #284140;
-}
-footer.leftbox .footlink a{
-  display: block;
-  margin: 2vh 0 2vh 0;
-  font-weight: bold;
-  color: black;
-  font-size: 25px;
-  text-decoration:none;
-}
-footer.leftbox a:hover{
-  color: #284140;
-  text-decoration: underline;
-  text-decoration-style: solid 3px;
-  text-decoration-color: #284140;
-}
-footer .leftbox .icons{
-margin: 10px;
-font-size: 2.5em;
-}
-footer .leftbox .icons a{
-  color: #284140;
-  display: inline-block;
-}
-/*---------FOOTER MIDDLEBOX----------*/
-footer.middlebox{
-  width: 30vw;
-  height: 45vh;
-  display: inline-block;
-  align-content: center;
-  align-self: center;
-  text-align: center;
-}
+@media screen and (max-width: 1200px){
+  /*-------------------FOOTER--------------------*/
+  footer{
+    height: 35vh;
+    width: 100vw;
+    position: relative;
+    margin-right: 5vw;
+    margin-left: 5vw;
+  }
+  footer p{
+    font-size: 24px;
+  }
+  /*---------FOOTER LEFTBOX----------*/
+  footer.leftbox{
+    width: 30vw;
+    height: 40vh;
+    display: inline-block;
+    border-top: solid 3px #284140;
+  }
+  footer.leftbox .footlink a{
+    display: block;
+    margin: 2vh 0 2vh 0;
+    font-weight: bold;
+    color: black;
+    font-size: 25px;
+    text-decoration:none;
+  }
+  footer.leftbox a:hover{
+    color: #284140;
+    text-decoration: underline;
+    text-decoration-style: solid 3px;
+    text-decoration-color: #284140;
+  }
+  footer .leftbox .icons{
+  margin: 10px;
+  font-size: 2.5em;
 
-footer.middlebox a{
-  text-decoration: none;
-}
-footer .middlebox .icons{
-  display: none;
-}
-footer .middlebox img{
-  max-height: 50px;
-}
+  }
+  footer .leftbox .icons a{
+    color: #284140;
+    display: inline-block;
+  }
+  /*---------FOOTER MIDDLEBOX----------*/
+  footer.middlebox{
+    width: 30vw;
+    height: 45vh;
+    display: inline-block;
+    align-content: center;
+    align-self: center;
+    text-align: center;
+  }
 
-.vertical{
-  border-left: 3px solid #284140;
-  height: 20vh;
-  position: absolute;
-  left: 45vw;
-}
+  footer.middlebox a{
+    text-decoration: none;
+  }
+  footer .middlebox .icons{
+    display: none;
+  }
+  footer .middlebox img{
+    max-height: 50px;
+  }
 
-.copyright{
-  font-size: 1em;
-  font-weight: bold;
-  color: #284140;
-  border: 3px solid green;
-}
+  .vertical{
+    border-left: 3px solid #284140;
+    height: 20vh;
+    position: absolute;
+    left: 45vw;
+  }
+
+  .copyright{
+    font-size: 1em;
+    font-weight: bold;
+    color: #284140;
+    border: 3px solid green;
+  }
 /*---------FOOTER RIGHTBOX----------*/
-footer.rightbox{
-  width: 30vw;
-  height: 40vh;
+  footer.rightbox{
+    width: 30vw;
+    height: 40vh;
+  }
+  footer .rightbox .about p{
+    font-size: 1.3em;
+  }
+  /*------------------END FOOTER-------------------*/
 }
-footer .rightbox .about p{
-  font-size: 1.3em;
-}
-/*------------------END FOOTER-------------------*/
-
+/*------------------END FOOTER FOR A SCREEN WITH MAX-WIDTH 1200PX-------------------*/
 
 /*------------------FOOTER FOR A SCREEN WITH MAX-WIDTH 800PX-------------------*/
 }
 @media screen and (max-width: 800px){
-p{
-  font-size: 1.4em;
-}
-footer{
-  height: 30vh;
-  width: 100vw;
-  position: relative;
-  margin-right: 5vw;
-  margin-left: 5vw;
-  margin-top: 10%;
-}
-}
-/*---------FOOTER LEFTBOX----------*/
-footer .leftbox{
-  width: 30vw;
-  height: 40vh;
+  p{
+    font-size: 1.4em;
+  }
+  footer{
+    height: 30vh;
+    width: 100vw;
+    position: relative;
+    margin-right: 5vw;
+    margin-left: 5vw;
+    margin-top: 10%;
+  }
+
+  /*---------FOOTER LEFTBOX----------*/
+  footer .leftbox{
+    width: 30vw;
+    height: 40vh;
+    display: inline-block;
+    border-top: solid 3px #284140;
+  }
+  footer .leftbox .footlink a{
+    display: block;
+    margin: 2vh 0 2vh 0;
+    font-weight: bold;
+    color: black;
+    font-size: 15px;
+    text-decoration: none;
+  }
+  footer .leftbox a:hover{
+    color: #284140;
+    text-decoration: underline;
+    text-decoration-style: solid 3px;
+    text-decoration-color: #284140;
+  }
+  footer .leftbox .icons{
+  margin: 10px;
+  font-size: 2.5em;
   display: inline-block;
-  border-top: solid 3px #284140;
-}
-footer .leftbox .footlink a{
-  display: block;
-  margin: 2vh 0 2vh 0;
-  font-weight: bold;
-  color: black;
-  font-size: 15px;
-  text-decoration:none;
-}
-footer .leftbox a:hover{
-  color: #284140;
-  text-decoration: underline;
-  text-decoration-style: solid 3px;
-  text-decoration-color: #284140;
-}
-footer .leftbox .icons{
-margin: 10px;
-font-size: 2.5em;
-display: inline-block;
-}
-footer .icons a{
-  font-size: 17px;
-  color: #284140;
-  display: inline-block;
-}
-/*---------FOOTER MIDDLEBOX----------*/
-footer .middlebox{
-  width: 30vw;
-  height: 45vh;
-  display: inline-block;
-  align-content: center;
-  align-self: center;
-  text-align: center;
-}
 
-footer .middlebox a{
-  text-decoration: none;
-}
-footer .middlebox .icons{
-  display: none;
-}
-footer .middlebox img{
-  max-height: 35px;
-}
+  }
+  footer .icons a{
+    font-size: 17px;
+    color: #284140;
+    display: inline-block;
+  }
+  /*---------FOOTER MIDDLEBOX----------*/
+  footer .middlebox{
+    width: 30vw;
+    height: 45vh;
+    display: inline-block;
+    align-content: center;
+    align-self: center;
+    text-align: center;
+  }
 
-.vertical{
-  border-left: 3px solid #284140;
-  height: 20vh;
-  position: absolute;
-  left: 45vw;
-}
+  footer .middlebox a{
+    text-decoration: none;
+  }
+  footer .middlebox .icons{
+    display: none;
+  }
+  footer .middlebox img{
+    max-height: 35px;
+  }
 
-/*---------FOOTER RIGHTBOX----------*/
-footer.rightbox{
-  width: 30vw;
-  height: 40vh;
-}
-footer .rightbox .about p{
-  font-size: 1em;
-}
+  .vertical{
+    border-left: 3px solid #284140;
+    height: 20vh;
+    position: absolute;
+    left: 45vw;
+  }
 
-.copyright{
-  font-size: 1em;
-  font-weight: bold;
-  color: #284140;
-  border: 3px solid green;
-}
+  /*---------FOOTER RIGHTBOX----------*/
+  footer.rightbox{
+    width: 30vw;
+    height: 40vh;
+  }
+  footer .rightbox .about p{
+    font-size: 1em;
+  }
+
+  .copyright{
+    font-size: 1em;
+    font-weight: bold;
+    color: #284140;
+    border: 3px solid green;
+  }
+  /*------------------END FOOTER-------------------*/
 /*------------------END FOOTER FOR A SCREEN WITH MAX-WIDTH 800PX-------------------*/
