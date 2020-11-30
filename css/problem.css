@@ -44,10 +44,84 @@ nav ul li{
 nav ul li a{
   position: relative;
   font-weight: bold;
+<<<<<<< Updated upstream
   padding: 5px 0;
   color: #fffef8;
   font-size: 25px;
   text-decoration:none;
+=======
+  color: #fff;
+}
+.mobilhead .icon-close .close p:hover{
+  text-decoration: underline solid;
+}
+/*------------------END RESPONSIVE NAVBAR-------------------*/
+
+
+/*------------------MAIN PART OF BODY-------------------*/
+/*---------SHOWCASE----------*/
+#showcase{
+  background-image: url("../bilder/problem/waste.jpg");
+  background-repeat: no-repeat;
+  background-position:left;
+  height: 100vh;
+}
+#showcase h1{
+font-size: 4vw;
+text-align: center;
+color: black;
+position: absolute;
+top: 50%;
+left: 50%;
+width: 48vw;
+text-shadow: 2px 2px 4vw #283e3e;
+}
+/*---------RESPONSIVE SHOWCASE----------*/
+@media only screen and (max-width:1100px){
+  #showcase{
+    background-image: url("../bilder/problem/problem-showcase.jpg");
+    background-repeat: no-repeat;
+    background-position:center;
+    height: 100vh;
+  }
+  #showcase h1{
+  font-size: 3em;
+  top: 75%;
+  left: 0%;
+  width: 100vw;
+  }
+
+}
+
+@media only screen and (max-width:800px){
+  #showcase{
+    background-image: url("../bilder/problem/mango2.jpg");
+  }
+
+  #showcase h1{
+  font-size: 2.4em;
+  }
+
+}
+/*---------SHOWCASE END ----------*/
+
+
+/*-------Division of content-------------------*/
+
+.problem-content{
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-bottom: 15vh;
+}
+.problem-content ul li {
+  font-size: 1.1em;
+  padding: 2%;
+}
+
+ a{
+  color: #c65f39;
+  text-decoration: none;
+>>>>>>> Stashed changes
 }
 nav ul li a:hover{
   text-decoration: underline;

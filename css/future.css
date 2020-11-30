@@ -1,0 +1,714 @@
+*{
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+  margin: 0;
+  color: black;
+}
+h1{
+  font-size: 2.6em;
+}
+
+p{
+font-size: 1.9em;
+line-height: 1.6em;
+}
+
+/*-------------------HEADER--------------------*/
+header{
+  height: 110px;
+  width: 100vw;
+  background-color: #284040;
+  align-items: center;
+  text-align: center;
+  align-self: center;
+  position: fixed;
+  z-index: 1;
+  overflow: hidden;
+}
+/*----------HEADER LEFTBOX----------*/
+header .leftbox{
+  width: 30vw;
+  height: 65px;
+  display: inline-block;
+  border-top: solid 3px white;
+}
+
+header .leftbox nav{
+  left: 0;
+}
+
+header .leftbox nav{
+  left: 0;
+  margin-right: 2vw;
+}
+
+header .leftbox nav a{
+  margin-right: 4vw;
+  margin-left: 4vw;
+}
+
+/*----------HEADER MIDDLEBOX----------*/
+header .middlebox{
+  display: inline-block;
+  width: 30vw;
+  height: 110px;
+}
+
+header .middlebox img{
+  height: 100px;
+  width: auto;
+}
+
+/*----------HEADER RIGHTBOX----------*/
+header .rightbox{
+  width: 30vw;
+  height: 65px;
+  display: inline-block;
+  border-top: solid 3px white;
+}
+
+header .rightbox nav{
+  right: 0;
+  margin-right: 2vw;
+}
+
+header .rightbox nav a{
+  margin-right: 4vw;
+  margin-left: 4vw;
+}
+/*-------------------END HEADER--------------------*/
+
+/*------------------NAVBAR-------------------*/
+nav{
+  position: fixed;
+  z-index: 10;
+}
+
+nav li {
+  list-style: none;
+  display: inline-block;
+}
+
+nav a{
+  display: inline-block;
+  color: #fff;
+  padding-top: 0.5em;
+  margin-right: 5vw;
+  margin-left: 5vw;
+  font-size: 1.6em;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a:visited {
+  color: #fff;
+}
+
+nav a:hover{
+  color: #c65f39;
+  text-decoration: underline;
+  opacity: inherit;
+}
+/*------------------NAVBAR END-------------------*/
+
+/*------------------RESPONSIVE NAVBAR-------------------*/
+.mobilhead{
+  display: none;
+}
+
+#nav-toggle {
+  position: absolute;
+  top: -100px;
+}
+
+.mobilhead .icon-burger {
+  display: none;
+  position: absolute;
+  right: 5%;
+  top: 45%;
+  overflow-y: hidden;
+  transform: translateY(-50%);
+}
+
+.mobilhead .icon-burger .line {
+  width: 30px;
+  height: 5px;
+  background-color: #fff;
+  margin: 5px;
+  border-radius: 3px;
+  transition: all .3s ease-in-out;
+  cursor: pointer;
+}
+
+.mobilhead .icon-close {
+  display: none;
+  width: 100vw;
+}
+
+.mobilhead .icon-close .close {
+  width: 100px;
+  height: 65px;
+  background-color: #c65f39;
+  border-radius: 50px;
+  transition: all .3s ease-in-out;
+  padding: 1em;
+  cursor: pointer;
+  margin-top: 2vh;
+}
+
+.mobilhead .icon-close .close p{
+  font-size: 25px;
+  font-weight: bold;
+  color: #fff;
+}
+.mobilhead .icon-close .close p:hover{
+  text-decoration: underline solid;
+}
+/*------------------END RESPONSIVE NAVBAR-------------------*/
+
+/*------------------MAIN PART OF BODY-------------------*/
+/*---------SHOWCASE----------*/
+#showcase{
+ width: 100vw;
+ height: 100vh;
+ padding-left: 10vw;
+ padding-right: 10vw;
+ background-color: #eee3dd;
+}
+
+/*---------#CONTENT----------*/
+#content{
+  width: 100vw;
+  height: 60vh;
+  padding-top: 15vh;
+  padding-left: 10vw;
+  padding-right: 10vw;
+}
+
+/*---------PROBLEM----------*/
+.problem {
+  /* background-color: #eee3dd; */
+  padding-top: 15vh;
+}
+/*---------SOLUTION----------*/
+.solution{
+  background-color: #eee3dd;
+}
+/*---------SPACE----------*/
+.space{
+  display: none;
+  width: 100vw;
+  height: 20vh;
+  background-color: #eee3dd;
+}
+/*---------APP----------*/
+.app{
+  padding-top: 0;
+}
+
+.app .appimg{
+  float: right;
+}
+
+.app .mobimg{
+  display: none;
+}
+/*---------FUTURE----------*/
+.future{
+  background-color: #eee3dd;
+  padding-top: 15vh;
+}
+/*------------------END MAIN PART OF BODY-------------------*/
+
+/*------------------READ MORE - BUTTON-------------------*/
+.button {
+ background-color:  #c65f39;
+ border: none;
+ color: white;
+ padding: 8px 25px;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ font-size: 1.4em;
+ font-weight: bold;
+ margin: 4px 2px;
+ border-radius: 1.5em;
+ z-index: -1;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+/*------------------END OF READ MORE BUTTON-------------------*/
+
+/*------------------FOOTER-------------------*/
+footer{
+  height: 40vh;
+  width: 100vw;
+  position: relative;
+  margin-right: 5vw;
+  margin-left: 5vw;
+  overflow: hidden;
+}
+footer p{
+  font-size: 24px;
+}
+
+/*---------FOOTER LEFTBOX----------*/
+footer .leftbox{
+  width: 30vw;
+  height: 40vh;
+  display: inline-block;
+  border-top: solid 3px #284140;
+}
+
+footer .leftbox a{
+  display: block;
+  margin: 2vh 0 2vh 0;
+  font-weight: bold;
+  color: #284140;
+  font-size: 1.8em;
+  text-decoration:none;
+}
+
+footer .leftbox a:hover{
+  color: #c65f39;
+  text-decoration: underline;
+  text-decoration-style: solid 3px;
+  text-decoration-color: #c65f39;
+}
+
+footer .leftbox i:hover{
+  background-color: #c65f39;
+}
+
+footer .leftbox .icons{
+  display: none;
+}
+
+.fa-arrow-up{
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  padding-top: 10px;
+  line-height: 2.0em;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  background-color: #284140;
+  border-radius: 30%;
+}
+
+/*---------FOOTER MIDDLEBOX----------*/
+footer .middlebox{
+  width: 30vw;
+  height: 45vh;
+  display: inline-block;
+  align-content: center;
+  align-self: center;
+  text-align: center;
+}
+footer .middlebox img{
+  height: 70px;
+  width: auto;
+  margin-bottom: 5%;
+  margin-top: 2%;
+}
+
+footer .middlebox a{
+  text-decoration: none;
+}
+
+.vertical{
+  border-left: 3px solid #284140;
+  height: 20vh;
+  position: absolute;
+  left: 45vw;
+}
+.icons{
+  margin: 10px;
+  font-size: 2.5em;
+}
+.icons a{
+  color: #284140;
+}
+.icons a:hover{
+  color: #c65f39;
+}
+.copyright{
+  font-size: 1em;
+  font-weight: bold;
+  color: #284140;
+  border: 3px solid green;
+
+}
+
+/*---------FOOTER RIGHTBOX----------*/
+footer .rightbox{
+  width: 30vw;
+  height: 40vh;
+  display: inline-block;
+  border-top: solid 3px #284140;
+}
+footer .rightbox h3{
+  color: #284140;
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 25px;
+  margin-top: 2vh;
+}
+
+.rightbox .icons{
+  display: none;
+}
+/*------------------END FOOTER-------------------*/
+
+
+/*------------------HEADER FOR A SCREEN WITH MAX-WIDTH 1200PX-------------------*/
+@media screen and (max-width: 1200px){
+  /*-------------------HEADER--------------------*/
+  header{
+    height: 100px;
+    width: 100vw;
+    background-color: #284040;
+    align-items: center;
+    text-align: center;
+    align-self: center;
+    position: fixed;
+    z-index: 1;
+  }
+  /*---------DEKSTOP HEADER----------*/
+  header .leftbox{
+    display: none;
+  }
+  header .rightbox{
+    display: none;
+  }
+  header .middlebox{
+    display: none;
+  }
+
+  nav{
+    display: none;
+  }
+  /*---------LOGO----------*/
+  .mobilhead{
+    display: inline-flex;
+    width: 100vw;
+  }
+
+  .mobilhead img{
+    float: left;
+    height: 90px;
+  }
+  /*---------NAVBAR LINKS----------*/
+  .mobilhead .links {
+    float: right;
+    position: fixed;
+    z-index: 9;
+    left: 0;
+    right: 0;
+    top: 100px;
+    bottom: 100%;
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    justify-content: space-around;
+    background-color: #284040;
+    border-top: #fff 3px solid;
+    overflow: hidden;
+    transition: all .5s ease-in-out;
+    align-items: center;
+    text-align: center;
+  }
+
+  .mobilhead .links li {
+    list-style: none;
+  }
+
+  .mobilhead .links a {
+    display: block;
+    font-size: 30px;
+    padding: 1em;
+    color: #fff;
+    width: 100vw;
+    height: auto;
+    overflow-y: hidden;
+    font-weight: bold;
+    transition: all ease 0.5s;
+    text-decoration: none;
+  }
+
+  .mobilhead a:visited {
+    color: #fff;
+    }
+
+  .mobilhead .links a:hover{
+    color: #c65f39;
+    text-decoration: 3px underline;
+  }
+  /*---------HAMBURGER NAVBAR LINES + OPEN/CLOSE----------*/
+  .mobilhead .links label {
+    display: block;
+    padding: 1em;
+    width: 100vw;
+    height: auto;
+    overflow-y: hidden;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+  }
+
+  .mobilhead :checked ~ .links {
+     bottom: 0;
+  }
+  .mobilhead .icon-burger {
+    display: block;
+  }
+  .mobilhead .icon-close{
+    display: block;
+  }
+
+  .mobilhead :checked ~ .icon-burger .line:nth-child(1){
+    transform: translateY(10px) rotate(225deg);
+  }
+  .mobilhead :checked ~ .icon-burger .line:nth-child(2){
+    opacity: 0;
+  }
+  .mobilhead :checked ~ .icon-burger .line:nth-child(3){
+    transform: translateY(-10px) rotate(-225deg);
+  }
+
+  #content{
+    width: 100vw;
+    height: auto;
+  }
+  /*---------SHOWCASE----------*/
+/*  #showcase img{
+     margin-top: 40%;
+    width: 40vw;
+  }
+  #showcase p{
+    width: 35vw;
+  }*/
+  footer{
+    height: 35vh;
+    width: 100vw;
+    position: relative;
+    margin-right: 5vw;
+    margin-left: 5vw;
+  }
+  footer p{
+    font-size: 24px;
+  }
+  /*---------FOOTER LEFTBOX----------*/
+  footer.leftbox{
+    width: 30vw;
+    height: 40vh;
+    display: inline-block;
+    border-top: solid 3px #284140;
+  }
+  footer.leftbox .footlink a{
+    display: block;
+    margin: 2vh 0 2vh 0;
+    font-weight: bold;
+    color: black;
+    font-size: 25px;
+    text-decoration:none;
+  }
+  footer.leftbox a:hover{
+    color: #284140;
+    text-decoration: underline;
+    text-decoration-style: solid 3px;
+    text-decoration-color: #284140;
+  }
+  footer .leftbox .icons{
+  margin: 10px;
+  font-size: 2.5em;
+
+  }
+  footer .leftbox .icons a{
+    color: #284140;
+    display: inline-block;
+  }
+  /*---------FOOTER MIDDLEBOX----------*/
+  footer.middlebox{
+    width: 30vw;
+    height: 45vh;
+    display: inline-block;
+    align-content: center;
+    align-self: center;
+    text-align: center;
+  }
+
+  footer.middlebox a{
+    text-decoration: none;
+  }
+  footer .middlebox .icons{
+    display: none;
+  }
+  footer .middlebox img{
+    max-height: 50px;
+  }
+
+  .vertical{
+    border-left: 3px solid #284140;
+    height: 20vh;
+    position: absolute;
+    left: 45vw;
+  }
+
+  .copyright{
+    font-size: 1em;
+    font-weight: bold;
+    color: #284140;
+    border: 3px solid green;
+  }
+/*---------FOOTER RIGHTBOX----------*/
+  footer.rightbox{
+    width: 30vw;
+    height: 40vh;
+  }
+  footer .rightbox .about p{
+    font-size: 1.3em;
+  }
+  /*------------------END FOOTER-------------------*/
+}
+@media screen and (max-width: 800px){
+  p{
+    font-size: 1.4em;
+  }
+  /*---------SHOWCASE----------*/
+  /*#showcase img{
+    margin-top: 40%;
+  }
+  #showcase p{
+    width: 35vw;
+  }*/
+  #showcase {
+   padding-top: 10px;
+   width: 100vw;
+   height: 100vh;
+ }
+  /*---------THE APP----------*/
+  .app .appimg{
+    display: none;
+  }
+
+  .mobimg{
+    display: block;
+    background-color: red;
+  }
+  /*------------------FOOTER-------------------*/
+  footer{
+    height: 30vh;
+    width: 100vw;
+    position: relative;
+    margin-right: 5vw;
+    margin-left: 5vw;
+    margin-top: 10%;
+  }
+
+  /*---------FOOTER LEFTBOX----------*/
+  footer .leftbox{
+    width: 30vw;
+    height: 40vh;
+    display: inline-block;
+    border-top: solid 3px #284140;
+  }
+  footer .leftbox .footlink a{
+    display: block;
+    margin: 2vh 0 2vh 0;
+    font-weight: bold;
+    color: black;
+    font-size: 15px;
+    text-decoration:none;
+  }
+  footer .leftbox a:hover{
+    color: #284140;
+    text-decoration: underline;
+    text-decoration-style: solid 3px;
+    text-decoration-color: #284140;
+  }
+  footer .leftbox .icons{
+  margin: 10px;
+  font-size: 2.5em;
+  display: inline-block;
+
+  }
+  footer .icons a{
+    font-size: 17px;
+    color: #284140;
+    display: inline-block;
+  }
+  /*---------FOOTER MIDDLEBOX----------*/
+  footer .middlebox{
+    width: 30vw;
+    height: 45vh;
+    display: inline-block;
+    align-content: center;
+    align-self: center;
+    text-align: center;
+  }
+
+  footer .middlebox a{
+    text-decoration: none;
+  }
+  footer .middlebox .icons{
+    display: none;
+  }
+  footer .middlebox img{
+    max-height: 35px;
+  }
+
+  .vertical{
+    border-left: 3px solid #284140;
+    height: 20vh;
+    position: absolute;
+    left: 45vw;
+  }
+
+  /*---------FOOTER RIGHTBOX----------*/
+  footer.rightbox{
+    width: 30vw;
+    height: 40vh;
+  }
+  footer .rightbox .about p{
+    font-size: 1em;
+  }
+
+  .copyright{
+    font-size: 1em;
+    font-weight: bold;
+    color: #284140;
+    border: 3px solid green;
+  }
+  /*------------------END FOOTER-------------------*/
+}
