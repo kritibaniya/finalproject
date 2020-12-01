@@ -18,7 +18,8 @@
 
 body{
   margin: 0;
-  color: black;
+  padding: 0;
+  color: #000;
 }
 h1{
   color: #284040;
@@ -280,23 +281,27 @@ nav a:hover{
 #showcase{
  width: 100vw;
  height: 100vh;
- padding-left: 10vw;
- padding-right: 5vw;
  background-color: #e0ebeb;
  overflow-y: hidden;
 }
 
 #showcase img{
-  float: right;
-  right: 0;
-  max-width: 50%;
+  display: block;
+  max-width: 30%;
   height: auto;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #showcase p{
-  margin-top: 25%;
   font-size: 3em;
   color: #284040;
+}
+
+#showcase .stext{
+  width: 100vw;
+  padding-top: 10%;
+  text-align: center;
 }
 
 #showcase b{
@@ -308,28 +313,33 @@ nav a:hover{
 #content{
   width: 100vw;
   height: auto;
-  padding: 15vh 10vw 15vh 10vw;
+  padding: 5vh 10vw 5vh 10vw;
+  /* margin: 0; */
 }
 
-#content img{
-  width: 150px;
-  height: auto;
-  border: 3px solid #284040;
-  right: 0;
-}
-
-#content .img{
-  display: block;
+#content .images{
+  display: inline-block;
   width: 35vw;
   height: auto;
   float: right;
+  text-align: center;
 }
 
-#content p{
-  float: left;
-  width: 40vw;
+#content img{
+  width: 208px;
+  height: auto;
+  right: 0;
+  border: 3px solid #284040;
 }
-.mobimg{
+
+#content .text{
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+  width: 45vw;
+}
+
+#content .mobimages{
   display: none;
 }
 
@@ -464,7 +474,7 @@ footer .rightbox h3{
 /*---------------------------END OF DESKTOP CODE----------------------------*/
 
 /*------------------RESPONSIVE PAGE WITH MAX-WIDTH 1200PX-------------------*/
-@media only screen and (min-width:1200px){
+@media only screen and (max-width:1200px){
   /*---------------------------MENU----------------------------*/
   .menu-toggle{
     display: none;
@@ -476,35 +486,40 @@ footer .rightbox h3{
     display: block;
   }
 /*---------------------------SHOWCASE----------------------------*/
+#showcase .stext{
+  width: 100vw;
+  padding-top: 15%;
+  font-size: 3em;
+  text-align: center;
+}
+
   #showcase img{
-    max-width: 60%;
-    padding-top: 20vh;
+    display: block;
+    max-width: 40%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 
-  #showcase p{
-    font-size: 2.5em;
-    padding-top: 15vh;
+  #showcase b{
+    color: #c65f39;
+    font-weight: normal;
   }
 
   /*---------------------------CONTENT----------------------------*/
-  #content{
-    width: 100vw;
-    height: auto;
-    padding: 15vh 10vw 15vh 10vw;
-  }
-
-  #content .img{
+  #content .images{
     display: none;
   }
 
-  #content .mobimg{
-    display: inline-block;
-    align-items: center;
-    align-content: center;
-    align-self: center;
+  #content .mobimages {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-top: 5%;
   }
 
-  #content p{
+  #content .text{
     width: 100vw;
     padding-right: 20vw;
   }
@@ -526,13 +541,19 @@ footer .rightbox h3{
  }
 
  #showcase img{
-   padding-top: 20vh;
-   max-width: 60%;
+   max-width: 70%;
+   float: none;
  }
 
- #showcase p{
-   font-size: 1.2em;
-   padding-top: 15vh;
+ #showcase .stext{
+   width: 100vw;
+   padding-top: 20%;
+   font-size: 2.1em;
+   text-align: center;
+ }
+
+#showcase img{
+   max-width: 40%;
  }
 
  /*---------------------------FOOTER----------------------------*/

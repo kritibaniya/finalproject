@@ -284,13 +284,15 @@ nav a:hover{
 }
 
 .showcase-text {
-  line-height: 1.6;
   padding-top: 200px;
   width: 100vw;
-  color: #284040;
-  text-align: center;
-  overflow-y: hidden;
+}
+
+.showcase-text p{
   font-size: 2.3em;
+  text-align: center;
+  line-height: 1.6;
+  color: #284040;
 }
 
 #showcase c{
@@ -308,7 +310,7 @@ nav a:hover{
 
 }
 
-.img-sharingApple{
+.img-sharingfood{
   max-width: 100%;
   height: auto;
   display: block;
@@ -489,13 +491,12 @@ footer .rightbox h3{
     margin-right: 30px;
     padding-top: 170px;
   }
+
   .showcase-img{
     margin-top: 70px;
   }
+
   /*---------------------------CONTENT----------------------------*/
-  /*.content{
-    margin: 20px;
-  }*/
   .content h1{
     font-size: 2.3em;
     margin-top: 15px;
@@ -526,9 +527,16 @@ footer .rightbox h3{
   }
 
   /*---------------------------SHOWCASE----------------------------*/
+  #showcase{
+    height: auto;
+  }
   .showcase-text{
-    font-size: 1.3em;
-    width: 90%;
+    padding-top: 150px;
+    width: 100vw;
+  }
+
+  .showcase-text p{
+    font-size: 1.4em;
   }
 
   .showcase-img{
