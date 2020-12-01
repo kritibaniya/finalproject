@@ -146,13 +146,21 @@ display: inline-block;
 
 .close{
     background-color: #c65f39;
+    width: 200px;
     border-radius: 35px;
-    margin-left: 33%;
-    margin-right: 33%;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
   }
   .close a{
-    font-size: 20px;
-    height: 70px;
+    font-size: 25px;
+    height: 75px;
+    padding: 0px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
   }
   .close a:hover, .close a:focus{
     color: #fff;
@@ -246,7 +254,7 @@ nav{
   z-index: 10;
 }
 
-nav li {
+.desktop nav li {
   list-style: none;
   display: inline-block;
 }
