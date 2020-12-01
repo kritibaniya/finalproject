@@ -602,9 +602,7 @@ footer .rightbox h3{
   /*------------------END FOOTER-------------------*/
 }
 @media screen and (max-width: 800px){
-  p{
-    font-size: 1.4em;
-  }
+
   /*---------SHOWCASE----------*/
   #showcase {
    margin: auto;
