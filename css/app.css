@@ -297,11 +297,10 @@ nav a:hover{
   right: 0;
   max-width: 50%;
   height: auto;
-  /* padding-top: 20vh; */
 }
 
 #showcase p{
-  /* margin-top: 25%; */
+  margin-top: 25%;
   font-size: 3em;
   color: #284040;
 }
@@ -320,21 +319,22 @@ nav a:hover{
 
 .content .img{
   float: right;
-  display: block;
+  right: 0;
   width: 35vw;
-  height: auto;
+  display: inline-block;
+  margin-left: 5vw;
 }
 
 .content img{
   right: 0;
-  float: right;
-  width: 208px;
 }
 
-.content p{
+.content .text{
   left: 0;
   float: left;
   width: 45vw;
+  height: auto;
+  margin-right: 5vw;
 }
 
 .mobimg{
