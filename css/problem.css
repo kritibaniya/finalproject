@@ -45,10 +45,11 @@ header{
   overflow: hidden;
 }
 
-  nav{
-display: inline-block;
-  }
-  /*---------LOGO----------*/
+nav{
+ display: inline-block;
+}
+
+/*---------LOGO----------*/
     .mobilhead{
       display: inline-block;
       position: relative;
@@ -613,126 +614,6 @@ footer .rightbox h3{
   display: none;
 }
 /*------------------END FOOTER-------------------*/
-
-/*------------------HEADER FOR A SCREEN WITH MAX-WIDTH 1200PX-------------------*/
-@media screen and (max-width: 1200px){
-  /*-------------------HEADER--------------------*/
-  header{
-    height: 100px;
-    width: 100vw;
-    background-color: #284040;
-    align-items: center;
-    text-align: center;
-    align-self: center;
-    position: fixed;
-    z-index: 1;
-  }
-  /*---------DEKSTOP HEADER----------*/
-  header .leftbox{
-    display: none;
-  }
-  header .rightbox{
-    display: none;
-  }
-  header .middlebox{
-    display: none;
-  }
-
-  nav{
-    display: none;
-  }
-  /*---------LOGO----------*/
-  .mobilhead{
-    display: inline-flex;
-    width: 100vw;
-  }
-
-  .mobilhead img{
-    float: left;
-    height: 90px;
-  }
-  /*---------NAVBAR LINKS----------*/
-  .mobilhead .links {
-    display: none;
-    float: right;
-    position: fixed;
-    z-index: 9;
-    left: 0;
-    right: 0;
-    top: 100px;
-    bottom: 100%;
-    width: auto;
-    height: auto;
-    padding: 0;
-    margin: 0;
-    justify-content: space-around;
-    background-color: #284040;
-    border-top: #fff 3px solid;
-    overflow: hidden;
-    transition: all .5s ease-in-out;
-    align-items: center;
-    text-align: center;
-  }
-
-  .mobilhead .links li {
-    list-style: none;
-  }
-
-  .mobilhead .links a {
-    display: block;
-    font-size: 30px;
-    padding: 1em;
-    color: #fff;
-    width: 100vw;
-    height: auto;
-    overflow-y: hidden;
-    font-weight: bold;
-    transition: all ease 0.5s;
-    text-decoration: none;
-  }
-
-  .mobilhead a:visited {
-    color: #fff;
-    }
-
-  .mobilhead .links a:hover{
-    color: #c65f39;
-    text-decoration: 3px underline;
-  }
-  /*---------HAMBURGER NAVBAR LINES + OPEN/CLOSE----------*/
-  .mobilhead .links label {
-    display: block;
-    padding: 1em;
-    width: 100vw;
-    height: auto;
-    overflow-y: hidden;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-  }
-
-  .mobilhead :checked ~ .links {
-     bottom: 0;
-     display: block;
-  }
-
-  .mobilhead .icon-burger {
-    display: block;
-  }
-
-  .mobilhead .icon-close{
-    display: block;
-  }
-
-  .mobilhead :checked ~ .icon-burger .line:nth-child(1){
-    transform: translateY(10px) rotate(225deg);
-  }
-  .mobilhead :checked ~ .icon-burger .line:nth-child(2){
-    opacity: 0;
-  }
-  .mobilhead :checked ~ .icon-burger .line:nth-child(3){
-    transform: translateY(-10px) rotate(-225deg);
-  }
 
 
   /*---------------------------FOOTER----------------------------*/
