@@ -392,7 +392,7 @@ nav a:hover{
 
 /*---------------------------FOOTER----------------------------*/
 footer{
-  height: 50vh;
+  height: 52vh;
   width: 100vw;
   position: relative;
   margin-right: 5vw;
@@ -486,17 +486,19 @@ footer .middlebox a{
 
 .vertical{
   border-left: 3px solid #284140;
-  height: 20vh;
+  height: 15vh;
   position: absolute;
   left: 45vw;
 }
 
 .icons{
+  overflow-y: hidden;
   margin: 10px;
   font-size: 2.5em;
 }
 
 .icons a{
+
   color: #284140;
 }
 
@@ -506,6 +508,7 @@ footer .middlebox a{
 
 /*---------FOOTER RIGHTBOX----------*/
 footer .rightbox{
+  overflow-y: hidden;
   width: 30vw;
   height: 40vh;
   display: inline-block;
@@ -628,7 +631,7 @@ footer .rightbox h3{
     height: 40vh;
     overflow-y: hidden;
   }
-  
+
   footer .copyright{
     display: block;
     height: 10vh;
