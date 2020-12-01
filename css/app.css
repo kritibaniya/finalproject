@@ -21,6 +21,11 @@ body{
   padding: 0;
   color: #000;
 }
+a:focus {
+  border: 2px solid #c65f39;
+  overflow-y: hidden;
+}
+
 h1{
   color: #284040;
   font-size: 2.3em;
@@ -59,12 +64,21 @@ nav{
     display: block;
     height: 100px;
   }
+  .mobilhead a:focus img {
+    border: 5px solid #c65f39;
+
+  }
 
   /*---------HAMBURGER MENU ICON/BUTTON STYLING----------*/
   .menu-toggle{
     font-size:30px;
     float:right;
-    padding:40px;
+    margin-top: 20px;
+    margin-right: 50px;
+    overflow-y: hidden;
+    padding: 20px;
+    height: auto;
+    width: auto;
   }
 
   #main-menu-toggle{
@@ -77,17 +91,13 @@ nav{
     padding: 1em;
   }
 
-  .menu-toggle:hover,
-  .menu-toggle:focus {
-    color:blue ;
-  }
-
   .main-menu {
     position: absolute;
     display: none;
     top: 0;
     overflow-x: visible;
     z-index: 999;
+
   }
 
   .main-menu ul{
@@ -103,11 +113,12 @@ nav{
     overflow-y: hidden;
     font-weight: bold;
     text-decoration: none;
+
   }
 
 
   .main-menu li a {
-    display: block;
+    display: inline-block;
     padding: 1em;
     line-height: 1em;
     color: #fff;
@@ -145,8 +156,6 @@ nav{
     position: relative;
     z-index: 1000;
   }
-
-
 
   .close{
       background-color: #c65f39;
