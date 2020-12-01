@@ -21,13 +21,15 @@ body{
   margin: 0;
   color: black;
 }
+
 h1{
   font-size: 2.6em;
+  line-height: 1.6;
 }
 
 p{
-font-size: 1.4em;
-line-height: 1.6em;
+  font-size: 1.6em;
+  line-height: 1.6;
 }
 
 /*-------------------HEADER--------------------*/
@@ -347,9 +349,7 @@ nav a:hover{
 /*-------Division of content-------------------*/
 
 .problem-content{
-  margin-left: 5vw;
-  margin-right: 5vw;
-  margin-bottom: 10vh;
+  margin: 0 10vw 10vh 10vw;
 }
 
 h2{
@@ -365,7 +365,7 @@ h2{
 
 .problem-content p {
   font-size: 1.6em;
-  line-height: 1.6em;
+  line-height: 1.6;
 }
 
  a{
@@ -448,6 +448,14 @@ h2{
   height: 300px;
   border: none;
 }
+
+.problem-content h1 {
+  font-size: 2.3em;
+}
+
+.problem-content p {
+  font-size: 1.4em;
+  }
 }
 
 @media only screen and (max-width:800px) {
@@ -474,7 +482,8 @@ h2{
 
 .col-half-100 iframe {
   width: 100vw;
-  height: 40vh;}
+  height: 40vh;
+  }
 }
 
 /*-------Division of content end-------------------*/

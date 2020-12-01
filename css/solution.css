@@ -25,13 +25,13 @@ body{
   color: black;
 }
 h1{
-  font-size: 2.7em;
+  font-size: 2.6em;
   color: #284040;
 }
 
 p{
-  font-size: 1.4em;
-    line-height: 1.6;
+  font-size: 1.6em;
+  line-height: 1.6;
 }
 
 /*-------------------HEADER--------------------*/
@@ -206,7 +206,7 @@ nav a:hover{
   overflow-y: hidden;
   font-size: 2.3em;
 }
-#showcase b{
+#showcase c{
   color: #e36802;
 }
 #showcase d{
@@ -233,10 +233,7 @@ nav a:hover{
 /*------------------ CONTENT-------------------*/
 
 .content {
-  margin-left: 22%;
-  margin-right: 22%;
-  margin-top: 50px;
-  margin-bottom: 70px;
+  margin: 10vh 10vw 10vh 10vw;
 }
 
 .content a{
@@ -552,13 +549,18 @@ footer .rightbox h3{
 /*------------------CONTENT FOR A SCREEN WITH MAX-WIDTH 1200PX-------------------*/
 @media screen and (max-width: 1200px){
 
-  .content{
+  /*.content{
     margin: 20px;
-  }
+  }*/
   .content h1{
     font-size: 2.3em;
     margin-top: 15px;
   }
+
+  .content p{
+    font-size: 1.4em;
+  }
+
   .ourStep {
     float: none;
     width: 95%;

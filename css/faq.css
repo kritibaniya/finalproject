@@ -18,7 +18,6 @@
 body{
   margin: 0;
   padding: 0;
-  color: black;
 }
 
 /*-------------------HEADER--------------------*/
@@ -184,7 +183,7 @@ nav a:hover{
 
 h1{
   color: #284040;
-  font-size: 1.8em;
+  font-size: 2em;
   font-weight: bold;
   letter-spacing: 5px;
   text-transform: uppercase;
@@ -206,6 +205,12 @@ h1{
   width: 85vw;
   font-size: 1.6em;
   line-height: 1.6em;
+}
+
+.content a-letter{
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #c65f39;
 }
 
 .content a{
@@ -479,6 +484,11 @@ footer .rightbox h3{
   .mobilhead :checked ~ .icon-burger .line:nth-child(3){
     transform: translateY(-10px) rotate(-225deg);
   }
+
+  .content p {
+    font-size: 1.4em;
+    }
+
   footer{
     height: 35vh;
     width: 100vw;
