@@ -22,12 +22,12 @@ body{
 }
 h1{
   color: #284040;
-  font-size: 2.6em;
+  font-size: 2.3em;
   line-height: 1.6;
 }
 
 p{
-  font-size: 1.7em;
+  font-size: 1.4em;
   line-height: 1.6;
 }
 
@@ -297,11 +297,11 @@ nav a:hover{
   right: 0;
   max-width: 50%;
   height: auto;
-  padding-top: 20vh;
+  /* padding-top: 20vh; */
 }
 
 #showcase p{
-  margin-top: 25%;
+  /* margin-top: 25%; */
   font-size: 3em;
   color: #284040;
 }
@@ -318,39 +318,23 @@ nav a:hover{
   padding: 10vh 10vw 10vh 10vw;
 }
 
-.content img{
-  /*width: 208px;
-  height: auto;*/
-  border: 3px solid #284040;
-  right: 0;
-}
-
 .content .img{
+  float: right;
   display: block;
   width: 35vw;
   height: auto;
+}
+
+.content img{
+  right: 0;
   float: right;
+  width: 208px;
 }
 
 .content p{
+  left: 0;
   float: left;
-  width: 40vw;
-}
-
-.content a{
-  color: #c65f39;
-  text-decoration: none;
-}
-
-.content a:hover{
-  color: #284040;
-  text-decoration: underline;
-  text-decoration-style: solid 3px;
-  transition: all ease 0.5s;
-}
-
-.content a:visited{
-  color: #c65f39;
+  width: 45vw;
 }
 
 .mobimg{
@@ -517,7 +501,7 @@ footer .rightbox h3{
     align-self: center;
   }
 
-  .content .monimg img{
+  .content .mobimg img{
     width: 150px;
   }
 

@@ -22,6 +22,7 @@ body{
   color: black;
 }
 
+
 /*-------------------HEADER--------------------*/
 header{
   height: 100px;
@@ -303,14 +304,14 @@ nav a:hover{
 
 .side-nav h1{
   color: #284040;
-  font-size: 2.0em;
+  font-size: 1.6em;
   text-transform: uppercase;
   padding-bottom: 2vh;
 }
 
 .side-nav a{
   color: #000;
-  font-size: 1.8em;
+  font-size: 1.4em;
   line-height: 1.6em;
   text-decoration: none;
 }
@@ -336,8 +337,8 @@ nav a:hover{
 
 h2 {
   color: #284040;
-  font-size: 1.8em;
-  line-height: : 1.8em;
+  font-size: 1.6em;
+  line-height: : 1.6em;
   font-weight: bold;
   letter-spacing: 5px;
   text-transform: uppercase;
@@ -354,7 +355,7 @@ h2 {
 }
 
 .list li {
-  font-size: 1.6em;
+  font-size: 1.4em;
   line-height: 1.6em;
 }
 

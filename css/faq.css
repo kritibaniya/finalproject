@@ -20,6 +20,7 @@ body{
   padding: 0;
 }
 
+
 /*-------------------HEADER--------------------*/
 header{
   height: 110px;
@@ -292,7 +293,7 @@ nav a:hover{
 
 h1{
   color: #284040;
-  font-size: 2em;
+  font-size: 1.6em;
   font-weight: bold;
   letter-spacing: 5px;
   text-transform: uppercase;
@@ -312,7 +313,7 @@ h1{
 
 .content p{
   width: 85vw;
-  font-size: 1.6em;
+  font-size: 1.4em;
   line-height: 1.6em;
 }
 
@@ -340,7 +341,7 @@ h1{
 
 h3{
   color: #284040;
-  font-size: 1.8em;
+  font-size: 1.6em;
 }
 
 .content:nth-child(even){
