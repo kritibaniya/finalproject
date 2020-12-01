@@ -533,6 +533,15 @@ footer .rightbox h3{
     width: 100vw;
     height: auto;
   }
+
+  #app .appimg{
+    display: none;
+  }
+
+  #app .mobimg{
+    display: block;
+    float: right;
+  }
 }
 /*------------------END RESPONSIVE PAGE WITH MAX-WIDTH 1200PX-------------------*/
 
