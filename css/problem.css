@@ -397,7 +397,7 @@ a:visited{
 
 /*---------------------------FOOTER----------------------------*/
 footer{
-  height: 40vh;
+  height: 50vh;
   width: 100vw;
   position: relative;
   margin-right: 5vw;
@@ -505,13 +505,6 @@ footer .middlebox a{
 }
 .icons a:hover{
   color: #c65f39;
-}
-.copyright{
-  font-size: 1em;
-  font-weight: bold;
-  color: #284140;
-  border: 3px solid green;
-
 }
 
 /*---------FOOTER RIGHTBOX----------*/
@@ -642,7 +635,7 @@ footer .rightbox h3{
 
  /*---------------------------FOOTER----------------------------*/
  footer{
-   height: 40vh;
+   height: 45vh;
    width: 100vw;
    position: relative;
    margin-right: 5vw;
@@ -755,12 +748,6 @@ footer .rightbox h3{
    font-size: 1em;
  }
 
-  .copyright{
-    font-size: 1em;
-    font-weight: bold;
-    color: #284140;
-    border: 3px solid green;
-  }
   /*---------------------------END FOOTER----------------------------*/
 }
 /*------------------END RESPONSIVE PAGE WITH MAX-WIDTH 800PX-------------------*/
