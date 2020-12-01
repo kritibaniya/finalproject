@@ -361,11 +361,12 @@ footer{
   margin-right: 5vw;
   margin-left: 5vw;
   overflow: hidden;
+  margin-top: 2.5%;
+
 }
 footer p{
   font-size: 24px;
 }
-
 footer .copyright{
   display: block;
   height: 10vh;
@@ -398,8 +399,8 @@ footer .leftbox a:hover{
   text-decoration-color: #c65f39;
 }
 
-footer .leftbox i:hover{
-  background-color: #c65f39;
+footer .icons:hover{
+  color: #c65f39;
 }
 
 footer .leftbox .icons{
@@ -425,7 +426,6 @@ footer .fa-arrow-up{
 footer .fa-arrow-up:hover{
   background-color: #284140;
 }
-
 /*---------FOOTER MIDDLEBOX----------*/
 footer .middlebox{
   width: 30vw;
@@ -452,11 +452,13 @@ footer .middlebox a{
   position: absolute;
   left: 45vw;
 }
+
 .icons{
   overflow-y: hidden;
   margin: 10px;
   font-size: 2.5em;
 }
+
 .icons a{
   color: #284140;
 }
@@ -481,10 +483,7 @@ footer .rightbox h3{
   margin-top: 2vh;
 }
 
-.rightbox .icons{
-  display: none;
-}
-/*------------------END FOOTER-------------------*/
+/*---------------------------END FOOTER----------------------------*/
 /*---------------------------END OF DESKTOP CODE----------------------------*/
 
 /*------------------RESPONSIVE PAGE WITH MAX-WIDTH 1200PX-------------------*/
@@ -534,6 +533,7 @@ footer .rightbox h3{
     margin-left: 5vw;
     margin-top: 10%;
   }
+
   footer .footerboxes{
     height: 40vh;
     overflow-y: hidden;
@@ -547,6 +547,7 @@ footer .rightbox h3{
     text-align: center;
     color: #284140;
   }
+
   /*---------FOOTER LEFTBOX----------*/
   footer .leftbox{
     width: 30vw;
@@ -598,6 +599,7 @@ footer .rightbox h3{
     display: inline-block;
 
   }
+
   /*---------FOOTER MIDDLEBOX----------*/
   footer .middlebox{
     width: 30vw;
@@ -611,9 +613,11 @@ footer .rightbox h3{
   footer .middlebox a{
     text-decoration: none;
   }
+
   footer .middlebox .icons{
     display: none;
   }
+
   footer .middlebox img{
     max-height: 35px;
   }
@@ -623,10 +627,12 @@ footer .rightbox h3{
     width: 30vw;
     height: 43vh;
   }
+
   footer .rightbox .about p{
     font-size: 0.8em;
     padding-right: 10px;
   }
-  /*------------------END FOOTER-------------------*/
+
+  /*---------------------------END FOOTER----------------------------*/
 }
 /*------------------END RESPONSIVE PAGE WITH MAX-WIDTH 800PX-------------------*/
