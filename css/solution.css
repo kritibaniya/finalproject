@@ -1,24 +1,21 @@
-/* Add animation (Chrome, Safari, Opera) */
+/*---------------------------KEYFRAMES----------------------------*/
 @-webkit-keyframes example {
   from {top:-100px;opacity: 0;}
   to {top:0px;opacity:1;}
 }
 
-/* Add animation (Standard syntax) */
 @keyframes example {
   from {top:-100px;opacity: 0;}
   to {top:0px;opacity:1;}
 }
+
+/*-------------------COMMON CODE FOR THE WHOLE WEBSITE--------------------*/
 *{
   scroll-behavior: smooth;
   overflow-x: hidden;
   margin: 0;
   box-sizing: border-box;
 }
-/**:focus {
-	outline: 5px solid orange;
-	outline-offset: 3px	;
-}*/
 
 body{
   margin: 0;
@@ -50,50 +47,48 @@ header{
   nav{
 display: inline-block;
   }
-  /*---------LOGO----------*/
+/*---------LOGO----------*/
 .mobilhead{
   display: inline-block;
   position: relative;
   float: left;
 }
-  .mobilhead img{
-    padding-top: 15px;
-    display: block;
-    height: 100px;
-
-  }
-  /*
-  /*Hamburger menu icon/'button' styling
-  */
-  .menu-toggle{
+.mobilhead img{
+  padding-top: 15px;
+  display: block;
+  height: 100px;
+}
+/*---------HAMBURGER MENU ICON/BUTTON STYLING----------*/
+.menu-toggle{
   font-size:30px;
   float:right;
   padding:40px;
-  }
+}
 
-  #main-menu-toggle{
-    color: white;
-  }
-  #main-menu-close{
-    color: white;
-    font-size: 1.5em;
-    padding: 1em;
-  }
+#main-menu-toggle{
+  color: white;
+}
 
-  .menu-toggle:hover,
-  .menu-toggle:focus {
+#main-menu-close{
+  color: white;
+  font-size: 1.5em;
+  padding: 1em;
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
   color:blue ;
-  }
+}
 
-  .main-menu {
+.main-menu {
   position: absolute;
   display: none;
   top: 0;
   overflow-x: visible;
   z-index: 999;
-  }
+}
 
-  .main-menu ul{
+.main-menu ul{
   list-style: none;
   margin: 0;
   min-height: 100%;
@@ -106,55 +101,54 @@ display: inline-block;
   overflow-y: hidden;
   font-weight: bold;
   text-decoration: none;
-  }
+}
 
 
-  .main-menu li a {
+.main-menu li a {
   display: block;
   padding: 1em;
   line-height: 1em;
   color: #fff;
   text-decoration: none;
-  }
+}
 
-  .main-menu a.menu-close {
+.main-menu a.menu-close {
   border-bottom: 0;
-  }
+}
 
 
-  .main-menu a:focus,
-  .main-menu a:hover {
+.main-menu a:focus,
+.main-menu a:hover {
   color: #c65f39;
   text-decoration: underline;
-  }
+}
 
-  .main-menu .menu-close {
+.main-menu .menu-close {
   position: absolute;
   right: 0;
   top: 0;
-  }
+}
 
-  .main-menu:target {
+.main-menu:target {
   display: block;
   right: 0;
-  }
+}
 
 
-  .main-menu:target .menu-close, .menu-close {
+.main-menu:target .menu-close, .menu-close {
   z-index: 1001;
-  }
+}
 
-  .main-menu:target ul,{
+.main-menu:target ul,{
   position: relative;
   z-index: 1000;
-  }
+}
 
-  .close{
-    background-color: #c65f39;
-    border-radius: 40px;
-    height: 70px;
-  }
-
+.close{
+  background-color: #c65f39;
+  border-radius: 40px;
+  height: 70px;
+}
 
 .main-menu:target + .backdrop{
   position: absolute;
@@ -166,30 +160,22 @@ display: inline-block;
   z-index: 998;
   background: #284040;
   cursor: default;
-  }
+}
 
-  @supports (position: fixed) {
+@supports (position: fixed) {
   .main-menu,
   .main-menu:target + .backdrop{
     position: fixed;
   }
-  }
-.dekstop{
+}
+/*--------- END HAMBURGER MENU ICON/BUTTON STYLING----------*/
+
+/*CODE TO HIDE THE BUTTON ON DESKTOP*/
+.desktop{
   display: none;
 }
 
 /*--------RESPONSIVE  HEADER (NAV INCLUDED)-----------*/
-
-@media only screen and (min-width:1200px){
-.menu-toggle{
-  display: none;
-}
-.mobilhead{
-  display: none;
-}
-.dekstop{
-  display: block;
-}
 
 /*----------HEADER LEFTBOX----------*/
 header{
@@ -278,14 +264,11 @@ nav a:hover{
   text-decoration: underline;
   opacity: inherit;
 }
-}
 /*------------------NAVBAR END-------------------*/
-/*-------END RESPONSIVE HEADER WITH NAVBAR------------*/
+/*---------------------------END HEADER----------------------------*/
 
-
-
-
-/*------------------ SHOWCASE-------------------*/
+/*---------------------------MAIN PART OF BODY----------------------------*/
+/*---------SHOWCASE----------*/
 #showcase {
   width: 100vw;
   height: 100vh;
@@ -302,18 +285,22 @@ nav a:hover{
   overflow-y: hidden;
   font-size: 2.3em;
 }
+
 #showcase c{
   color: #e36802;
 }
+
 #showcase d{
   color: #d23014;
 }
+
 .showcase-img{
   width: 100%;
   margin-top: 90px;
   padding-bottom: 20px;
 
 }
+
 .img-sharingApple{
   max-width: 100%;
   height: auto;
@@ -322,12 +309,7 @@ nav a:hover{
   margin-right: auto;
 }
 
-
-/*------------------ END SHOWCASE-------------------*/
-
-
-/*------------------ CONTENT-------------------*/
-
+/*---------CONTENT----------*/
 .content {
   margin: 10vh 10vw 10vh 10vw;
 }
@@ -348,16 +330,14 @@ nav a:hover{
   color: #c65f39;
 }
 
-/*----------HOW WILL IT HELP SOCIETY TOWARDS A GREADET DIRECTION - PARAGRAPH----------*/
+/*----------SOCIETY----------*/
 #society ul{
 font-size: 1.4em;
 line-height: 1.6;
 }
+/*---------END CONTENT----------*/
 
-/*------------------ END CONTENT-------------------*/
-
-
-/*------------------FOOTER-------------------*/
+/*---------------------------FOOTER----------------------------*/
 footer{
   height: 40vh;
   width: 100vw;
@@ -366,8 +346,8 @@ footer{
   margin-left: 5vw;
   overflow: hidden;
   margin-top: 2.5%;
-}
 
+}
 footer p{
   font-size: 24px;
 }
@@ -454,13 +434,12 @@ footer .middlebox a{
 .icons a:hover{
   color: #c65f39;
 }
-.copyright{
+/*.copyright{
   font-size: 1em;
   font-weight: bold;
   color: #284140;
   border: 3px solid green;
-
-}
+}*/
 
 /*---------FOOTER RIGHTBOX----------*/
 footer .rightbox{
@@ -480,12 +459,23 @@ footer .rightbox h3{
 .rightbox .icons{
   display: none;
 }
-/*------------------END FOOTER-------------------*/
+/*---------------------------END FOOTER----------------------------*/
+/*---------------------------END OF DESKTOP CODE----------------------------*/
 
-/*------------------HEADER FOR A SCREEN WITH MAX-WIDTH 1200PX-------------------*/
+/*------------------RESPONSIVE PAGE WITH MAX-WIDTH 1200PX-------------------*/
+@media only screen and (min-width:1200px){
+  /*---------------------------MENU----------------------------*/
+  .menu-toggle{
+    display: none;
+  }
+  .mobilhead{
+    display: none;
+  }
+  .desktop{
+    display: block;
+  }
 
-/*------------------SHOWCASE FOR A SCREEN WITH MAX-WIDTH 1200PX-------------------*/
-@media screen and (max-width: 1200px){
+  /*---------------------------SHOWCASE----------------------------*/
   .showcase-text{
     font-size: 1.4em;
     margin-left: 30px;
@@ -495,41 +485,7 @@ footer .rightbox h3{
   .showcase-img{
     margin-top: 70px;
   }
-}
-/*------------------END SHOWCASE FOR A SCREEN WITH MAX-WIDTH 1200PX-------------------*/
-
-/*------------------SHOWCASE FOR A SCREEN WITH MAX-WIDTH 800PX-------------------*/
-@media screen and (max-width: 800px){
-
-  .showcase-text{
-    font-size: 1.3em;
-    width: 90%;
-  }
-
-  .showcase-img{
-    margin-top: 50px;
-  }
-}
-/*------------------END SHOWCASE FOR A SCREEN WITH MAX-WIDTH 800PX-------------------*/
-
-/*------------------SHOWCASE FOR A SCREEN WITH MAX-WIDTH 540PX-------------------*/
-@media screen and (max-width: 540px){
-
-  .showcase-text{
-    padding-top: 140px;
-    font-size: 0.8em;
-    width: 87%;
-  }
-
-  .showcase-img{
-    margin-top: 20px;
-  }
-}
-/*------------------END SHOWCASE FOR A SCREEN WITH MAX-WIDTH 540PX-------------------*/
-
-/*------------------CONTENT FOR A SCREEN WITH MAX-WIDTH 1200PX-------------------*/
-@media screen and (max-width: 1200px){
-
+  /*---------------------------CONTENT----------------------------*/
   /*.content{
     margin: 20px;
   }*/
@@ -554,112 +510,31 @@ footer .rightbox h3{
     text-align: center;
   }
 }
-/*------------------END CONTENT FOR A SCREEN WITH MAX-WIDTH 1200PX-------------------*/
+/*------------------END RESPONSIVE PAGE WITH MAX-WIDTH 1200PX-------------------*/
 
-/*------------------CONTENT FOR A SCREEN WITH MAX-WIDTH 800PX-------------------*/
-@media screen and (max-width: 800px){
-  .content h1{
-    font-size: 2em;
-    margin-top: 20px;
-  }
-}
-/*------------------END CONTENT FOR A SCREEN WITH MAX-WIDTH 800PX-------------------*/
-
-/*------------------FOOTER FOR A SCREEN WITH MAX-WIDTH 1200PX-------------------*/
-/*------------------FOOTER-------------------*/
-@media screen and (max-width: 1200px){
-  /*-------------------FOOTER--------------------*/
-  footer{
-    height: 35vh;
-    width: 100vw;
-    position: relative;
-    margin-right: 5vw;
-    margin-left: 5vw;
-  }
-  footer p{
-    font-size: 24px;
-  }
-  /*---------FOOTER LEFTBOX----------*/
-  footer.leftbox{
-    width: 30vw;
-    height: 40vh;
-    display: inline-block;
-    border-top: solid 3px #284140;
-  }
-  footer.leftbox .footlink a{
-    display: block;
-    margin: 2vh 0 2vh 0;
-    font-weight: bold;
-    color: black;
-    font-size: 25px;
-    text-decoration:none;
-  }
-  footer.leftbox a:hover{
-    color: #284140;
-    text-decoration: underline;
-    text-decoration-style: solid 3px;
-    text-decoration-color: #284140;
-  }
-  footer .leftbox .icons{
-  margin: 10px;
-  font-size: 2.5em;
-
-  }
-  footer .leftbox .icons a{
-    color: #284140;
-    display: inline-block;
-  }
-  /*---------FOOTER MIDDLEBOX----------*/
-  footer.middlebox{
-    width: 30vw;
-    height: 45vh;
-    display: inline-block;
-    align-content: center;
-    align-self: center;
-    text-align: center;
-  }
-
-  footer.middlebox a{
-    text-decoration: none;
-  }
-  footer .middlebox .icons{
-    display: none;
-  }
-  footer .middlebox img{
-    max-height: 50px;
-  }
-
-  .vertical{
-    border-left: 3px solid #284140;
-    height: 20vh;
-    position: absolute;
-    left: 45vw;
-  }
-
-  .copyright{
-    font-size: 1em;
-    font-weight: bold;
-    color: #284140;
-    border: 3px solid green;
-  }
-/*---------FOOTER RIGHTBOX----------*/
-  footer.rightbox{
-    width: 30vw;
-    height: 40vh;
-  }
-  footer .rightbox .about p{
-    font-size: 1.3em;
-  }
-  /*------------------END FOOTER-------------------*/
-}
-/*------------------END FOOTER FOR A SCREEN WITH MAX-WIDTH 1200PX-------------------*/
-
-/*------------------FOOTER FOR A SCREEN WITH MAX-WIDTH 800PX-------------------*/
-}
+/*------------------RESPONSIVE PAGE WITH MAX-WIDTH 800PX-------------------*/
 @media screen and (max-width: 800px){
   p{
     font-size: 1.4em;
   }
+
+  /*---------------------------SHOWCASE----------------------------*/
+  .showcase-text{
+    font-size: 1.3em;
+    width: 90%;
+  }
+
+  .showcase-img{
+    margin-top: 50px;
+  }
+
+  /*---------------------------CONTENT----------------------------*/
+  .content h1{
+    font-size: 2em;
+    margin-top: 20px;
+  }
+
+  /*---------------------------FOOTER----------------------------*/
   footer{
     height: 30vh;
     width: 100vw;
@@ -676,31 +551,36 @@ footer .rightbox h3{
     display: inline-block;
     border-top: solid 3px #284140;
   }
+
   footer .leftbox .footlink a{
     display: block;
     margin: 2vh 0 2vh 0;
     font-weight: bold;
     color: black;
     font-size: 15px;
-    text-decoration: none;
+    text-decoration:none;
   }
+
   footer .leftbox a:hover{
     color: #284140;
     text-decoration: underline;
     text-decoration-style: solid 3px;
     text-decoration-color: #284140;
   }
+
   footer .leftbox .icons{
   margin: 10px;
   font-size: 2.5em;
   display: inline-block;
 
   }
+
   footer .icons a{
     font-size: 17px;
     color: #284140;
     display: inline-block;
   }
+
   /*---------FOOTER MIDDLEBOX----------*/
   footer .middlebox{
     width: 30vw;
@@ -714,9 +594,11 @@ footer .rightbox h3{
   footer .middlebox a{
     text-decoration: none;
   }
+
   footer .middlebox .icons{
     display: none;
   }
+
   footer .middlebox img{
     max-height: 35px;
   }
@@ -733,15 +615,17 @@ footer .rightbox h3{
     width: 30vw;
     height: 40vh;
   }
+
   footer .rightbox .about p{
     font-size: 1em;
   }
 
-  .copyright{
+  /*.copyright{
     font-size: 1em;
     font-weight: bold;
     color: #284140;
     border: 3px solid green;
-  }
-  /*------------------END FOOTER-------------------*/
-/*------------------END FOOTER FOR A SCREEN WITH MAX-WIDTH 800PX-------------------*/
+  }*/
+  /*---------------------------END FOOTER----------------------------*/
+}
+/*------------------END RESPONSIVE PAGE WITH MAX-WIDTH 800PX-------------------*/

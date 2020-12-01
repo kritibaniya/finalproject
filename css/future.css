@@ -1,14 +1,15 @@
-/* Add animation (Chrome, Safari, Opera) */
+/*---------------------------KEYFRAMES----------------------------*/
 @-webkit-keyframes example {
   from {top:-100px;opacity: 0;}
   to {top:0px;opacity:1;}
 }
 
-/* Add animation (Standard syntax) */
 @keyframes example {
   from {top:-100px;opacity: 0;}
   to {top:0px;opacity:1;}
 }
+
+/*-------------------COMMON CODE FOR THE WHOLE WEBSITE--------------------*/
 *{
   scroll-behavior: smooth;
   overflow-x: hidden;
@@ -45,53 +46,51 @@ header{
   overflow: hidden;
 }
 
-  nav{
-display: inline-block;
-  }
-  /*---------LOGO----------*/
+nav{
+  display: inline-block;
+}
+/*---------LOGO----------*/
 .mobilhead{
   display: inline-block;
   position: relative;
   float: left;
 }
-  .mobilhead img{
-    padding-top: 15px;
-    display: block;
-    height: 100px;
-
-  }
-  /*
-  /*Hamburger menu icon/'button' styling
-  */
-  .menu-toggle{
+.mobilhead img{
+  padding-top: 15px;
+  display: block;
+  height: 100px;
+}
+/*---------HAMBURGER MENU ICON/BUTTON STYLING----------*/
+.menu-toggle{
   font-size:30px;
   float:right;
   padding:40px;
-  }
+}
 
-  #main-menu-toggle{
-    color: white;
-  }
-  #main-menu-close{
-    color: white;
-    font-size: 1.5em;
-    padding: 1em;
-  }
+#main-menu-toggle{
+  color: white;
+}
 
-  .menu-toggle:hover,
-  .menu-toggle:focus {
+#main-menu-close{
+  color: white;
+  font-size: 1.5em;
+  padding: 1em;
+}
+
+.menu-toggle:hover,
+.menu-toggle:focus {
   color:blue ;
-  }
+}
 
-  .main-menu {
+.main-menu {
   position: absolute;
   display: none;
   top: 0;
   overflow-x: visible;
   z-index: 999;
-  }
+}
 
-  .main-menu ul{
+.main-menu ul{
   list-style: none;
   margin: 0;
   min-height: 100%;
@@ -104,55 +103,54 @@ display: inline-block;
   overflow-y: hidden;
   font-weight: bold;
   text-decoration: none;
-  }
+}
 
 
-  .main-menu li a {
+.main-menu li a {
   display: block;
   padding: 1em;
   line-height: 1em;
   color: #fff;
   text-decoration: none;
-  }
+}
 
-  .main-menu a.menu-close {
+.main-menu a.menu-close {
   border-bottom: 0;
-  }
+}
 
 
-  .main-menu a:focus,
-  .main-menu a:hover {
+.main-menu a:focus,
+.main-menu a:hover {
   color: #c65f39;
   text-decoration: underline;
-  }
+}
 
-  .main-menu .menu-close {
+.main-menu .menu-close {
   position: absolute;
   right: 0;
   top: 0;
-  }
+}
 
-  .main-menu:target {
+.main-menu:target {
   display: block;
   right: 0;
-  }
+}
 
 
-  .main-menu:target .menu-close, .menu-close {
+.main-menu:target .menu-close, .menu-close {
   z-index: 1001;
-  }
+}
 
-  .main-menu:target ul,{
+.main-menu:target ul,{
   position: relative;
   z-index: 1000;
-  }
+}
 
-  .close{
-    background-color: #c65f39;
-    border-radius: 40px;
-    height: 70px;
-  }
-
+.close{
+  background-color: #c65f39;
+  border-radius: 40px;
+  height: 70px;
+}
 
 .main-menu:target + .backdrop{
   position: absolute;
@@ -164,31 +162,22 @@ display: inline-block;
   z-index: 998;
   background: #284040;
   cursor: default;
-  }
+}
 
-  @supports (position: fixed) {
+@supports (position: fixed) {
   .main-menu,
   .main-menu:target + .backdrop{
     position: fixed;
   }
-  }
-.dekstop{
+}
+/*--------- END HAMBURGER MENU ICON/BUTTON STYLING----------*/
+
+/*CODE TO HIDE THE BUTTON ON DESKTOP*/
+.desktop{
   display: none;
 }
 
 /*--------RESPONSIVE  HEADER (NAV INCLUDED)-----------*/
-
-@media only screen and (min-width:1200px){
-.menu-toggle{
-  display: none;
-}
-.mobilhead{
-  display: none;
-}
-.dekstop{
-  display: block;
-}
-
 /*----------HEADER LEFTBOX----------*/
 header{
   height: 110px;
@@ -243,9 +232,9 @@ header .rightbox nav a{
   margin-right: 4vw;
   margin-left: 4vw;
 }
-/*-------------------END HEADER BOXES--------------------*/
+/*---------END HEADER BOXES----------*/
 
-/*------------------NAVBAR-------------------*/
+/*---------NAVBAR----------*/
 nav{
   position: fixed;
   z-index: 10;
@@ -276,13 +265,10 @@ nav a:hover{
   text-decoration: underline;
   opacity: inherit;
 }
-}
-/*------------------NAVBAR END-------------------*/
-/*-------END RESPONSIVE HEADER WITH NAVBAR------------*/
+/*---------END NAVBAR----------*/
+/*---------------------------END HEADER----------------------------*/
 
-
-
-/*------------------MAIN PART OF BODY-------------------*/
+/*---------------------------MAIN PART OF BODY----------------------------*/
 /*---------SHOWCASE----------*/
 #showcase{
  width: 100vw;
@@ -318,51 +304,9 @@ nav a:hover{
   height: auto;
   padding: 5vh 10vw;
 }
-
 /*------------------END MAIN PART OF BODY-------------------*/
 
-/*------------------READ MORE - BUTTON-------------------*/
-.button {
- background-color:  #c65f39;
- border: none;
- color: white;
- padding: 8px 25px;
- text-align: center;
- text-decoration: none;
- display: inline-block;
- font-size: 1.4em;
- font-weight: bold;
- margin: 4px 2px;
- border-radius: 1.5em;
- z-index: -1;
-}
-.button span {
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
-}
-
-.button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
-}
-
-.button:hover span {
-  padding-right: 25px;
-}
-
-.button:hover span:after {
-  opacity: 1;
-  right: 0;
-}
-/*------------------END OF READ MORE BUTTON-------------------*/
-
-/*------------------FOOTER-------------------*/
+/*---------------------------FOOTER----------------------------*/
 footer{
   height: 40vh;
   width: 100vw;
@@ -485,120 +429,59 @@ footer .rightbox h3{
   display: none;
 }
 /*------------------END FOOTER-------------------*/
+/*---------------------------END OF DESKTOP CODE----------------------------*/
 
+/*------------------RESPONSIVE PAGE WITH MAX-WIDTH 1200PX-------------------*/
+@media only screen and (min-width:1200px){
+  /*---------------------------MENU----------------------------*/
+  .menu-toggle{
+    display: none;
+  }
 
+  .mobilhead{
+    display: none;
+  }
 
+  .desktop{
+    display: block;
+  }
+  /*---------------------------CONTENT----------------------------*/
   .content{
     width: 100vw;
     height: auto;
   }
-  /*---------SHOWCASE----------*/
-/*  #showcase img{
+
+  /*---------------------------SHOWCASE----------------------------*/
+  #showcase img{
      margin-top: 40%;
     width: 40vw;
   }
   #showcase p{
     width: 35vw;
-  }*/
-  footer{
-    height: 35vh;
-    width: 100vw;
-    position: relative;
-    margin-right: 5vw;
-    margin-left: 5vw;
   }
-  footer p{
-    font-size: 24px;
-  }
-  /*---------FOOTER LEFTBOX----------*/
-  footer.leftbox{
-    width: 30vw;
-    height: 40vh;
-    display: inline-block;
-    border-top: solid 3px #284140;
-  }
-  footer.leftbox .footlink a{
-    display: block;
-    margin: 2vh 0 2vh 0;
-    font-weight: bold;
-    color: black;
-    font-size: 25px;
-    text-decoration:none;
-  }
-  footer.leftbox a:hover{
-    color: #284140;
-    text-decoration: underline;
-    text-decoration-style: solid 3px;
-    text-decoration-color: #284140;
-  }
-  footer .leftbox .icons{
-  margin: 10px;
-  font-size: 2.5em;
-
-  }
-  footer .leftbox .icons a{
-    color: #284140;
-    display: inline-block;
-  }
-  /*---------FOOTER MIDDLEBOX----------*/
-  footer.middlebox{
-    width: 30vw;
-    height: 45vh;
-    display: inline-block;
-    align-content: center;
-    align-self: center;
-    text-align: center;
-  }
-
-  footer.middlebox a{
-    text-decoration: none;
-  }
-  footer .middlebox .icons{
-    display: none;
-  }
-  footer .middlebox img{
-    max-height: 50px;
-  }
-
-  .vertical{
-    border-left: 3px solid #284140;
-    height: 20vh;
-    position: absolute;
-    left: 45vw;
-  }
-
-  .copyright{
-    font-size: 1em;
-    font-weight: bold;
-    color: #284140;
-    border: 3px solid green;
-  }
-/*---------FOOTER RIGHTBOX----------*/
-  footer.rightbox{
-    width: 30vw;
-    height: 40vh;
-  }
-  footer .rightbox .about p{
-    font-size: 1.3em;
-  }
-  /*------------------END FOOTER-------------------*/
 }
+/*------------------END RESPONSIVE PAGE WITH MAX-WIDTH 1200PX-------------------*/
+
+/*------------------RESPONSIVE PAGE WITH MAX-WIDTH 800PX-------------------*/
 @media screen and (max-width: 800px){
   p{
     font-size: 1.4em;
   }
   /*---------SHOWCASE----------*/
-  /*#showcase img{
+  #showcase img{
     margin-top: 40%;
   }
+
   #showcase p{
     width: 35vw;
-  }*/
+  }
+
   #showcase {
    padding-top: 10px;
    width: 100vw;
    height: 100vh;
  }
+
   /*---------THE APP----------*/
   .app .appimg{
     display: none;
@@ -608,7 +491,8 @@ footer .rightbox h3{
     display: block;
     background-color: red;
   }
-  /*------------------FOOTER-------------------*/
+
+  /*---------------------------FOOTER----------------------------*/
   footer{
     height: 30vh;
     width: 100vw;
@@ -625,6 +509,7 @@ footer .rightbox h3{
     display: inline-block;
     border-top: solid 3px #284140;
   }
+
   footer .leftbox .footlink a{
     display: block;
     margin: 2vh 0 2vh 0;
@@ -633,23 +518,27 @@ footer .rightbox h3{
     font-size: 15px;
     text-decoration:none;
   }
+
   footer .leftbox a:hover{
     color: #284140;
     text-decoration: underline;
     text-decoration-style: solid 3px;
     text-decoration-color: #284140;
   }
+
   footer .leftbox .icons{
   margin: 10px;
   font-size: 2.5em;
   display: inline-block;
 
   }
+
   footer .icons a{
     font-size: 17px;
     color: #284140;
     display: inline-block;
   }
+
   /*---------FOOTER MIDDLEBOX----------*/
   footer .middlebox{
     width: 30vw;
@@ -663,9 +552,11 @@ footer .rightbox h3{
   footer .middlebox a{
     text-decoration: none;
   }
+
   footer .middlebox .icons{
     display: none;
   }
+
   footer .middlebox img{
     max-height: 35px;
   }
@@ -682,15 +573,18 @@ footer .rightbox h3{
     width: 30vw;
     height: 40vh;
   }
+
   footer .rightbox .about p{
     font-size: 1em;
   }
 
-  .copyright{
+  /*.copyright{
     font-size: 1em;
     font-weight: bold;
     color: #284140;
     border: 3px solid green;
-  }
-  /*------------------END FOOTER-------------------*/
+  }*/
+
+  /*---------------------------END FOOTER----------------------------*/
 }
+  /*------------------END RESPONSIVE PAGE WITH MAX-WIDTH 800PX-------------------*/
