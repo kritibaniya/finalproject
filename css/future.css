@@ -337,6 +337,15 @@ footer p{
   font-size: 24px;
 }
 
+footer .copyright{
+  display: block;
+  height: 10vh;
+  margin-left: auto;
+  margin-right: 10vw;
+  text-align: center;
+  background-color: #eee3dd;
+  color: #284140;
+}
 /*---------FOOTER LEFTBOX----------*/
 footer .leftbox{
   width: 30vw;
@@ -544,11 +553,24 @@ footer .rightbox h3{
     margin-left: 5vw;
     margin-top: 10%;
   }
+  footer .footerboxes{
+    height: 40vh;
+    overflow-y: hidden;
+  }
 
+  footer .copyright{
+    display: block;
+    height: 10vh;
+    margin-left: auto;
+    margin-right: 10vw;
+    text-align: center;
+    background-color: #eee3dd;
+    color: #284140;
+  }
   /*---------FOOTER LEFTBOX----------*/
   footer .leftbox{
     width: 30vw;
-    height: 40vh;
+    height: 43vh;
     display: inline-block;
     border-top: solid 3px #284140;
   }
@@ -591,7 +613,7 @@ footer .rightbox h3{
   }
 
   footer .icons a{
-    font-size: 0.8em;
+    font-size: 0.7em;
     color: #284140;
     display: inline-block;
 
@@ -628,7 +650,7 @@ footer .rightbox h3{
   /*---------FOOTER RIGHTBOX----------*/
   footer.rightbox{
     width: 30vw;
-    height: 40vh;
+    height: 43vh;
   }
 
   footer .rightbox .about p{
