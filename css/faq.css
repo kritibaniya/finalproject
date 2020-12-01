@@ -1,14 +1,15 @@
-/* Add animation (Chrome, Safari, Opera) */
+/*---------------------------KEYFRAMES----------------------------*/
 @-webkit-keyframes example {
   from {top:-100px;opacity: 0;}
   to {top:0px;opacity:1;}
 }
 
-/* Add animation (Standard syntax) */
 @keyframes example {
   from {top:-100px;opacity: 0;}
   to {top:0px;opacity:1;}
 }
+
+/*-------------------COMMON CODE FOR THE WHOLE WEBSITE--------------------*/
 *{
   scroll-behavior: smooth;
   overflow-x: hidden;
@@ -19,20 +20,31 @@ body{
   margin: 0;
   padding: 0;
 }
-
-/*-------------------HEADER--------------------*/
-header{
-  height: 110px;
-  width: 100vw;
-  background-color: #284040;
-  align-items: center;
-  text-align: center;
-  align-self: center;
-  position: fixed;
-  z-index: 1;
-  overflow: hidden;
+a:focus {
+  border: 2px solid #c65f39;
+  overflow-y: hidden;
 }
-/*-------------------HEADER--------------------*/
+
+
+h1{
+  color: #284040;
+  font-size: 1.6em;
+  font-weight: bold;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 50px;
+  border: 3px solid #284040;
+  padding: 2vh 0 2vh 0;
+  margin: 0 2vh 0 2vh;
+}
+
+h3{
+  color: #284040;
+  font-size: 1.6em;
+}
+
+/*---------------------------HEADER----------------------------*/
 header{
   height: 100px;
   width: 100vw;
@@ -45,58 +57,64 @@ header{
   overflow: hidden;
 }
 
-  nav{
-display: inline-block;
-  }
-  /*---------LOGO----------*/
+nav{
+  display: inline-block;
+}
+
+/*---------LOGO----------*/
 .mobilhead{
   display: inline-block;
   position: relative;
   float: left;
 }
-  .mobilhead img{
-    padding-top: 15px;
-    display: block;
-    height: 100px;
+.mobilhead img{
+  padding-top: 15px;
+  display: block;
+  height: 100px;
+}
+.mobilhead a:focus img {
+  border: 5px solid #c65f39;
 
-  }
-  /*
-  /*Hamburger menu icon/'button' styling
-  */
-  .menu-toggle{
+}
+
+
+/*---------HAMBURGER MENU ICON/BUTTON STYLING----------*/
+.menu-toggle{
   font-size:30px;
   float:right;
-  padding:40px;
-  }
+  margin-top: 20px;
+  margin-right: 50px;
+  overflow-y: hidden;
+  padding: 20px;
+  height: auto;
+  width: auto;
+}
 
-  #main-menu-toggle{
-    color: white;
-  }
-  #main-menu-close{
-    color: white;
-    font-size: 1.5em;
-    padding: 1em;
-  }
+#main-menu-toggle{
+  color: white;
+}
 
-  .menu-toggle:hover,
-  .menu-toggle:focus {
-  color:blue ;
-  }
+#main-menu-close{
+  color: white;
+  font-size: 1.5em;
+  padding: 1em;
+}
 
-  .main-menu {
+.main-menu {
   position: absolute;
   display: none;
   top: 0;
   overflow-x: visible;
   z-index: 999;
-  }
 
-  .main-menu ul{
+}
+
+.main-menu ul{
   list-style: none;
   margin: 0;
   min-height: 100%;
   display: block;
-  font-size: 30px;
+  font-size: 20px;
   padding: 1em;
   color: #fff;
   width: 100vw;
@@ -104,56 +122,71 @@ display: inline-block;
   overflow-y: hidden;
   font-weight: bold;
   text-decoration: none;
-  }
+
+}
 
 
-  .main-menu li a {
-  display: block;
+.main-menu li a {
+  display: inline-block;
   padding: 1em;
   line-height: 1em;
   color: #fff;
   text-decoration: none;
-  }
+}
 
-  .main-menu a.menu-close {
+.main-menu a.menu-close {
   border-bottom: 0;
-  }
+}
 
 
-  .main-menu a:focus,
-  .main-menu a:hover {
+.main-menu a:focus,
+.main-menu a:hover {
   color: #c65f39;
   text-decoration: underline;
-  }
+}
 
-  .main-menu .menu-close {
+.main-menu .menu-close {
   position: absolute;
   right: 0;
   top: 0;
-  }
+}
 
-  .main-menu:target {
+.main-menu:target {
   display: block;
   right: 0;
-  }
+}
 
 
-  .main-menu:target .menu-close, .menu-close {
+.main-menu:target .menu-close, .menu-close {
   z-index: 1001;
-  }
+}
 
-  .main-menu:target ul,{
+.main-menu:target ul,{
   position: relative;
   z-index: 1000;
-  }
+}
 
-  .close{
+.close{
     background-color: #c65f39;
-    border-radius: 40px;
-    height: 70px;
+    width: 200px;
+    border-radius: 35px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
   }
-
-
+  .close a{
+    font-size: 25px;
+    height: 75px;
+    padding: 0px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+  .close a:hover, .close a:focus{
+    color: #fff;
+  }
 .main-menu:target + .backdrop{
   position: absolute;
   display: block;
@@ -164,31 +197,21 @@ display: inline-block;
   z-index: 998;
   background: #284040;
   cursor: default;
-  }
+}
 
-  @supports (position: fixed) {
+@supports (position: fixed) {
   .main-menu,
   .main-menu:target + .backdrop{
     position: fixed;
   }
-  }
-.dekstop{
+}
+/*--------- END HAMBURGER MENU ICON/BUTTON STYLING----------*/
+/*CODE TO HIDE THE BUTTON ON DESKTOP*/
+.desktop{
   display: none;
 }
 
 /*--------RESPONSIVE  HEADER (NAV INCLUDED)-----------*/
-
-@media only screen and (min-width:1200px){
-.menu-toggle{
-  display: none;
-}
-.mobilhead{
-  display: none;
-}
-.dekstop{
-  display: block;
-}
-
 /*----------HEADER LEFTBOX----------*/
 header{
   height: 110px;
@@ -243,15 +266,15 @@ header .rightbox nav a{
   margin-right: 4vw;
   margin-left: 4vw;
 }
-/*-------------------END HEADER BOXES--------------------*/
+/*---------END HEADER BOXES----------*/
 
-/*------------------NAVBAR-------------------*/
+/*---------NAVBAR----------*/
 nav{
   position: fixed;
   z-index: 10;
 }
 
-nav li {
+.desktop nav li {
   list-style: none;
   display: inline-block;
 }
@@ -276,33 +299,16 @@ nav a:hover{
   text-decoration: underline;
   opacity: inherit;
 }
-}
-/*------------------NAVBAR END-------------------*/
-/*-------END RESPONSIVE HEADER WITH NAVBAR------------*/
+/*---------END NAVBAR----------*/
+/*---------------------------END HEADER----------------------------*/
 
-
-
+/*---------------------------MAIN PART OF BODY----------------------------*/
 /*----------CONTAINER----------*/
-
 .container{
   padding: 20vh 0 5vh 0;
 }
 
 /*----------CONTENT----------*/
-
-h1{
-  color: #284040;
-  font-size: 2em;
-  font-weight: bold;
-  letter-spacing: 5px;
-  text-transform: uppercase;
-  text-align: center;
-  border-radius: 50px;
-  border: 3px solid #284040;
-  padding: 2vh 0 2vh 0;
-  margin: 0 2vh 0 2vh;
-}
-
 .content{
   width: 100vw;
   height: auto;
@@ -312,7 +318,7 @@ h1{
 
 .content p{
   width: 85vw;
-  font-size: 1.6em;
+  font-size: 1.4em;
   line-height: 1.6em;
 }
 
@@ -338,26 +344,15 @@ h1{
   color: #c65f39;
 }
 
-h3{
-  color: #284040;
-  font-size: 1.8em;
-}
-
 .content:nth-child(even){
   background-color: #eee3dd;
 }
-
 /*----------END CONTENT----------*/
-
-
-
 /*----------END CONTAINER----------*/
 
-
-
-/*------------------FOOTER-------------------*/
+/*---------------------------FOOTER----------------------------*/
 footer{
-  height: 40vh;
+  height: 50vh;
   width: 100vw;
   position: relative;
   margin-right: 5vw;
@@ -368,6 +363,15 @@ footer p{
   font-size: 24px;
 }
 
+footer .copyright{
+  display: block;
+  height: 10vh;
+  margin-left: auto;
+  margin-right: 10vw;
+  text-align: center;
+  background-color: #eee3dd;
+  color: #284140;
+}
 /*---------FOOTER LEFTBOX----------*/
 footer .leftbox{
   width: 30vw;
@@ -410,8 +414,14 @@ footer .leftbox .icons{
   text-align: center;
   text-decoration: none;
   outline: none;
-  background-color: #284140;
   border-radius: 30%;
+}
+
+footer .fa-arrow-up{
+  background-color: #c65f39;
+}
+footer .fa-arrow-up:hover{
+  background-color: #284140;
 }
 
 /*---------FOOTER MIDDLEBOX----------*/
@@ -451,12 +461,6 @@ footer .middlebox a{
 .icons a:hover{
   color: #c65f39;
 }
-.copyright{
-  font-size: 1em;
-  font-weight: bold;
-  color: #284140;
-  border: 3px solid green;
-}
 
 /*---------FOOTER RIGHTBOX----------*/
 footer .rightbox{
@@ -477,9 +481,27 @@ footer .rightbox h3{
   display: none;
 }
 /*------------------END FOOTER-------------------*/
+/*---------------------------END OF DESKTOP CODE----------------------------*/
 
-/*------------------HEADER FOR A SCREEN WITH MAX-WIDTH 1200PX-------------------*/
-@media screen and (max-width: 1200px){
+/*------------------RESPONSIVE PAGE WITH MAX-WIDTH 1200PX-------------------*/
+@media only screen and (min-width:1200px){
+  /*---------------------------MENU----------------------------*/
+  .menu-toggle{
+    display: none;
+  }
+
+  .mobilhead{
+    display: none;
+  }
+
+  .desktop{
+    display: block;
+  }
+}
+/*------------------RESPONSIVE PAGE WITH MIN-WIDTH 1200PX-------------------*/
+
+/*------------------RESPONSIVE PAGE WITH MAX-WIDTH 1200PX-------------------*/
+@media only screen and (max-width:1200px){
   /*-------------------HEADER--------------------*/
   header{
     height: 100px;
@@ -495,9 +517,11 @@ footer .rightbox h3{
   header .leftbox{
     display: none;
   }
+
   header .rightbox{
     display: none;
   }
+
   header .middlebox{
     display: none;
   }
@@ -516,215 +540,106 @@ footer .rightbox h3{
     height: 90px;
   }
   /*---------NAVBAR LINKS----------*/
-  .mobilhead .links {
-    float: right;
-    position: fixed;
-    z-index: 9;
-    left: 0;
-    right: 0;
-    top: 100px;
-    bottom: 100%;
-    width: auto;
-    height: auto;
-    padding: 0;
-    margin: 0;
-    justify-content: space-around;
-    background-color: #284040;
-    border-top: #fff 3px solid;
-    overflow: hidden;
-    transition: all .5s ease-in-out;
-    align-items: center;
-    text-align: center;
-  }
+  /*????*/
 
-  .mobilhead .links li {
-    list-style: none;
-  }
-
-  .mobilhead .links a {
-    display: block;
-    font-size: 30px;
-    padding: 1em;
-    color: #fff;
-    width: 100vw;
-    height: auto;
-    overflow-y: hidden;
-    font-weight: bold;
-    transition: all ease 0.5s;
-    text-decoration: none;
-  }
-
-  .mobilhead a:visited {
-    color: #fff;
-    }
-
-  .mobilhead .links a:hover{
-    color: #c65f39;
-    text-decoration: 3px underline;
-  }
-  /*---------HAMBURGER NAVBAR LINES + OPEN/CLOSE----------*/
-  .mobilhead .links label {
-    display: block;
-    padding: 1em;
-    width: 100vw;
-    height: auto;
-    overflow-y: hidden;
-    justify-content: space-around;
-    align-items: center;
-    text-align: center;
-  }
-
-  .mobilhead :checked ~ .links {
-     bottom: 0;
-  }
-  .mobilhead .icon-burger {
-    display: block;
-  }
-  .mobilhead .icon-close{
-    display: block;
-  }
-
-  .mobilhead :checked ~ .icon-burger .line:nth-child(1){
-    transform: translateY(10px) rotate(225deg);
-  }
-  .mobilhead :checked ~ .icon-burger .line:nth-child(2){
-    opacity: 0;
-  }
-  .mobilhead :checked ~ .icon-burger .line:nth-child(3){
-    transform: translateY(-10px) rotate(-225deg);
-  }
-
+  /*---------CONTENT----------*/
   .content p {
     font-size: 1.4em;
-    }
-
-  footer{
-    height: 35vh;
-    width: 100vw;
-    position: relative;
-    margin-right: 5vw;
-    margin-left: 5vw;
   }
-  footer p{
-    font-size: 24px;
-  }
-  /*---------FOOTER LEFTBOX----------*/
-  footer.leftbox{
-    width: 30vw;
-    height: 40vh;
-    display: inline-block;
-    border-top: solid 3px #284140;
-  }
-  footer.leftbox .footlink a{
-    display: block;
-    margin: 2vh 0 2vh 0;
-    font-weight: bold;
-    color: black;
-    font-size: 25px;
-    text-decoration:none;
-  }
-  footer.leftbox a:hover{
-    color: #284140;
-    text-decoration: underline;
-    text-decoration-style: solid 3px;
-    text-decoration-color: #284140;
-  }
-  footer .leftbox .icons{
-  margin: 10px;
-  font-size: 2.5em;
-
-  }
-  footer .leftbox .icons a{
-    color: #284140;
-    display: inline-block;
-  }
-  /*---------FOOTER MIDDLEBOX----------*/
-  footer.middlebox{
-    width: 30vw;
-    height: 45vh;
-    display: inline-block;
-    align-content: center;
-    align-self: center;
-    text-align: center;
-  }
-
-  footer.middlebox a{
-    text-decoration: none;
-  }
-  footer .middlebox .icons{
-    display: none;
-  }
-  footer .middlebox img{
-    max-height: 50px;
-  }
-
-  .vertical{
-    border-left: 3px solid #284140;
-    height: 20vh;
-    position: absolute;
-    left: 45vw;
-  }
-
-  .copyright{
-    font-size: 1em;
-    font-weight: bold;
-    color: #284140;
-    border: 3px solid green;
-  }
-/*---------FOOTER RIGHTBOX----------*/
-  footer.rightbox{
-    width: 30vw;
-    height: 40vh;
-  }
-  footer .rightbox .about p{
-    font-size: 1.3em;
-  }
-  /*------------------END FOOTER-------------------*/
 }
+/*------------------END RESPONSIVE PAGE WITH MAX-WIDTH 1200PX-------------------*/
+
+/*------------------RESPONSIVE PAGE WITH MAX-WIDTH 800PX-------------------*/
 @media screen and (max-width: 800px){
   p{
     font-size: 1.4em;
   }
+
+  /*---------CONTENT----------*/
+  .content p{
+    font-size: 1.3em;
+  }
+  .content h3{
+    font-size: 1.5em;
+  }
+  .container h1{
+    font-size: 1.3em;
+  }
+  /*---------END CONTENT----------*/
+
+  /*---------------------------FOOTER----------------------------*/
   footer{
-    height: 30vh;
+    height: 45vh;
     width: 100vw;
     position: relative;
     margin-right: 5vw;
     margin-left: 5vw;
     margin-top: 10%;
   }
+  footer .footerboxes{
+    height: 40vh;
+    overflow-y: hidden;
+  }
 
+  footer .copyright{
+    display: block;
+    height: 10vh;
+    margin-left: auto;
+    margin-right: 10vw;
+    text-align: center;
+    background-color: #eee3dd;
+    color: #284140;
+  }
   /*---------FOOTER LEFTBOX----------*/
   footer .leftbox{
     width: 30vw;
-    height: 40vh;
+    height: 43vh;
     display: inline-block;
     border-top: solid 3px #284140;
   }
+
   footer .leftbox .footlink a{
     display: block;
     margin: 2vh 0 2vh 0;
     font-weight: bold;
-    color: black;
-    font-size: 15px;
+    color: #284140;
+    font-size: 23px;
     text-decoration:none;
   }
+
   footer .leftbox a:hover{
     color: #284140;
     text-decoration: underline;
     text-decoration-style: solid 3px;
     text-decoration-color: #284140;
   }
+
+  .fa-arrow-up{
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    padding-top: 3px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    background-color: #284140;
+    border-radius: 30%;
+    margin: 0;
+  }
+
   footer .leftbox .icons{
-  margin: 10px;
-  font-size: 2.5em;
   display: inline-block;
+  margin: 0;
 
   }
+
   footer .icons a{
-    font-size: 17px;
+    font-size: 0.7em;
     color: #284140;
     display: inline-block;
+
   }
   /*---------FOOTER MIDDLEBOX----------*/
   footer .middlebox{
@@ -756,30 +671,11 @@ footer .rightbox h3{
   /*---------FOOTER RIGHTBOX----------*/
   footer.rightbox{
     width: 30vw;
-    height: 40vh;
+    height: 43vh;
   }
   footer .rightbox .about p{
     font-size: 1em;
   }
-
-  .copyright{
-    font-size: 1em;
-    font-weight: bold;
-    color: #284140;
-    border: 3px solid green;
-  }
   /*------------------END FOOTER-------------------*/
 }
-/*------------------CONTENT FOR A SCREEN WITH MAX-WIDTH 800PX-------------------*/
-@media screen and (max-width: 800px){
-  .content p{
-    font-size: 1.3em;
-  }
-  .content h3{
-    font-size: 1.5em;
-  }
-  .container h1{
-    font-size: 1.3em;
-  }
-}
-/*------------------END CONTENT FOR A SCREEN WITH MAX-WIDTH 800PX-------------------*/
+/*------------------END RESPONSIVE PAGE WITH MAX-WIDTH 800PX-------------------*/

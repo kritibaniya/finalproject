@@ -1,15 +1,15 @@
-/* Add animation (Chrome, Safari, Opera) */
+/*---------------------------KEYFRAMES----------------------------*/
 @-webkit-keyframes example {
   from {top:-100px;opacity: 0;}
   to {top:0px;opacity:1;}
 }
 
-/* Add animation (Standard syntax) */
 @keyframes example {
   from {top:-100px;opacity: 0;}
   to {top:0px;opacity:1;}
 }
 
+/*-------------------COMMON CODE FOR THE WHOLE WEBSITE--------------------*/
 *{
   scroll-behavior: smooth;
   overflow-x: hidden;
@@ -21,16 +21,28 @@ body{
   margin: 0;
   color: black;
 }
+a:focus {
+  border: 2px solid #c65f39;
+  overflow-y: hidden;
+}
+
 
 h1{
-  font-size: 2.6em;
+  font-size: 2.3em;
   line-height: 1.6;
+  color: #284040;
+}
+
+h2{
+  font-size: 1.6em;
+  color: #284040;
 }
 
 p{
-  font-size: 1.6em;
-  line-height: 1.6;
+font-size: 1.4em;
+line-height: 1.6;
 }
+
 
 /*-------------------HEADER--------------------*/
 header{
@@ -50,54 +62,58 @@ nav{
 }
 
 /*---------LOGO----------*/
-    .mobilhead{
-      display: inline-block;
-      position: relative;
-      float: left;
-    }
-  .mobilhead img{
-    padding-top: 15px;
-    display: block;
-    height: 100px;
+.mobilhead{
+  display: inline-block;
+  position: relative;
+  float: left;
+}
+.mobilhead img{
+  padding-top: 15px;
+  display: block;
+  height: 100px;
+}
+.mobilhead a:focus img {
+  border: 5px solid #c65f39;
 
-  }
-  /*
-  /*Hamburger menu icon/'button' styling
-  */
-  .menu-toggle{
+}
+
+/*---------HAMBURGER MENU ICON/BUTTON STYLING----------*/
+.menu-toggle{
   font-size:30px;
   float:right;
-  padding:40px;
-  }
+  margin-top: 20px;
+  margin-right: 50px;
+  overflow-y: hidden;
+  padding: 20px;
+  height: auto;
+  width: auto;
+}
 
-  #main-menu-toggle{
-    color: white;
-  }
-  #main-menu-close{
-    color: white;
-    font-size: 1.5em;
-    padding: 1em;
-  }
+#main-menu-toggle{
+  color: white;
+}
 
-  .menu-toggle:hover,
-  .menu-toggle:focus {
-  color:blue ;
-  }
+#main-menu-close{
+  color: white;
+  font-size: 1.5em;
+  padding: 1em;
+}
 
-  .main-menu {
+.main-menu {
   position: absolute;
   display: none;
   top: 0;
   overflow-x: visible;
   z-index: 999;
-  }
 
-  .main-menu ul{
+}
+
+.main-menu ul{
   list-style: none;
   margin: 0;
   min-height: 100%;
   display: block;
-  font-size: 30px;
+  font-size: 20px;
   padding: 1em;
   color: #fff;
   width: 100vw;
@@ -105,56 +121,71 @@ nav{
   overflow-y: hidden;
   font-weight: bold;
   text-decoration: none;
-  }
+
+}
 
 
-  .main-menu li a {
-  display: block;
+.main-menu li a {
+  display: inline-block;
   padding: 1em;
   line-height: 1em;
   color: #fff;
   text-decoration: none;
-  }
+}
 
-  .main-menu a.menu-close {
+.main-menu a.menu-close {
   border-bottom: 0;
-  }
+}
 
 
-  .main-menu a:focus,
-  .main-menu a:hover {
+.main-menu a:focus,
+.main-menu a:hover {
   color: #c65f39;
   text-decoration: underline;
-  }
+}
 
-  .main-menu .menu-close {
+.main-menu .menu-close {
   position: absolute;
   right: 0;
   top: 0;
-  }
+}
 
-  .main-menu:target {
+.main-menu:target {
   display: block;
   right: 0;
-  }
+}
 
 
-  .main-menu:target .menu-close, .menu-close {
+.main-menu:target .menu-close, .menu-close {
   z-index: 1001;
-  }
+}
 
-  .main-menu:target ul,{
+.main-menu:target ul,{
   position: relative;
   z-index: 1000;
-  }
+}
 
-  .close{
+.close{
     background-color: #c65f39;
-    border-radius: 40px;
-    height: 70px;
+    width: 200px;
+    border-radius: 35px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
   }
-
-
+  .close a{
+    font-size: 25px;
+    height: 75px;
+    padding: 0px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+  .close a:hover, .close a:focus{
+    color: #fff;
+  }
 .main-menu:target + .backdrop{
   position: absolute;
   display: block;
@@ -165,36 +196,27 @@ nav{
   z-index: 998;
   background: #284040;
   cursor: default;
-  }
+}
 
-  @supports (position: fixed) {
+@supports (position: fixed) {
   .main-menu,
   .main-menu:target + .backdrop{
     position: fixed;
   }
-  }
-.dekstop{
+}
+/*--------- END HAMBURGER MENU ICON/BUTTON STYLING----------*/
+
+/*CODE TO HIDE THE BUTTON ON DESKTOP*/
+.desktop{
   display: none;
 }
 
 /*--------RESPONSIVE  HEADER (NAV INCLUDED)-----------*/
-
-@media only screen and (min-width:1200px){
-.menu-toggle{
-  display: none;
-}
-.mobilhead{
-  display: none;
-}
-.dekstop{
-  display: block;
-}
-}
-
 /*----------HEADER LEFTBOX----------*/
 header{
   height: 110px;
 }
+
 header .leftbox{
   width: 30vw;
   height: 65px;
@@ -253,7 +275,7 @@ nav{
   z-index: 10;
 }
 
-nav li {
+.desktop nav li {
   list-style: none;
   display: inline-block;
 }
@@ -287,75 +309,37 @@ nav a:hover{
 #showcase{
  width: 100vw;
  height: 100vh;
- padding-left: 10vw;
- padding-right: 5vw;
  background-color: #e0ebeb;
  overflow-y: hidden;
 }
 
 #showcase img{
-  float: right;
-  right: 0;
-  max-width: 70%;
+  display: block;
+  max-width: 50%;
   height: auto;
-  padding-top: 10vh;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #showcase p{
-  margin-top: 25%;
-  font-size: 3em;
   color: #284040;
+}
+
+#showcase .stext{
+  width: 100vw;
+  padding-top: 10%;
+  font-size: 3em;
+  text-align: center;
 }
 
 #showcase b{
   color: #c65f39;
   font-weight: normal;
 }
-/*---------RESPONSIVE SHOWCASE----------*/
-@media only screen and (max-width:1200px){
-  #showcase img{
-    max-width: 60%;
-    padding-top: 20vh;
-  }
-  #showcase p{
-    font-size: 1.6em;
-    padding-top: 15vh;
-  }
 
-}
-
-@media only screen and (max-width:800px){
-  #showcase {
-   margin: auto;
-   padding-top: 10px;
-   width: 100vw;
-   height: auto;
-   padding-bottom: 15%;
-
- }
- #showcase img{
-   padding-top: 20vh;
-   max-width: 60%;
-   /* float: none; */
- }
- #showcase p{
-   font-size: 1.2em;
-   padding-top: 15vh;
- }
-
-}
-/*---------SHOWCASE END ----------*/
-
-
-/*-------Division of content-------------------*/
-
+/*---------.PROBLEM-CONTENT----------*/
 .problem-content{
   margin: 0 10vw 10vh 10vw;
-}
-
-h2{
-  font-size: 1.6em;
-  color: #284040;
 }
 
 .problem-content ul li {
@@ -364,31 +348,21 @@ h2{
   padding-top: 2vh;
 }
 
-.problem-content p {
-  font-size: 1.6em;
-  line-height: 1.6;
-}
-
- a{
+a{
   color: #c65f39;
   text-decoration: none;
 }
 
- a:hover{
+a:hover{
   color: #284040;
   text-decoration: underline;
   text-decoration-style: solid 3px;
   transition: all ease 0.5s;
 }
 
- a:visited{
+a:visited{
   color: #c65f39;
 }
-
-*{
-  box-sizing: border-box;
-}
-
 
 [class*="col-"]{
   float: left;
@@ -417,94 +391,45 @@ h2{
 .col-small-40 img{
   padding: 5vw;
   max-width: 100%;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
 }
 
 .col-small-40 iframe{
-  padding-left:5vw;
+  padding: 0 5vw;
+
   width: 100%;
   height: 300px;
   border: none;
 }
 
-/*-------Responsive content-------------------*/
-@media only screen and (max-width:1200px) {
-.col-tall-10 {width: 10%;}
-.col-tall-20 {width: 20%;}
-.col-tall-30 {width: 30%;}
-.col-tall-40 {width: 40%;}
-.col-tall-50 {width: 50%;}
-.col-tall-60 {width: 60%;}
-.col-tall-70 {width: 70%;}
-.col-tall-80 {width: 80%;}
-.col-tall-90 {width: 90%;}
-.col-tall-100 {width: 100%;}
+/*------------------END MAIN PART OF BODY-------------------*/
 
-.col-small-40 img{
-  padding: 2vw 2vw 2vw 2vw;
-  max-width: 100%;
-}
-.col-small-40 iframe{
-  padding-left:2vw;
-  width: 100%;
-  height: 300px;
-  border: none;
-}
-
-.problem-content h1 {
-  font-size: 2.3em;
-}
-
-.problem-content p {
-  font-size: 1.4em;
-  }
-}
-
-@media only screen and (max-width:800px) {
-
-
-
-[class*="col-"]{
-    margin-top: 50px;
-  }
-  [class*="col-"] h1{
-    font-size:2em;
-  }
-
-.col-half-10 { width: 10%}
-.col-half-20 {width: 20%;}
-.col-half-30 {width: 30%;}
-.col-half-40 {width: 40%;}
-.col-half-50 {width: 50%;}
-.col-half-60 {width: 60%;}
-.col-half-70 {width: 70%;}
-.col-half-80 {width: 80%;}
-.col-half-90 {width: 90%;}
-.col-half-100 {width: 100%;}
-
-.col-half-100 iframe {
-  width: 100vw;
-  height: 40vh;
-  }
-}
-
-/*-------Division of content end-------------------*/
-
-
-/*------------------FOOTER-------------------*/
+/*---------------------------FOOTER----------------------------*/
 footer{
-  height: 40vh;
+  height: 50vh;
   width: 100vw;
   position: relative;
   margin-right: 5vw;
   margin-left: 5vw;
   overflow: hidden;
   margin-top: 2.5%;
-
 }
 footer p{
   font-size: 24px;
 }
 
+footer .copyright{
+  display: block;
+  height: 10vh;
+  margin-left: auto;
+  margin-right: 10vw;
+  text-align: center;
+  background-color: #eee3dd;
+  color: #284140;
+}
 /*---------FOOTER LEFTBOX----------*/
 footer .leftbox{
   width: 30vw;
@@ -529,8 +454,8 @@ footer .leftbox a:hover{
   text-decoration-color: #c65f39;
 }
 
-footer .leftbox i:hover{
-  background-color: #c65f39;
+footer .icons:hover{
+  color: #c65f39;
 }
 
 footer .leftbox .icons{
@@ -547,8 +472,14 @@ footer .leftbox .icons{
   text-align: center;
   text-decoration: none;
   outline: none;
-  background-color: #284140;
   border-radius: 30%;
+}
+
+footer .fa-arrow-up{
+  background-color: #c65f39;
+}
+footer .fa-arrow-up:hover{
+  background-color: #284140;
 }
 
 /*---------FOOTER MIDDLEBOX----------*/
@@ -587,13 +518,6 @@ footer .middlebox a{
 .icons a:hover{
   color: #c65f39;
 }
-.copyright{
-  font-size: 1em;
-  font-weight: bold;
-  color: #284140;
-  border: 3px solid green;
-
-}
 
 /*---------FOOTER RIGHTBOX----------*/
 footer .rightbox{
@@ -614,183 +538,228 @@ footer .rightbox h3{
   display: none;
 }
 /*------------------END FOOTER-------------------*/
+/*---------------------------END OF DESKTOP CODE----------------------------*/
 
-
-  /*---------------------------FOOTER----------------------------*/
-  footer{
-    height: 35vh;
-    width: 100vw;
-    position: relative;
-    margin-right: 5vw;
-    margin-left: 5vw;
-  }
-  footer p{
-    font-size: 24px;
-  }
-  /*---------FOOTER LEFTBOX----------*/
-  footer.leftbox{
-    width: 30vw;
-    height: 40vh;
-    display: inline-block;
-    border-top: solid 3px #284140;
-  }
-  footer.leftbox .footlink a{
-    display: block;
-    margin: 2vh 0 2vh 0;
-    font-weight: bold;
-    color: black;
-    font-size: 25px;
-    text-decoration:none;
-  }
-  footer.leftbox a:hover{
-    color: #284140;
-    text-decoration: underline;
-    text-decoration-style: solid 3px;
-    text-decoration-color: #284140;
-  }
-  footer .leftbox .icons{
-  margin: 10px;
-  font-size: 2.5em;
-
-  }
-  footer .leftbox .icons a{
-    color: #284140;
-    display: inline-block;
-  }
-  /*---------FOOTER MIDDLEBOX----------*/
-  footer.middlebox{
-    width: 30vw;
-    height: 45vh;
-    display: inline-block;
-    align-content: center;
-    align-self: center;
-    text-align: center;
-  }
-
-  footer.middlebox a{
-    text-decoration: none;
-  }
-  footer .middlebox .icons{
+/*------------------RESPONSIVE PAGE WITH MAX-WIDTH 1200PX-------------------*/
+@media only screen and (min-width:1200px){
+  /*---------------------------MENU----------------------------*/
+  .menu-toggle{
     display: none;
   }
-  footer .middlebox img{
-    max-height: 50px;
+
+  .mobilhead{
+    display: none;
   }
 
-  .vertical{
-    border-left: 3px solid #284140;
-    height: 20vh;
-    position: absolute;
-    left: 45vw;
+  .desktop{
+    display: block;
+  }
+}
+/*------------------RESPONSIVE PAGE WITH MIN-WIDTH 1200PX-------------------*/
+
+/*------------------RESPONSIVE PAGE WITH MAX-WIDTH 1200PX-------------------*/
+@media only screen and (max-width:1200px){
+  /*---------------------------SHOWCASE----------------------------*/
+  #showcase .stext{
+    padding-top: 20%;
+    font-size: 3em;
   }
 
-  .copyright{
-    font-size: 1em;
-    font-weight: bold;
-    color: #284140;
-    border: 3px solid green;
-  }
-  /*---------FOOTER RIGHTBOX----------*/
-  footer.rightbox{
-    width: 30vw;
-    height: 40vh;
-  }
-  footer .rightbox .about p{
-    font-size: 1.3em;
-  }
-  /*------------------END FOOTER-------------------*/
+    #showcase img{
+      display: block;
+      max-width: 40%;
+    }
+  /*---------------------------CONTENT----------------------------*/
+  .col-tall-10 {width: 10%;}
+  .col-tall-20 {width: 20%;}
+  .col-tall-30 {width: 30%;}
+  .col-tall-40 {width: 40%;}
+  .col-tall-50 {width: 50%;}
+  .col-tall-60 {width: 60%;}
+  .col-tall-70 {width: 70%;}
+  .col-tall-80 {width: 80%;}
+  .col-tall-90 {width: 90%;}
+  .col-tall-100 {width: 100%;}
+/*
+  .col-small-40 img{
+    padding: 2vw 2vw 2vw 2vw;
+    max-width: 100%;
+  }*/
+  .col-small-40 iframe{
+    margin-left: 2vw;
+    width: 100%;
+    height: 300px;
+    border: none;
   }
 }
-  /*------------------END FOOTER-------------------*/
-}
+/*------------------END RESPONSIVE PAGE WITH MAX-WIDTH 1200PX-------------------*/
+
+/*------------------RESPONSIVE PAGE WITH MAX-WIDTH 800PX-------------------*/
 @media screen and (max-width: 800px){
   p{
     font-size: 1.4em;
   }
-  /*------------------FOOTER-------------------*/
-  footer{
-    height: 30vh;
-    width: 100vw;
-    position: relative;
-    margin-right: 5vw;
-    margin-left: 5vw;
-    margin-top: 10%;
-  }
-
-  /*---------FOOTER LEFTBOX----------*/
-  footer .leftbox{
-    width: 30vw;
-    height: 40vh;
-    display: inline-block;
-    border-top: solid 3px #284140;
-  }
-  footer .leftbox .footlink a{
-    display: block;
-    margin: 2vh 0 2vh 0;
-    font-weight: bold;
-    color: black;
-    font-size: 15px;
-    text-decoration:none;
-  }
-  footer .leftbox a:hover{
-    color: #284140;
-    text-decoration: underline;
-    text-decoration-style: solid 3px;
-    text-decoration-color: #284140;
-  }
-  footer .leftbox .icons{
-  margin: 10px;
-  font-size: 2.5em;
-  display: inline-block;
-
-  }
-  footer .icons a{
-    font-size: 17px;
-    color: #284140;
-    display: inline-block;
-  }
-  /*---------FOOTER MIDDLEBOX----------*/
-  footer .middlebox{
-    width: 30vw;
-    height: 45vh;
-    display: inline-block;
-    align-content: center;
-    align-self: center;
-    text-align: center;
-  }
-
-  footer .middlebox a{
-    text-decoration: none;
-  }
-  footer .middlebox .icons{
-    display: none;
-  }
-  footer .middlebox img{
-    max-height: 35px;
-  }
-
-  .vertical{
-    border-left: 3px solid #284140;
-    height: 20vh;
-    position: absolute;
-    left: 45vw;
-  }
-
-  /*---------FOOTER RIGHTBOX----------*/
-  footer.rightbox{
-    width: 30vw;
-    height: 40vh;
-  }
-  footer .rightbox .about p{
-    font-size: 1em;
-  }
-
-  .copyright{
-    font-size: 1em;
-    font-weight: bold;
-    color: #284140;
-    border: 3px solid green;
-  }
-  /*------------------END FOOTER-------------------*/
+/*---------------------------SHOWCASE----------------------------*/
+#showcase {
+ margin: auto;
+ padding-top: 10px;
+ width: 100vw;
+ height: auto;
+ padding-bottom: 15%;
 }
-  /*------------------END FOOTER-------------------*/
+
+#showcase img{
+ max-width: 70%;
+ float: none;
+}
+
+#showcase .stext{
+ width: 100vw;
+ padding-top: 25%;
+ font-size: 2.1em;
+ text-align: center;
+}
+
+
+ /*---------------------------CONTENT----------------------------*/
+ [class*="col-"]{
+     margin-top: 50px;
+   }
+   [class*="col-"] h1{
+     font-size:2em;
+   }
+
+ .col-half-10 { width: 10%}
+ .col-half-20 {width: 20%;}
+ .col-half-30 {width: 30%;}
+ .col-half-40 {width: 40%;}
+ .col-half-50 {width: 50%;}
+ .col-half-60 {width: 60%;}
+ .col-half-70 {width: 70%;}
+ .col-half-80 {width: 80%;}
+ .col-half-90 {width: 90%;}
+ .col-half-100 {width: 100%;}
+
+ .col-half-100 iframe {
+   width: 100vw;
+   height: 40vh;
+ }
+
+ /*---------------------------FOOTER----------------------------*/
+ footer{
+   height: 45vh;
+   width: 100vw;
+   position: relative;
+   margin-right: 5vw;
+   margin-left: 5vw;
+   margin-top: 10%;
+ }
+ footer .footerboxes{
+   height: 40vh;
+   overflow-y: hidden;
+ }
+
+ footer .copyright{
+   display: block;
+   height: 10vh;
+   margin-left: auto;
+   margin-right: 10vw;
+   text-align: center;
+   background-color: #eee3dd;
+   color: #284140;
+ }
+
+ /*---------FOOTER LEFTBOX----------*/
+ footer .leftbox{
+   width: 30vw;
+   height: 43vh;
+   display: inline-block;
+   border-top: solid 3px #284140;
+ }
+
+ footer .leftbox .footlink a{
+   display: block;
+   margin: 2vh 0 2vh 0;
+   font-weight: bold;
+   color: #284140;
+   font-size: 23px;
+   text-decoration:none;
+ }
+
+ footer .leftbox a:hover{
+   color: #284140;
+   text-decoration: underline;
+   text-decoration-style: solid 3px;
+   text-decoration-color: #284140;
+ }
+
+ .fa-arrow-up{
+   color: #fff;
+   width: 30px;
+   height: 30px;
+   padding: 0;
+   padding-top: 3px;
+   cursor: pointer;
+   text-align: center;
+   text-decoration: none;
+   outline: none;
+   background-color: #284140;
+   border-radius: 30%;
+   margin: 0;
+ }
+
+ footer .leftbox .icons{
+ display: inline-block;
+ margin: 0;
+
+ }
+
+ footer .icons a{
+   font-size: 0.7em;
+   color: #284140;
+   display: inline-block;
+
+ }
+
+ /*---------FOOTER MIDDLEBOX----------*/
+ footer .middlebox{
+   width: 30vw;
+   height: 45vh;
+   display: inline-block;
+   align-content: center;
+   align-self: center;
+   text-align: center;
+ }
+
+ footer .middlebox a{
+   text-decoration: none;
+ }
+
+ footer .middlebox .icons{
+   display: none;
+ }
+
+ footer .middlebox img{
+   max-height: 35px;
+ }
+
+ .vertical{
+   border-left: 3px solid #284140;
+   height: 20vh;
+   position: absolute;
+   left: 45vw;
+ }
+
+ /*---------FOOTER RIGHTBOX----------*/
+ footer.rightbox{
+   width: 30vw;
+   height: 43vh;
+ }
+
+ footer .rightbox .about p{
+   font-size: 1em;
+ }
+
+  /*---------------------------END FOOTER----------------------------*/
+}
+/*------------------END RESPONSIVE PAGE WITH MAX-WIDTH 800PX-------------------*/
