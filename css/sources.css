@@ -309,12 +309,13 @@ nav a:hover{
 /*---------------------------MAIN PART OF BODY----------------------------*/
 /*---------------CONTAINTER---------------*/
 .container{
-  padding: 0 5vw 5vh 5vw;
+  margin: 0 30vw 5vh 5vw;
 }
 /*----------SIDE-NAV----------*/
 .side-nav {
   position: fixed;
   margin-top: 20vh;
+  margin-left: 5vh;
   width: auto;
   padding-right: 15px;
   padding-bottom: 10px;
@@ -359,9 +360,11 @@ nav a:hover{
 /*----------CONTENT----------*/
 .content{
   position: relative;
+  height: auto;
   float: right;
   width: 66vw;
   margin-top: 10vh;
+  margin-right: 5vw;
 }
 
 .list {
