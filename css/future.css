@@ -29,12 +29,12 @@ a:focus {
 
 h1{
   color: #284040;
-  font-size: 2.3em;
+  font-size: 2em;
   line-height: 1.6;
 }
 
 p{
-  font-size: 1.4em;
+  font-size: 1.2em;
   font-weight: normal;
   line-height: 1.6;
 }
@@ -208,7 +208,7 @@ nav{
 /*--------RESPONSIVE  HEADER (NAV INCLUDED)-----------*/
 /*----------HEADER LEFTBOX----------*/
 header{
-  height: 110px;
+  height: 100px;
 }
 header .leftbox{
   width: 30vw;
@@ -279,7 +279,7 @@ nav a{
   padding-top: 0.5em;
   margin-right: 5vw;
   margin-left: 5vw;
-  font-size: 1.6em;
+  font-size: 1.3em;
   font-weight: bold;
   text-decoration: none;
 }
@@ -307,19 +307,21 @@ nav a:hover{
 
 #showcase img{
   display: block;
-  max-width: 30%;
+  max-width: 40%;
   height: auto;
-  margin: 5% auto;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 30px;
 }
 
 #showcase p{
-  font-size: 3em;
+  font-size: 2em;
   color: #284040;
 }
 
 #showcase .stext{
   width: 100vw;
-  padding-top: 10%;
+  padding-top: 150px;
   text-align: center;
 }
 
@@ -338,18 +340,18 @@ nav a:hover{
 
 /*---------------------------FOOTER----------------------------*/
 footer{
-  height: 52vh;
+  height: 35vh;
   width: 100vw;
   position: relative;
   margin-right: 5vw;
   margin-left: 5vw;
   overflow: hidden;
   margin-top: 2.5%;
+
 }
 footer p{
-  font-size: 24px;
+  font-size: 1em;
 }
-
 footer .copyright{
   display: block;
   height: 10vh;
@@ -361,7 +363,7 @@ footer .copyright{
 /*---------FOOTER LEFTBOX----------*/
 footer .leftbox{
   width: 30vw;
-  height: 40vh;
+  height: 30vh;
   display: inline-block;
   border-top: solid 3px #284140;
 }
@@ -371,7 +373,7 @@ footer .leftbox a{
   margin: 2vh 0 2vh 0;
   font-weight: bold;
   color: #284140;
-  font-size: 1.8em;
+  font-size: 1.4em;
   text-decoration:none;
 }
 
@@ -409,18 +411,17 @@ footer .fa-arrow-up{
 footer .fa-arrow-up:hover{
   background-color: #284140;
 }
-
 /*---------FOOTER MIDDLEBOX----------*/
 footer .middlebox{
   width: 30vw;
-  height: 45vh;
+  height: 30vh;
   display: inline-block;
   align-content: center;
   align-self: center;
   text-align: center;
 }
 footer .middlebox img{
-  height: 70px;
+  height: 45px;
   width: auto;
   margin-bottom: 5%;
   margin-top: 2%;
@@ -431,19 +432,19 @@ footer .middlebox a{
 }
 
 .vertical{
-  border-left: 3px solid #284140;
-  height: 15vh;
-  position: absolute;
-  left: 45vw;
+  display: none;
 }
+
 .icons{
   overflow-y: hidden;
   margin: 10px;
-  font-size: 2.5em;
+  font-size: 2em;
 }
+
 .icons a{
   color: #284140;
 }
+
 .icons a:hover{
   color: #c65f39;
 }
@@ -452,7 +453,7 @@ footer .middlebox a{
 footer .rightbox{
   overflow-y: hidden;
   width: 30vw;
-  height: 40vh;
+  height: 30vh;
   display: inline-block;
   border-top: solid 3px #284140;
 }
@@ -460,12 +461,12 @@ footer .rightbox h3{
   color: #284140;
   font-weight: bold;
   text-decoration: underline;
-  font-size: 25px;
+  font-size: 1.4em;
   margin-top: 2vh;
 }
 
-.rightbox .icons{
-  display: none;
+footer .rightbox p{
+  font-size: 1.2em;
 }
 /*------------------END FOOTER-------------------*/
 /*---------------------------END OF DESKTOP CODE----------------------------*/
@@ -501,24 +502,30 @@ footer .rightbox h3{
   }
   #showcase .stext{
     width: 100vw;
-    padding-top: 15%;
-    font-size: 3em;
+    padding-top: 150px;
+    font-size: 2em;
     text-align: center;
   }
 
     #showcase img{
       display: block;
-      max-width: 40%;
+      width: 40%;
       height: auto;
-      margin: 5% auto;
+      margin-left: auto;
+      margin-right: auto;
     }
 }
 /*------------------END RESPONSIVE PAGE WITH MAX-WIDTH 1200PX-------------------*/
 
 /*------------------RESPONSIVE PAGE WITH MAX-WIDTH 800PX-------------------*/
 @media screen and (max-width: 800px){
+
+  h1{
+    font-size: 1.6em;
+  }
+
   p{
-    font-size: 1.4em;
+    font-size: 1em;
   }
   /*---------SHOWCASE----------*/
   #showcase {
@@ -530,14 +537,14 @@ footer .rightbox h3{
  }
 
  #showcase img{
-   max-width: 70%;
+   width: 100%;
    float: none;
  }
 
  #showcase .stext{
    width: 100vw;
-   padding-top: 30%;
-   font-size: 2.1em;
+   padding-top:27%;
+   font-size: 1.6em;
    text-align: center;
  }
 
@@ -560,23 +567,25 @@ footer .rightbox h3{
     margin-left: 5vw;
     margin-top: 10%;
   }
+
   footer .footerboxes{
-    height: 40vh;
+    height: 35vh;
     overflow-y: hidden;
   }
 
   footer .copyright{
     display: block;
-    height: 10vh;
+    height: 5vh;
     margin-left: auto;
     margin-right: 10vw;
     text-align: center;
     color: #284140;
   }
+
   /*---------FOOTER LEFTBOX----------*/
   footer .leftbox{
     width: 30vw;
-    height: 43vh;
+    height: 41vh;
     display: inline-block;
     border-top: solid 3px #284140;
   }
@@ -586,7 +595,7 @@ footer .rightbox h3{
     margin: 2vh 0 2vh 0;
     font-weight: bold;
     color: #284140;
-    font-size: 23px;
+    font-size: 1.2em;
     text-decoration:none;
   }
 
@@ -620,10 +629,12 @@ footer .rightbox h3{
 
   footer .icons a{
     font-size: 0.5em;
+    overflow: hidden:
     color: #284140;
     display: inline-block;
 
   }
+
   /*---------FOOTER MIDDLEBOX----------*/
   footer .middlebox{
     width: 30vw;
@@ -646,10 +657,22 @@ footer .rightbox h3{
     max-height: 35px;
   }
 
+  .vertical{
+    display: block;
+    border-left: 3px solid #284140;
+    height: 20vh;
+    position: absolute;
+    left: 45vw;
+  }
+
   /*---------FOOTER RIGHTBOX----------*/
   footer .rightbox{
     width: 30vw;
-    height: 43vh;
+    height: 41vh;
+  }
+
+  footer .rightbox h3{
+    font-size: 1.2em;
   }
 
   footer .rightbox .about p{

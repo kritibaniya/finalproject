@@ -19,6 +19,8 @@
 
 body{
   margin: 0;
+  padding: 0;
+  margin: 0;
 
 }
 
@@ -43,7 +45,12 @@ h1{
 
 h3{
   color: #284040;
-  font-size: 1.6em;
+  font-size: 1.3em;
+}
+
+p{
+font-size: 1.2em;
+line-height: 1.6;
 }
 
 /*---------------------------HEADER----------------------------*/
@@ -217,7 +224,7 @@ nav{
 
 /*----------HEADER LEFTBOX----------*/
 header{
-  height: 110px;
+  height: 100px;
 }
 header .leftbox{
   width: 30vw;
@@ -288,7 +295,7 @@ nav a{
   padding-top: 0.5em;
   margin-right: 5vw;
   margin-left: 5vw;
-  font-size: 1.6em;
+  font-size: 1.3em;
   font-weight: bold;
   text-decoration: none;
 }
@@ -321,7 +328,7 @@ nav a:hover{
 
 .content p{
   width: 85vw;
-  font-size: 1.4em;
+  font-size: 1.2em;
   line-height: 1.6em;
 }
 
@@ -355,7 +362,7 @@ nav a:hover{
 
 /*---------------------------FOOTER----------------------------*/
 footer{
-  height: 52vh;
+  height: 35vh;
   width: 100vw;
   position: relative;
   margin-right: 5vw;
@@ -365,7 +372,7 @@ footer{
 
 }
 footer p{
-  font-size: 24px;
+  font-size: 1em;
 }
 footer .copyright{
   display: block;
@@ -378,7 +385,7 @@ footer .copyright{
 /*---------FOOTER LEFTBOX----------*/
 footer .leftbox{
   width: 30vw;
-  height: 40vh;
+  height: 30vh;
   display: inline-block;
   border-top: solid 3px #284140;
 }
@@ -388,7 +395,7 @@ footer .leftbox a{
   margin: 2vh 0 2vh 0;
   font-weight: bold;
   color: #284140;
-  font-size: 1.8em;
+  font-size: 1.4em;
   text-decoration:none;
 }
 
@@ -429,14 +436,14 @@ footer .fa-arrow-up:hover{
 /*---------FOOTER MIDDLEBOX----------*/
 footer .middlebox{
   width: 30vw;
-  height: 45vh;
+  height: 30vh;
   display: inline-block;
   align-content: center;
   align-self: center;
   text-align: center;
 }
 footer .middlebox img{
-  height: 70px;
+  height: 45px;
   width: auto;
   margin-bottom: 5%;
   margin-top: 2%;
@@ -447,16 +454,13 @@ footer .middlebox a{
 }
 
 .vertical{
-  border-left: 3px solid #284140;
-  height: 15vh;
-  position: absolute;
-  left: 45vw;
+  display: none;
 }
 
 .icons{
   overflow-y: hidden;
   margin: 10px;
-  font-size: 2.5em;
+  font-size: 2em;
 }
 
 .icons a{
@@ -471,7 +475,7 @@ footer .middlebox a{
 footer .rightbox{
   overflow-y: hidden;
   width: 30vw;
-  height: 40vh;
+  height: 30vh;
   display: inline-block;
   border-top: solid 3px #284140;
 }
@@ -479,8 +483,12 @@ footer .rightbox h3{
   color: #284140;
   font-weight: bold;
   text-decoration: underline;
-  font-size: 25px;
+  font-size: 1.4em;
   margin-top: 2vh;
+}
+
+footer .rightbox p{
+  font-size: 1.2em;
 }
 
 /*---------------------------END FOOTER----------------------------*/
@@ -509,18 +517,18 @@ footer .rightbox h3{
 /*------------------RESPONSIVE PAGE WITH MAX-WIDTH 800PX-------------------*/
 @media screen and (max-width: 800px){
   p{
-    font-size: 1.4em;
+    font-size: 1em;
   }
 
   /*---------CONTENT----------*/
   .content p{
-    font-size: 1.3em;
+    font-size: 1em;
   }
   .content h3{
-    font-size: 1.5em;
+    font-size: 1.1em;
   }
   .container h1{
-    font-size: 1.3em;
+    font-size: 1.1em;
   }
   /*---------END CONTENT----------*/
 
@@ -535,13 +543,13 @@ footer .rightbox h3{
   }
 
   footer .footerboxes{
-    height: 40vh;
+    height: 35vh;
     overflow-y: hidden;
   }
 
   footer .copyright{
     display: block;
-    height: 10vh;
+    height: 5vh;
     margin-left: auto;
     margin-right: 10vw;
     text-align: center;
@@ -551,7 +559,7 @@ footer .rightbox h3{
   /*---------FOOTER LEFTBOX----------*/
   footer .leftbox{
     width: 30vw;
-    height: 43vh;
+    height: 41vh;
     display: inline-block;
     border-top: solid 3px #284140;
   }
@@ -561,7 +569,7 @@ footer .rightbox h3{
     margin: 2vh 0 2vh 0;
     font-weight: bold;
     color: #284140;
-    font-size: 23px;
+    font-size: 1.2em;
     text-decoration:none;
   }
 
@@ -595,6 +603,7 @@ footer .rightbox h3{
 
   footer .icons a{
     font-size: 0.5em;
+    overflow: hidden:
     color: #284140;
     display: inline-block;
 
@@ -622,10 +631,22 @@ footer .rightbox h3{
     max-height: 35px;
   }
 
+  .vertical{
+    display: block;
+    border-left: 3px solid #284140;
+    height: 20vh;
+    position: absolute;
+    left: 45vw;
+  }
+
   /*---------FOOTER RIGHTBOX----------*/
   footer .rightbox{
     width: 30vw;
-    height: 43vh;
+    height: 41vh;
+  }
+
+  footer .rightbox h3{
+    font-size: 1.2em;
   }
 
   footer .rightbox .about p{
@@ -634,5 +655,5 @@ footer .rightbox h3{
   }
 
   /*---------------------------END FOOTER----------------------------*/
-}
+ }
 /*------------------END RESPONSIVE PAGE WITH MAX-WIDTH 800PX-------------------*/

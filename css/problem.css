@@ -34,12 +34,12 @@ h1{
 }
 
 h2{
-  font-size: 1.6em;
+  font-size: 2em;
   color: #284040;
 }
 
 p{
-font-size: 1.4em;
+font-size: 1.2em;
 line-height: 1.6;
 }
 
@@ -214,9 +214,8 @@ nav{
 /*--------RESPONSIVE  HEADER (NAV INCLUDED)-----------*/
 /*----------HEADER LEFTBOX----------*/
 header{
-  height: 110px;
+  height: 100px;
 }
-
 header .leftbox{
   width: 30vw;
   height: 65px;
@@ -267,9 +266,9 @@ header .rightbox nav a{
   margin-right: 4vw;
   margin-left: 4vw;
 }
-/*-------------------END HEADER BOXES--------------------*/
+/*---------END HEADER BOXES----------*/
 
-/*------------------NAVBAR-------------------*/
+/*---------NAVBAR----------*/
 nav{
   position: fixed;
   z-index: 10;
@@ -286,7 +285,7 @@ nav a{
   padding-top: 0.5em;
   margin-right: 5vw;
   margin-left: 5vw;
-  font-size: 1.6em;
+  font-size: 1.3em;
   font-weight: bold;
   text-decoration: none;
 }
@@ -300,7 +299,8 @@ nav a:hover{
   text-decoration: underline;
   opacity: inherit;
 }
-/*------------------NAVBAR END-------------------*/
+/*---------END NAVBAR----------*/
+/*---------------------------END HEADER----------------------------*/
 /*-------END RESPONSIVE HEADER WITH NAVBAR------------*/
 
 
@@ -315,20 +315,22 @@ nav a:hover{
 
 #showcase img{
   display: block;
-  max-width: 50%;
+  max-width: 25%;
   height: auto;
+  padding-top: 5vh;
   margin-left: auto;
   margin-right: auto;
 }
 
 #showcase p{
+  font-size: 2em;
   color: #284040;
 }
 
 #showcase .stext{
   width: 100vw;
+  padding: 10% 3% 0 0;
   padding-top: 10%;
-  font-size: 3em;
   text-align: center;
 }
 
@@ -343,7 +345,7 @@ nav a:hover{
 }
 
 .problem-content ul li {
-  font-size: 1.45em;
+  font-size: 1.2em;
   line-height: 1.6em;
   padding-top: 2vh;
 }
@@ -371,7 +373,7 @@ a:visited{
 }
 
 [class*="col-"] h1{
-  font-size:2.7em;
+  font-size:2em;
   padding-bottom: 3vh;
   color: #284040;
 }
@@ -409,18 +411,18 @@ a:visited{
 
 /*---------------------------FOOTER----------------------------*/
 footer{
-  height: 52vh;
+  height: 35vh;
   width: 100vw;
   position: relative;
   margin-right: 5vw;
   margin-left: 5vw;
   overflow: hidden;
   margin-top: 2.5%;
+
 }
 footer p{
-  font-size: 24px;
+  font-size: 1em;
 }
-
 footer .copyright{
   display: block;
   height: 10vh;
@@ -432,7 +434,7 @@ footer .copyright{
 /*---------FOOTER LEFTBOX----------*/
 footer .leftbox{
   width: 30vw;
-  height: 40vh;
+  height: 30vh;
   display: inline-block;
   border-top: solid 3px #284140;
 }
@@ -442,7 +444,7 @@ footer .leftbox a{
   margin: 2vh 0 2vh 0;
   font-weight: bold;
   color: #284140;
-  font-size: 1.8em;
+  font-size: 1.4em;
   text-decoration:none;
 }
 
@@ -480,18 +482,17 @@ footer .fa-arrow-up{
 footer .fa-arrow-up:hover{
   background-color: #284140;
 }
-
 /*---------FOOTER MIDDLEBOX----------*/
 footer .middlebox{
   width: 30vw;
-  height: 45vh;
+  height: 30vh;
   display: inline-block;
   align-content: center;
   align-self: center;
   text-align: center;
 }
 footer .middlebox img{
-  height: 70px;
+  height: 45px;
   width: auto;
   margin-bottom: 5%;
   margin-top: 2%;
@@ -502,19 +503,19 @@ footer .middlebox a{
 }
 
 .vertical{
-  border-left: 3px solid #284140;
-  height: 15vh;
-  position: absolute;
-  left: 45vw;
+  display: none;
 }
+
 .icons{
   overflow-y: hidden;
   margin: 10px;
-  font-size: 2.5em;
+  font-size: 2em;
 }
+
 .icons a{
   color: #284140;
 }
+
 .icons a:hover{
   color: #c65f39;
 }
@@ -523,7 +524,7 @@ footer .middlebox a{
 footer .rightbox{
   overflow-y: hidden;
   width: 30vw;
-  height: 40vh;
+  height: 30vh;
   display: inline-block;
   border-top: solid 3px #284140;
 }
@@ -531,14 +532,15 @@ footer .rightbox h3{
   color: #284140;
   font-weight: bold;
   text-decoration: underline;
-  font-size: 25px;
+  font-size: 1.4em;
   margin-top: 2vh;
 }
 
-.rightbox .icons{
-  display: none;
+footer .rightbox p{
+  font-size: 1.2em;
 }
-/*------------------END FOOTER-------------------*/
+
+/*---------------------------END FOOTER----------------------------*/
 /*---------------------------END OF DESKTOP CODE----------------------------*/
 
 /*------------------RESPONSIVE PAGE WITH MAX-WIDTH 1200PX-------------------*/
@@ -562,13 +564,16 @@ footer .rightbox h3{
 @media only screen and (max-width:1200px){
   /*---------------------------SHOWCASE----------------------------*/
   #showcase .stext{
-    padding-top: 20%;
-    font-size: 3em;
+    padding-top: 150px;
+    font-size: 2em;
   }
 
     #showcase img{
       display: block;
-      max-width: 40%;
+      max-width: 20%;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
     }
   /*---------------------------CONTENT----------------------------*/
   .col-tall-10 {width: 10%;}
@@ -597,27 +602,36 @@ footer .rightbox h3{
 
 /*------------------RESPONSIVE PAGE WITH MAX-WIDTH 800PX-------------------*/
 @media screen and (max-width: 800px){
-  p{
-    font-size: 1.4em;
-  }
+
+   p{
+     font-size: 1em;
+   }
+
+h2{
+  font-size: 1.4em;
+}
+
+   .problem-content ul li {
+     font-size: 1em;
+   }
 /*---------------------------SHOWCASE----------------------------*/
 #showcase {
  margin: auto;
  padding-top: 10px;
  width: 100vw;
  height: auto;
- padding-bottom: 15%;
+ padding-bottom: 50px;
 }
 
 #showcase img{
- max-width: 70%;
+ max-width: 40%;
  float: none;
 }
 
 #showcase .stext{
  width: 100vw;
- padding-top: 25%;
- font-size: 2.1em;
+ padding-top: 150px;
+ font-size: 1.5em;
  text-align: center;
 }
 
@@ -627,7 +641,7 @@ footer .rightbox h3{
      margin-top: 50px;
    }
    [class*="col-"] h1{
-     font-size:2em;
+     font-size:1.6em;
    }
 
  .col-half-10 { width: 10%}
@@ -655,14 +669,15 @@ footer .rightbox h3{
    margin-left: 5vw;
    margin-top: 10%;
  }
+
  footer .footerboxes{
-   height: 40vh;
+   height: 35vh;
    overflow-y: hidden;
  }
 
  footer .copyright{
    display: block;
-   height: 10vh;
+   height: 5vh;
    margin-left: auto;
    margin-right: 10vw;
    text-align: center;
@@ -672,7 +687,7 @@ footer .rightbox h3{
  /*---------FOOTER LEFTBOX----------*/
  footer .leftbox{
    width: 30vw;
-   height: 43vh;
+   height: 41vh;
    display: inline-block;
    border-top: solid 3px #284140;
  }
@@ -682,7 +697,7 @@ footer .rightbox h3{
    margin: 2vh 0 2vh 0;
    font-weight: bold;
    color: #284140;
-   font-size: 23px;
+   font-size: 1.2em;
    text-decoration:none;
  }
 
@@ -716,6 +731,7 @@ footer .rightbox h3{
 
  footer .icons a{
    font-size: 0.5em;
+   overflow: hidden:
    color: #284140;
    display: inline-block;
 
@@ -743,10 +759,22 @@ footer .rightbox h3{
    max-height: 35px;
  }
 
+ .vertical{
+   display: block;
+   border-left: 3px solid #284140;
+   height: 20vh;
+   position: absolute;
+   left: 45vw;
+ }
+
  /*---------FOOTER RIGHTBOX----------*/
  footer .rightbox{
    width: 30vw;
-   height: 43vh;
+   height: 41vh;
+ }
+
+ footer .rightbox h3{
+   font-size: 1.2em;
  }
 
  footer .rightbox .about p{
@@ -754,6 +782,6 @@ footer .rightbox h3{
    padding-right: 10px;
  }
 
-  /*---------------------------END FOOTER----------------------------*/
+ /*---------------------------END FOOTER----------------------------*/
 }
 /*------------------END RESPONSIVE PAGE WITH MAX-WIDTH 800PX-------------------*/

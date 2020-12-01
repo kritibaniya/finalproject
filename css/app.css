@@ -15,7 +15,6 @@
   margin: 0;
   box-sizing: border-box;
 }
-@media screen and (max-width: 3840px){
 body{
   margin: 0;
   padding: 0;
@@ -28,11 +27,11 @@ a:focus {
 
 h1{
   color: #284040;
-  font-size: 2.3em;
+  font-size: 2em;
 }
 
 p{
-  font-size: 1.4em;
+  font-size: 1.3em;
   line-height: 1.6;
 }
 
@@ -203,95 +202,95 @@ nav{
     display: none;
   }
 
-/*----------HEADER LEFTBOX----------*/
-header{
-  height: 110px;
-}
-header .leftbox{
-  width: 30vw;
-  height: 65px;
-  display: inline-block;
-  border-top: solid 3px white;
-}
+  /*----------HEADER LEFTBOX----------*/
+  header{
+    height: 100px;
+  }
+  header .leftbox{
+    width: 30vw;
+    height: 65px;
+    display: inline-block;
+    border-top: solid 3px white;
+  }
 
-header .leftbox nav{
-  left: 0;
-}
+  header .leftbox nav{
+    left: 0;
+  }
 
-header .leftbox nav{
-  left: 0;
-  margin-right: 2vw;
-}
+  header .leftbox nav{
+    left: 0;
+    margin-right: 2vw;
+  }
 
-header .leftbox nav a{
-  margin-right: 4vw;
-  margin-left: 4vw;
-}
+  header .leftbox nav a{
+    margin-right: 4vw;
+    margin-left: 4vw;
+  }
 
-/*----------HEADER MIDDLEBOX----------*/
-header .middlebox{
-  display: inline-block;
-  width: 30vw;
-  height: 110px;
-}
+  /*----------HEADER MIDDLEBOX----------*/
+  header .middlebox{
+    display: inline-block;
+    width: 30vw;
+    height: 110px;
+  }
 
-header .middlebox img{
-  height: 100px;
-  width: auto;
-}
+  header .middlebox img{
+    height: 100px;
+    width: auto;
+  }
 
-/*----------HEADER RIGHTBOX----------*/
-header .rightbox{
-  width: 30vw;
-  height: 65px;
-  display: inline-block;
-  border-top: solid 3px white;
-}
+  /*----------HEADER RIGHTBOX----------*/
+  header .rightbox{
+    width: 30vw;
+    height: 65px;
+    display: inline-block;
+    border-top: solid 3px white;
+  }
 
-header .rightbox nav{
-  right: 0;
-  margin-right: 2vw;
-}
+  header .rightbox nav{
+    right: 0;
+    margin-right: 2vw;
+  }
 
-header .rightbox nav a{
-  margin-right: 4vw;
-  margin-left: 4vw;
-}
-/*---------END HEADER BOXES----------*/
+  header .rightbox nav a{
+    margin-right: 4vw;
+    margin-left: 4vw;
+  }
+  /*---------END HEADER BOXES----------*/
 
-/*---------NAVBAR----------*/
-nav{
-  position: fixed;
-  z-index: 10;
-}
+  /*---------NAVBAR----------*/
+  nav{
+    position: fixed;
+    z-index: 10;
+  }
 
-.desktop nav li {
-  list-style: none;
-  display: inline-block;
-}
+  .desktop nav li {
+    list-style: none;
+    display: inline-block;
+  }
 
-nav a{
-  display: inline-block;
-  color: #fff;
-  padding-top: 0.5em;
-  margin-right: 5vw;
-  margin-left: 5vw;
-  font-size: 1.6em;
-  font-weight: bold;
-  text-decoration: none;
-}
+  nav a{
+    display: inline-block;
+    color: #fff;
+    padding-top: 0.5em;
+    margin-right: 5vw;
+    margin-left: 5vw;
+    font-size: 1.3em;
+    font-weight: bold;
+    text-decoration: none;
+  }
 
-nav a:visited {
-  color: #fff;
-}
+  nav a:visited {
+    color: #fff;
+  }
 
-nav a:hover{
-  color: #c65f39;
-  text-decoration: underline;
-  opacity: inherit;
-}
-/*---------END NAVBAR----------*/
-/*---------------------------END HEADER----------------------------*/
+  nav a:hover{
+    color: #c65f39;
+    text-decoration: underline;
+    opacity: inherit;
+  }
+  /*---------END NAVBAR----------*/
+  /*---------------------------END HEADER----------------------------*/
 
 /*---------------------------MAIN PART OF BODY----------------------------*/
 /*---------SHOWCASE----------*/
@@ -311,12 +310,13 @@ nav a:hover{
 }
 
 #showcase p{
-  font-size: 3em;
+  font-size: 2em;
   color: #284040;
 }
 
 #showcase .stext{
   width: 100vw;
+  padding: 10% 3% 0 0;
   padding-top: 10%;
   text-align: center;
 }
@@ -325,7 +325,6 @@ nav a:hover{
   color: #c65f39;
   font-weight: normal;
 }
-
 /*---------#CONTENT----------*/
 #content{
   width: 100vw;
@@ -383,19 +382,18 @@ nav a:hover{
 
 /*---------------------------FOOTER----------------------------*/
 footer{
-  height: 52vh;
+  height: 35vh;
   width: 100vw;
   position: relative;
   margin-right: 5vw;
   margin-left: 5vw;
   overflow: hidden;
   margin-top: 2.5%;
-}
 
+}
 footer p{
-  font-size: 24px;
+  font-size: 1em;
 }
-
 footer .copyright{
   display: block;
   height: 10vh;
@@ -404,11 +402,10 @@ footer .copyright{
   text-align: center;
   color: #284140;
 }
-
 /*---------FOOTER LEFTBOX----------*/
 footer .leftbox{
   width: 30vw;
-  height: 40vh;
+  height: 30vh;
   display: inline-block;
   border-top: solid 3px #284140;
 }
@@ -418,7 +415,7 @@ footer .leftbox a{
   margin: 2vh 0 2vh 0;
   font-weight: bold;
   color: #284140;
-  font-size: 1.8em;
+  font-size: 1.4em;
   text-decoration:none;
 }
 
@@ -456,18 +453,17 @@ footer .fa-arrow-up{
 footer .fa-arrow-up:hover{
   background-color: #284140;
 }
-
 /*---------FOOTER MIDDLEBOX----------*/
 footer .middlebox{
   width: 30vw;
-  height: 45vh;
+  height: 30vh;
   display: inline-block;
   align-content: center;
   align-self: center;
   text-align: center;
 }
 footer .middlebox img{
-  height: 70px;
+  height: 45px;
   width: auto;
   margin-bottom: 5%;
   margin-top: 2%;
@@ -478,19 +474,19 @@ footer .middlebox a{
 }
 
 .vertical{
-  border-left: 3px solid #284140;
-  height: 15vh;
-  position: absolute;
-  left: 45vw;
+  display: none;
 }
+
 .icons{
   overflow-y: hidden;
   margin: 10px;
-  font-size: 2.5em;
+  font-size: 2em;
 }
+
 .icons a{
   color: #284140;
 }
+
 .icons a:hover{
   color: #c65f39;
 }
@@ -499,7 +495,7 @@ footer .middlebox a{
 footer .rightbox{
   overflow-y: hidden;
   width: 30vw;
-  height: 40vh;
+  height: 30vh;
   display: inline-block;
   border-top: solid 3px #284140;
 }
@@ -507,16 +503,17 @@ footer .rightbox h3{
   color: #284140;
   font-weight: bold;
   text-decoration: underline;
-  font-size: 25px;
+  font-size: 1.4em;
   margin-top: 2vh;
 }
 
-.rightbox .icons{
-  display: none;
+footer .rightbox p{
+  font-size: 1.2em;
 }
-/*------------------END FOOTER-------------------*/
+
+/*---------------------------END FOOTER----------------------------*/
 /*---------------------------END OF DESKTOP CODE----------------------------*/
-}
+
 /*------------------RESPONSIVE PAGE WITH MAX-WIDTH 1200PX-------------------*/
 @media only screen and (min-width:1200px){
   /*---------------------------MENU----------------------------*/
@@ -539,18 +536,19 @@ footer .rightbox h3{
 /*---------------------------SHOWCASE----------------------------*/
 #showcase .stext{
   width: 100vw;
-  padding-top: 15%;
-  font-size: 3em;
+  padding-top: 150px;
+  font-size: 2em;
   text-align: center;
 }
 
   #showcase img{
     display: block;
-    max-width: 40%;
+    width: 40%;
     height: auto;
     margin-left: auto;
     margin-right: auto;
   }
+
 
   /*---------------------------CONTENT----------------------------*/
   #content .images{
@@ -575,7 +573,11 @@ footer .rightbox h3{
 /*------------------RESPONSIVE PAGE WITH MAX-WIDTH 800PX-------------------*/
 @media screen and (max-width: 800px){
   p{
-    font-size: 1.4em;
+    font-size: 1em;
+  }
+
+  h1{
+    font-size: 1.6em;
   }
   /*------------------SHOWCASE------------------*/
   #showcase {
@@ -593,120 +595,149 @@ footer .rightbox h3{
 
  #showcase .stext{
    width: 100vw;
-   padding-top: 20%;
-   font-size: 2.1em;
+   padding-top:27%;
+   font-size: 1.6em;
    text-align: center;
  }
 
+ #content .mobimages{
+   display: inline-block;
+   width: 80vw;
+   margin-right: auto;
+   margin-left: auto;
+   height: auto;
+   text-align: center;
+ }
+
+ #content img{
+   width: 120px;
+   height: auto;
+   right: 0;
+   border: 3px solid #284040;
+ }
+
  /*---------------------------FOOTER----------------------------*/
-  footer{
-    height: 45vh;
-    width: 100vw;
-    position: relative;
-    margin-right: 5vw;
-    margin-left: 5vw;
-    margin-top: 10%;
-  }
+ footer{
+   height: 45vh;
+   width: 100vw;
+   position: relative;
+   margin-right: 5vw;
+   margin-left: 5vw;
+   margin-top: 10%;
+ }
 
-  footer .footerboxes{
-    height: 40vh;
-    overflow-y: hidden;
-  }
+ footer .footerboxes{
+   height: 35vh;
+   overflow-y: hidden;
+ }
 
-  footer .copyright{
-    display: block;
-    height: 10vh;
-    margin-left: auto;
-    margin-right: 10vw;
-    text-align: center;
-    color: #284140;
-  }
+ footer .copyright{
+   display: block;
+   height: 5vh;
+   margin-left: auto;
+   margin-right: 10vw;
+   text-align: center;
+   color: #284140;
+ }
 
-  /*---------FOOTER LEFTBOX----------*/
-  footer .leftbox{
-    width: 30vw;
-    height: 42vh;
-    display: inline-block;
-    border-top: solid 3px #284140;
-  }
+ /*---------FOOTER LEFTBOX----------*/
+ footer .leftbox{
+   width: 30vw;
+   height: 41vh;
+   display: inline-block;
+   border-top: solid 3px #284140;
+ }
 
-  footer .leftbox .footlink a{
-    display: block;
-    margin: 2vh 0 2vh 0;
-    font-weight: bold;
-    color: #284140;
-    font-size: 23px;
-    text-decoration:none;
-  }
+ footer .leftbox .footlink a{
+   display: block;
+   margin: 2vh 0 2vh 0;
+   font-weight: bold;
+   color: #284140;
+   font-size: 1.2em;
+   text-decoration:none;
+ }
 
-  footer .leftbox a:hover{
-    color: #284140;
-    text-decoration: underline;
-    text-decoration-style: solid 3px;
-    text-decoration-color: #284140;
-  }
+ footer .leftbox a:hover{
+   color: #284140;
+   text-decoration: underline;
+   text-decoration-style: solid 3px;
+   text-decoration-color: #284140;
+ }
 
-  .fa-arrow-up{
-    color: #fff;
-    width: 30px;
-    height: 30px;
-    padding: 0;
-    padding-top: 3px;
-    cursor: pointer;
-    text-align: center;
-    text-decoration: none;
-    outline: none;
-    background-color: #284140;
-    border-radius: 30%;
-    margin: 0;
-  }
+ .fa-arrow-up{
+   color: #fff;
+   width: 30px;
+   height: 30px;
+   padding: 0;
+   padding-top: 3px;
+   cursor: pointer;
+   text-align: center;
+   text-decoration: none;
+   outline: none;
+   background-color: #284140;
+   border-radius: 30%;
+   margin: 0;
+ }
 
-  footer .leftbox .icons{
-  display: inline-block;
-  margin: 0;
+ footer .leftbox .icons{
+ display: inline-block;
+ margin: 0;
 
-  }
+ }
 
-  footer .icons a{
-    font-size: 0.5em;
-    color: #284140;
-    display: inline-block;
+ footer .icons a{
+   font-size: 0.5em;
+   overflow: hidden:
+   color: #284140;
+   display: inline-block;
 
-  }
+ }
 
-  /*---------FOOTER MIDDLEBOX----------*/
-  footer .middlebox{
-    width: 30vw;
-    height: 45vh;
-    display: inline-block;
-    align-content: center;
-    align-self: center;
-    text-align: center;
-  }
+ /*---------FOOTER MIDDLEBOX----------*/
+ footer .middlebox{
+   width: 30vw;
+   height: 45vh;
+   display: inline-block;
+   align-content: center;
+   align-self: center;
+   text-align: center;
+ }
 
-  footer .middlebox a{
-    text-decoration: none;
-  }
+ footer .middlebox a{
+   text-decoration: none;
+ }
 
-  footer .middlebox .icons{
-    display: none;
-  }
+ footer .middlebox .icons{
+   display: none;
+ }
 
-  footer .middlebox img{
-    max-height: 35px;
-  }
+ footer .middlebox img{
+   max-height: 35px;
+ }
 
-  /*---------FOOTER RIGHTBOX----------*/
-  footer .rightbox{
-    width: 30vw;
-    height: 42vh;
-  }
+ .vertical{
+   display: block;
+   border-left: 3px solid #284140;
+   height: 20vh;
+   position: absolute;
+   left: 45vw;
+ }
 
-  footer .rightbox .about p{
-    font-size: 0.8em;
-    padding-right: 10px;
-  }
+ /*---------FOOTER RIGHTBOX----------*/
+ footer .rightbox{
+   width: 30vw;
+   height: 41vh;
+ }
 
-  /*------------------END FOOTER-------------------*/
+ footer .rightbox h3{
+   font-size: 1.2em;
+ }
+
+ footer .rightbox .about p{
+   font-size: 0.8em;
+   padding-right: 10px;
+ }
+
+ /*---------------------------END FOOTER----------------------------*/
 }
 /*------------------END RESPONSIVE PAGE WITH MAX-WIDTH 800PX-------------------*/
