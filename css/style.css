@@ -108,7 +108,7 @@ nav{
 
 
 .main-menu li a {
-  display: block;
+  display: inline-block;
   padding: 1em;
   line-height: 1em;
   color: #fff;
@@ -500,13 +500,19 @@ footer .rightbox h3{
   .menu-toggle{
     display: none;
   }
+
   .mobilhead{
     display: none;
   }
+
   .desktop{
     display: block;
   }
+}
+/*------------------RESPONSIVE PAGE WITH MIN-WIDTH 1200PX-------------------*/
 
+/*------------------RESPONSIVE PAGE WITH MAX-WIDTH 1200PX-------------------*/
+@media only screen and (max-width:1200px){
   /*---------------------------SHOWCASE----------------------------*/
   #showcase img{
     max-width: 60%;
