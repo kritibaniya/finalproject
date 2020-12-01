@@ -430,7 +430,6 @@ footer .leftbox i:hover{
 footer .leftbox .icons{
   display: none;
 }
-
 .fa-arrow-up{
   color: #fff;
   width: 50px;
@@ -441,8 +440,14 @@ footer .leftbox .icons{
   text-align: center;
   text-decoration: none;
   outline: none;
-  background-color: #284140;
   border-radius: 30%;
+}
+
+footer .fa-arrow-up{
+  background-color: #c65f39;
+}
+footer .fa-arrow-up:hover{
+  background-color: #284140;
 }
 
 /*---------FOOTER MIDDLEBOX----------*/
