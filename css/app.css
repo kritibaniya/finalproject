@@ -15,7 +15,7 @@
   margin: 0;
   box-sizing: border-box;
 }
-
+@media screen and (max-width: 3840px){
 body{
   margin: 0;
   padding: 0;
@@ -516,7 +516,7 @@ footer .rightbox h3{
 }
 /*------------------END FOOTER-------------------*/
 /*---------------------------END OF DESKTOP CODE----------------------------*/
-
+}
 /*------------------RESPONSIVE PAGE WITH MAX-WIDTH 1200PX-------------------*/
 @media only screen and (min-width:1200px){
   /*---------------------------MENU----------------------------*/
