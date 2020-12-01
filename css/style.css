@@ -525,7 +525,7 @@ footer .rightbox h3{
       margin-left: auto;
       margin-right: auto;
     }
-  }
+
 
   /*---------------------------CONTENT----------------------------*/
   .content{
@@ -553,8 +553,8 @@ footer .rightbox h3{
 
  #showcase .stext{
    width: 100vw;
-   padding-top: 20%;
-   font-size: 2.1em;
+   padding-top:27%;
+   font-size: 1.6em;
    text-align: center;
  }
 
