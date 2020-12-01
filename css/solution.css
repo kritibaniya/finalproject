@@ -145,11 +145,18 @@ display: inline-block;
 }
 
 .close{
-  background-color: #c65f39;
-  border-radius: 40px;
-  height: 70px;
-}
-
+    background-color: #c65f39;
+    border-radius: 35px;
+    margin-left: 33%;
+    margin-right: 33%;
+  }
+  .close a{
+    font-size: 20px;
+    height: 70px;
+  }
+  .close a:hover, .close a:focus{
+    color: #fff;
+  }
 .main-menu:target + .backdrop{
   position: absolute;
   display: block;

@@ -78,10 +78,10 @@ nav{
   padding: 1em;
 }
 
-.menu-toggle:hover,
+/*.menu-toggle:hover,
 .menu-toggle:focus {
   color:blue ;
-}
+}*/
 
 .main-menu {
   position: absolute;
@@ -96,7 +96,7 @@ nav{
   margin: 0;
   min-height: 100%;
   display: block;
-  font-size: 30px;
+  font-size: 20px;
   padding: 1em;
   color: #fff;
   width: 100vw;
@@ -148,10 +148,18 @@ nav{
 }
 
 .close{
-  background-color: #c65f39;
-  border-radius: 40px;
-  height: 70px;
-}
+    background-color: #c65f39;
+    border-radius: 35px;
+    margin-left: 33%;
+    margin-right: 33%;
+  }
+  .close a{
+    font-size: 20px;
+    height: 70px;
+  }
+  .close a:hover, .close a:focus{
+    color: #fff;
+  }
 
 .main-menu:target + .backdrop{
   position: absolute;

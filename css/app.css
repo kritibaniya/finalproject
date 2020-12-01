@@ -23,7 +23,6 @@ body{
 h1{
   color: #284040;
   font-size: 2.3em;
-  line-height: 1.6;
 }
 
 p{
@@ -146,11 +145,20 @@ nav{
     z-index: 1000;
   }
 
+
   .close{
-    background-color: #c65f39;
-    border-radius: 40px;
-    height: 70px;
-  }
+      background-color: #c65f39;
+      border-radius: 35px;
+      margin-left: 33%;
+      margin-right: 33%;
+    }
+    .close a{
+      font-size: 20px;
+      height: 70px;
+    }
+    .close a:hover, .close a:focus{
+      color: #fff;
+    }
 
   .main-menu:target + .backdrop{
     position: absolute;
@@ -297,37 +305,35 @@ nav a:hover{
 }
 
 /*---------#CONTENT----------*/
-.content{
+#content{
   width: 100vw;
   height: auto;
-  padding: 10vh 10vw 10vh 10vw;
+  padding: 15vh 10vw 15vh 10vw;
 }
 
-.content .img{
-  float: right;
-  right: 0;
-  width: 35vw;
-  display: inline-block;
-  margin-left: 5vw;
-}
-
-.content img{
-  right: 0;
-}
-
-.content .text{
-  left: 0;
-  float: left;
-  width: 45vw;
+#content img{
+  width: 150px;
   height: auto;
-  margin-right: 5vw;
+  border: 3px solid #284040;
+  right: 0;
 }
 
+#content .img{
+  display: block;
+  width: 35vw;
+  height: auto;
+  float: right;
+}
+
+#content p{
+  float: left;
+  width: 40vw;
+}
 .mobimg{
   display: none;
 }
 
-.content:nth-child(even){
+#content:nth-child(even){
   background-color: #eee3dd;
 }
 /*------------------END MAIN PART OF BODY-------------------*/
@@ -481,28 +487,24 @@ footer .rightbox h3{
   }
 
   /*---------------------------CONTENT----------------------------*/
-  .content{
+  #content{
     width: 100vw;
     height: auto;
     padding: 15vh 10vw 15vh 10vw;
   }
 
-  .content .img{
+  #content .img{
     display: none;
   }
 
-  .content .mobimg{
+  #content .mobimg{
     display: inline-block;
     align-items: center;
     align-content: center;
     align-self: center;
   }
 
-  .content .mobimg img{
-    width: 150px;
-  }
-
-  .content p{
+  #content p{
     width: 100vw;
     padding-right: 20vw;
   }
