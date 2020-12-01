@@ -409,7 +409,7 @@ a:visited{
 
 /*---------------------------FOOTER----------------------------*/
 footer{
-  height: 50vh;
+  height: 52vh;
   width: 100vw;
   position: relative;
   margin-right: 5vw;
@@ -427,7 +427,6 @@ footer .copyright{
   margin-left: auto;
   margin-right: 10vw;
   text-align: center;
-  background-color: #eee3dd;
   color: #284140;
 }
 /*---------FOOTER LEFTBOX----------*/
@@ -504,11 +503,12 @@ footer .middlebox a{
 
 .vertical{
   border-left: 3px solid #284140;
-  height: 20vh;
+  height: 15vh;
   position: absolute;
   left: 45vw;
 }
 .icons{
+  overflow-y: hidden;
   margin: 10px;
   font-size: 2.5em;
 }
@@ -521,6 +521,7 @@ footer .middlebox a{
 
 /*---------FOOTER RIGHTBOX----------*/
 footer .rightbox{
+  overflow-y: hidden;
   width: 30vw;
   height: 40vh;
   display: inline-block;
@@ -665,7 +666,6 @@ footer .rightbox h3{
    margin-left: auto;
    margin-right: 10vw;
    text-align: center;
-   background-color: #eee3dd;
    color: #284140;
  }
 
@@ -715,7 +715,7 @@ footer .rightbox h3{
  }
 
  footer .icons a{
-   font-size: 0.7em;
+   font-size: 0.5em;
    color: #284140;
    display: inline-block;
 
@@ -743,21 +743,15 @@ footer .rightbox h3{
    max-height: 35px;
  }
 
- .vertical{
-   border-left: 3px solid #284140;
-   height: 20vh;
-   position: absolute;
-   left: 45vw;
- }
-
  /*---------FOOTER RIGHTBOX----------*/
- footer.rightbox{
+ footer .rightbox{
    width: 30vw;
    height: 43vh;
  }
 
  footer .rightbox .about p{
-   font-size: 1em;
+   font-size: 0.8em;
+   padding-right: 10px;
  }
 
   /*---------------------------END FOOTER----------------------------*/

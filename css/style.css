@@ -410,7 +410,6 @@ footer .copyright{
   margin-left: auto;
   margin-right: 10vw;
   text-align: center;
-  background-color: #eee3dd;
   color: #284140;
 }
 /*---------FOOTER LEFTBOX----------*/
@@ -498,7 +497,6 @@ footer .middlebox a{
 }
 
 .icons a{
-
   color: #284140;
 }
 
@@ -638,7 +636,6 @@ footer .rightbox h3{
     margin-left: auto;
     margin-right: 10vw;
     text-align: center;
-    background-color: #eee3dd;
     color: #284140;
   }
 
@@ -688,7 +685,7 @@ footer .rightbox h3{
   }
 
   footer .icons a{
-    font-size: 0.7em;
+    font-size: 0.5em;
     color: #284140;
     display: inline-block;
 
@@ -716,13 +713,6 @@ footer .rightbox h3{
     max-height: 35px;
   }
 
-  .vertical{
-    border-left: 3px solid #284140;
-    height: 20vh;
-    position: absolute;
-    left: 45vw;
-  }
-
   /*---------FOOTER RIGHTBOX----------*/
   footer .rightbox{
     width: 30vw;
@@ -730,7 +720,8 @@ footer .rightbox h3{
   }
 
   footer .rightbox .about p{
-    font-size: 1em;
+    font-size: 0.8em;
+    padding-right: 10px;
   }
 
   /*---------------------------END FOOTER----------------------------*/
