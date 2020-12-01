@@ -14,12 +14,14 @@
   scroll-behavior: smooth;
   overflow-x: hidden;
   box-sizing: border-box;
+  margin: 0;
 }
 
 body{
   margin: 0;
-  padding: 0;
+
 }
+
 a:focus {
   border: 2px solid #c65f39;
   overflow-y: hidden;
@@ -72,6 +74,7 @@ nav{
   display: block;
   height: 100px;
 }
+
 .mobilhead a:focus img {
   border: 5px solid #c65f39;
 
@@ -206,12 +209,12 @@ nav{
   }
 }
 /*--------- END HAMBURGER MENU ICON/BUTTON STYLING----------*/
+
 /*CODE TO HIDE THE BUTTON ON DESKTOP*/
 .desktop{
   display: none;
 }
 
-/*--------RESPONSIVE  HEADER (NAV INCLUDED)-----------*/
 /*----------HEADER LEFTBOX----------*/
 header{
   height: 110px;
@@ -502,53 +505,7 @@ footer .rightbox h3{
 /*------------------RESPONSIVE PAGE WITH MIN-WIDTH 1200PX-------------------*/
 
 /*------------------RESPONSIVE PAGE WITH MAX-WIDTH 1200PX-------------------*/
-@media only screen and (max-width:1200px){
-  /*-------------------HEADER--------------------*/
-  header{
-    height: 100px;
-    width: 100vw;
-    background-color: #284040;
-    align-items: center;
-    text-align: center;
-    align-self: center;
-    position: fixed;
-    z-index: 1;
-  }
-  /*---------DEKSTOP HEADER----------*/
-  header .leftbox{
-    display: none;
-  }
 
-  header .rightbox{
-    display: none;
-  }
-
-  header .middlebox{
-    display: none;
-  }
-
-  nav{
-    display: none;
-  }
-  /*---------LOGO----------*/
-  .mobilhead{
-    display: inline-flex;
-    width: 100vw;
-  }
-
-  .mobilhead img{
-    float: left;
-    height: 90px;
-  }
-  /*---------NAVBAR LINKS----------*/
-  /*????*/
-
-  /*---------CONTENT----------*/
-  .content p {
-    font-size: 1.4em;
-  }
-}
-/*------------------END RESPONSIVE PAGE WITH MAX-WIDTH 1200PX-------------------*/
 
 /*------------------RESPONSIVE PAGE WITH MAX-WIDTH 800PX-------------------*/
 @media screen and (max-width: 800px){
