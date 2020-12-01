@@ -95,7 +95,7 @@ nav{
   margin: 0;
   min-height: 100%;
   display: block;
-  font-size: 30px;
+  font-size: 20px;
   padding: 1em;
   color: #fff;
   width: 100vw;
@@ -453,6 +453,11 @@ footer .rightbox h3{
   .desktop{
     display: block;
   }
+}
+/*------------------RESPONSIVE PAGE WITH MIN-WIDTH 1200PX-------------------*/
+
+/*------------------RESPONSIVE PAGE WITH MAX-WIDTH 1200PX-------------------*/
+@media only screen and (max-width:1200px){
   /*---------------------------CONTENT----------------------------*/
   .content{
     width: 100vw;

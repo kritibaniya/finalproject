@@ -102,7 +102,7 @@ nav{
   margin: 0;
   min-height: 100%;
   display: block;
-  font-size: 30px;
+  font-size: 20px;
   padding: 1em;
   color: #fff;
   width: 100vw;
@@ -289,24 +289,27 @@ nav a:hover{
 #showcase{
  width: 100vw;
  height: 100vh;
- padding-left: 10vw;
- padding-right: 5vw;
  background-color: #e0ebeb;
  overflow-y: hidden;
 }
 
 #showcase img{
-  float: right;
-  right: 0;
-  max-width: 70%;
+  display: block;
+  max-width: 50%;
   height: auto;
-  padding-top: 10vh;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #showcase p{
-  margin-top: 25%;
-  font-size: 3em;
   color: #284040;
+}
+
+#showcase .stext{
+  width: 100vw;
+  padding-top: 10%;
+  font-size: 3em;
+  text-align: center;
 }
 
 #showcase b{
@@ -518,17 +521,21 @@ footer .rightbox h3{
   .desktop{
     display: block;
   }
+}
+/*------------------RESPONSIVE PAGE WITH MIN-WIDTH 1200PX-------------------*/
 
+/*------------------RESPONSIVE PAGE WITH MAX-WIDTH 1200PX-------------------*/
+@media only screen and (max-width:1200px){
   /*---------------------------SHOWCASE----------------------------*/
-  #showcase img{
-    max-width: 60%;
-    padding-top: 20vh;
-  }
-  #showcase p{
-    font-size: 1.6em;
-    padding-top: 15vh;
+  #showcase .stext{
+    padding-top: 20%;
+    font-size: 3em;
   }
 
+    #showcase img{
+      display: block;
+      max-width: 40%;
+    }
   /*---------------------------CONTENT----------------------------*/
   .col-tall-10 {width: 10%;}
   .col-tall-20 {width: 20%;}
@@ -561,22 +568,25 @@ footer .rightbox h3{
   }
 /*---------------------------SHOWCASE----------------------------*/
 #showcase {
-   margin: auto;
-   padding-top: 10px;
-   width: 100vw;
-   height: auto;
-   padding-bottom: 15%;
- }
+ margin: auto;
+ padding-top: 10px;
+ width: 100vw;
+ height: auto;
+ padding-bottom: 15%;
+}
 
- #showcase img{
-   padding-top: 20vh;
-   max-width: 60%;
- }
+#showcase img{
+ max-width: 70%;
+ float: none;
+}
 
- #showcase p{
-   font-size: 1.2em;
-   padding-top: 15vh;
- }
+#showcase .stext{
+ width: 100vw;
+ padding-top: 25%;
+ font-size: 2.1em;
+ text-align: center;
+}
+
 
  /*---------------------------CONTENT----------------------------*/
  [class*="col-"]{
