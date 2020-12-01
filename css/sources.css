@@ -264,7 +264,7 @@ header .rightbox nav a{
 /*---------NAVBAR----------*/
 nav{
   position: fixed;
-  z-index: 10;
+  z-index: 10;  
 }
 
 .desktop nav li {
