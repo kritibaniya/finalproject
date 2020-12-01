@@ -1,271 +1,756 @@
-html{
+/*---------------------------KEYFRAMES----------------------------*/
+@-webkit-keyframes example {
+  from {top:-100px;opacity: 0;}
+  to {top:0px;opacity:1;}
+}
+
+@keyframes example {
+  from {top:-100px;opacity: 0;}
+  to {top:0px;opacity:1;}
+}
+/*-------------------COMMON CODE FOR THE WHOLE WEBSITE--------------------*/
+*{
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body{
-  margin: 0 auto;
-  overflow-x: hidden;
-  overflow-y: scroll;
-  line-height: 1.6em;
+  margin: 0;
+  color: #000;;
 }
 
-/*NAVBAR*/
+a:focus {
+  border: 2px solid #c65f39;
+  overflow-y: hidden;
+}
+
+h1{
+  font-size: 2em;
+  line-height: 1.6;
+  color: #284040;
+}
+
+p{
+  font-size: 1.4em;
+  line-height: 1.6;
+}
+
+/*---------------------------HEADER----------------------------*/
+header{
+  height: 100px;
+  width: 100vw;
+  background-color: #284040;
+  align-items: center;
+  text-align: center;
+  align-self: center;
+  position: fixed;
+  z-index: 1;
+  overflow: hidden;
+}
+
 nav{
-  background-color:
-  position: ;
-  padding: ;
-  z-index: 10;
-  left: 0;
-  right: 0;
-  top: 0;
-  height: ;
+  display: inline-block;
 }
 
-#logo2 {
-  display: none;
+/*---------LOGO----------*/
+.mobilhead{
+  display: inline-block;
+  position: relative;
+  float: left;
+}
+.mobilhead img{
+  padding-top: 15px;
+  display: block;
+  height: 100px;
 }
 
-#logo1 {
-  display: ;
-  float: ;
-  width: ;
-  height: ;
-  padding: ;
-  margin: ;
-  align-items: ;
-  text-align: ;
-}
-
-#logo1 img {
-  width: ;
-  height: ;
-}
-
-#logo1 a {
-  font-size: ;
-  padding: ;
-  letter-spacing: ;
-  word-spacing: ;
-  text-transform: ;
-  align-items: ;
-}
-
-nav .links {
-  display: ;
-  float: ;
-  width: ;
-  height: ;
-  padding: ;
-  margin: ;
-  justify-content: ;
-  align-items: ;
-  text-align: ;
-}
-
-nav .links li {
-  list-style: none;
-}
-
-nav a{
-  color: ;
-  display: ;
-  padding: ;
-  font-size: ;
-  font-weight: ;
-  text-decoration: ;
-  transition: all ease 0.5s;
-}
-
-nav a:visited {
-  color: ;
-}
-
-nav a:hover{
-  color: ;
-  text-decoration: ;
-  background-color: ;
-  opacity: ;
-  border-radius: ;
-}
-
-#nav-toggle {
-  position: absolute;
-  top: -100px;
-}
-
-nav .icon-burger {
-  display: none;
-  position: absolute;
-  right: 5%;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-nav .icon-burger .line {
-  width: 30px;
-  height: 5px;
-  background-color: #fff;
-  margin: 5px;
-  border-radius: 3px;
-  transition: all .3s ease-in-out;
-}
-
-.container{
-  width: 100%;
-  height: 100%;
-}
-
-/*SHOWCASE*/
-#showcase {
-  display: ;
-  margin: ;
-  padding: ;
-  width: 100vw;
-  height: 100vh;
-  background-image: url(.);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-attachment: fixed;
-  justify-content: ;
-  align-items: ;
-}
-
-h1 {
-  color: ;
-  font-size: ;
-  line-height: ;
-  font-weight: ;
-  letter-spacing: ;
-  text-transform: ;
-  justify-content: ;
-  align-items: ;
-  text-align: ;
-  background-color: ;
-}
-
-/*PROBLEM*/
-#problem {
+.mobilhead a:focus img {
+  border: 5px solid #c65f39;
 
 }
 
-/*SOLUTION*/
-#soultion {
 
+/*---------HAMBURGER MENU ICON/BUTTON STYLING----------*/
+.menu-toggle{
+  font-size:30px;
+  float:right;
+  margin-top: 20px;
+  margin-right: 50px;
+  overflow-y: hidden;
+  padding: 20px;
+  height: auto;
+  width: auto;
 }
 
-/*APP*/
-#app {
-
+#main-menu-toggle{
+  color: white;
 }
 
-/*CONTENT*/
-.content{
-  width: 100vw;
-  height: 100vh;
-  align-items: ;
-  align-content: ;
-  align-self: ;
-}
-h2 {
-  color: ;
-  font-size: ;
-  line-height: ;
-  font-weight: ;
-  letter-spacing: ;
-  text-transform: ;
-  justify-content: ;
-  align-items: ;
-  text-align: ;
-  background-color: ;
+#main-menu-close{
+  color: white;
+  font-size: 1.5em;
   padding: 1em;
-  text-transform: uppercase;
+}
+
+.main-menu {
+  position: absolute;
+  display: none;
+  top: 0;
+  overflow-x: visible;
+  z-index: 999;
+
+}
+
+.main-menu ul{
+  list-style: none;
+  margin: 0;
+  min-height: 100%;
+  display: block;
+  font-size: 20px;
+  padding: 1em;
+  color: #fff;
+  width: 100vw;
+  height: auto;
+  overflow-y: hidden;
+  font-weight: bold;
+  text-decoration: none;
+
+}
+
+
+.main-menu li a {
+  display: inline-block;
+  padding: 1em;
+  line-height: 1em;
+  color: #fff;
+  text-decoration: none;
+}
+
+.main-menu a.menu-close {
+  border-bottom: 0;
+}
+
+
+.main-menu a:focus,
+.main-menu a:hover {
+  color: #c65f39;
   text-decoration: underline;
 }
 
-/*FOOTER*/
-footer{
-  background: ;
-  color: ;
-  text-align: ;
-  padding: ;
-  margin-top: ;
+.main-menu .menu-close {
+  position: absolute;
+  right: 0;
+  top: 0;
 }
 
-#sources{
-
+.main-menu:target {
+  display: block;
+  right: 0;
 }
 
-#faq{
 
+.main-menu:target .menu-close, .menu-close {
+  z-index: 1001;
 }
 
-.logo1{
-
+.main-menu:target ul,{
+  position: relative;
+  z-index: 1000;
 }
 
-@media screen and (max-width: 800px){
-#logo1 {
+.close{
+    background-color: #c65f39;
+    width: 200px;
+    border-radius: 35px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+  .close a{
+    font-size: 25px;
+    height: 75px;
+    padding: 0px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+  }
+  .close a:hover, .close a:focus{
+    color: #fff;
+  }
+.main-menu:target + .backdrop{
+  position: absolute;
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 998;
+  background: #284040;
+  cursor: default;
+}
+
+@supports (position: fixed) {
+  .main-menu,
+  .main-menu:target + .backdrop{
+    position: fixed;
+  }
+}
+/*--------- END HAMBURGER MENU ICON/BUTTON STYLING----------*/
+
+/*CODE TO HIDE THE BUTTON ON DESKTOP*/
+.desktop{
   display: none;
 }
 
-#logo1 {
-  display: ;
-  float: ;
-  width: ;
-  height: ;
-  padding: ;
-  margin: ;
-  align-items: ;
-  text-align: ;
+/*----------HEADER LEFTBOX----------*/
+header{
+  height: 100px;
+}
+header .leftbox{
+  width: 30vw;
+  height: 65px;
+  display: inline-block;
+  border-top: solid 3px white;
 }
 
-#logo1 img {
-  width: ;
-  height: ;
+header .leftbox nav{
+  left: 0;
 }
 
-#logo1 a {
-  font-size: ;
-  padding: ;
-  letter-spacing: ;
-  word-spacing: ;
-  text-transform: ;
-  align-items: ;
+header .leftbox nav{
+  left: 0;
+  margin-right: 2vw;
 }
 
-  nav .links {
-      float: ;
-      position: fixed;
-      z-index: 9;
-      left: 0;
-      right: 0;
-      top: 60px;
-      bottom: 100%;
-      width: auto;
-      height: auto;
-      flex-direction: column;
-      justify-content: space evenly;
-      background-color: rgba(0,0,0,8);
-      opacity: 0.75;
-      overflow: hidden;
-      transition: all .5s ease-in-out;
+header .leftbox nav a{
+  margin-right: 4vw;
+  margin-left: 4vw;
+}
+
+/*----------HEADER MIDDLEBOX----------*/
+header .middlebox{
+  display: inline-block;
+  width: 30vw;
+  height: 110px;
+}
+
+header .middlebox img{
+  height: 100px;
+  width: auto;
+}
+
+/*----------HEADER RIGHTBOX----------*/
+header .rightbox{
+  width: 30vw;
+  height: 65px;
+  display: inline-block;
+  border-top: solid 3px white;
+}
+
+header .rightbox nav{
+  right: 0;
+  margin-right: 2vw;
+}
+
+header .rightbox nav a{
+  margin-right: 4vw;
+  margin-left: 4vw;
+}
+/*---------END HEADER BOXES----------*/
+
+/*---------NAVBAR----------*/
+nav{
+  position: fixed;
+  z-index: 10;
+}
+
+.desktop nav li {
+  list-style: none;
+  display: inline-block;
+}
+
+nav a{
+  display: inline-block;
+  color: #fff;
+  padding-top: 0.5em;
+  margin-right: 5vw;
+  margin-left: 5vw;
+  font-size: 1.3em;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+nav a:visited {
+  color: #fff;
+}
+
+nav a:hover{
+  color: #c65f39;
+  text-decoration: underline;
+  opacity: inherit;
+}
+/*---------END NAVBAR----------*/
+/*---------------------------END HEADER----------------------------*/
+
+/*---------------------------MAIN PART OF BODY----------------------------*/
+/*---------SHOWCASE----------*/
+#showcase{
+ width: 100vw;
+ height: 100vh;
+ background-color: #e0ebeb;
+ overflow-y: hidden;
+}
+
+#showcase img{
+  display: block;
+  max-width: 25%;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#showcase p{
+  font-size: 2em;
+  color: #284040;
+}
+
+#showcase .stext{
+  width: 100vw;
+  padding-top: 150px;
+  text-align: center;
+}
+
+#showcase b{
+  color: #c65f39;
+  font-weight: normal;
+}
+/*---------#CONTENT----------*/
+.content{
+  width: 100vw;
+  height: auto;
+  padding: 7vh 10vw;
+}
+
+.content:nth-child(even){
+  background-color: #eee3dd;
+}
+
+/*---------APP----------*/
+#app .appimg{
+  float: right;
+}
+
+#app .mobimg{
+  display: none;
+}
+
+/*---------READ MORE - BUTTON----------*/
+.button {
+ background-color:  #c65f39;
+ border: none;
+ color: white;
+ padding: 8px 25px;
+ text-align: center;
+ text-decoration: none;
+ display: inline-block;
+ font-size: 1.4em;
+ font-weight: bold;
+ margin: 4px 2px;
+ border-radius: 1.5em;
+ z-index: -1;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+/*---------END READ MORE - BUTTON----------*/
+/*---------------------------END MAIN PART OF BODY----------------------------*/
+
+/*---------------------------FOOTER----------------------------*/
+footer{
+  height: 35vh;
+  width: 100vw;
+  position: relative;
+  margin-right: 5vw;
+  margin-left: 5vw;
+  overflow: hidden;
+  margin-top: 2.5%;
+
+}
+footer p{
+  font-size: 1em;
+}
+footer .copyright{
+  display: block;
+  height: 10vh;
+  margin-left: auto;
+  margin-right: 10vw;
+  text-align: center;
+  color: #284140;
+}
+/*---------FOOTER LEFTBOX----------*/
+footer .leftbox{
+  width: 30vw;
+  height: 30vh;
+  display: inline-block;
+  border-top: solid 3px #284140;
+}
+
+footer .leftbox a{
+  display: block;
+  margin: 2vh 0 2vh 0;
+  font-weight: bold;
+  color: #284140;
+  font-size: 1.4em;
+  text-decoration:none;
+}
+
+footer .leftbox a:hover{
+  color: #c65f39;
+  text-decoration: underline;
+  text-decoration-style: solid 3px;
+  text-decoration-color: #c65f39;
+}
+
+footer .icons:hover{
+  color: #c65f39;
+}
+
+footer .leftbox .icons{
+  display: none;
+}
+
+.fa-arrow-up{
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  padding-top: 10px;
+  line-height: 2.0em;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  border-radius: 30%;
+}
+
+footer .fa-arrow-up{
+  background-color: #c65f39;
+}
+footer .fa-arrow-up:hover{
+  background-color: #284140;
+}
+/*---------FOOTER MIDDLEBOX----------*/
+footer .middlebox{
+  width: 30vw;
+  height: 30vh;
+  display: inline-block;
+  align-content: center;
+  align-self: center;
+  text-align: center;
+}
+footer .middlebox img{
+  height: 45px;
+  width: auto;
+  margin-bottom: 5%;
+  margin-top: 2%;
+}
+
+footer .middlebox a{
+  text-decoration: none;
+}
+
+.vertical{
+  display: none;
+}
+
+.icons{
+  overflow-y: hidden;
+  margin: 10px;
+  font-size: 2em;
+}
+
+.icons a{
+  color: #284140;
+}
+
+.icons a:hover{
+  color: #c65f39;
+}
+
+/*---------FOOTER RIGHTBOX----------*/
+footer .rightbox{
+  overflow-y: hidden;
+  width: 30vw;
+  height: 30vh;
+  display: inline-block;
+  border-top: solid 3px #284140;
+}
+footer .rightbox h3{
+  color: #284140;
+  font-weight: bold;
+  text-decoration: underline;
+  font-size: 1.4em;
+  margin-top: 2vh;
+}
+
+footer .rightbox p{
+  font-size: 1.2em;
+}
+
+/*---------------------------END FOOTER----------------------------*/
+/*---------------------------END OF DESKTOP CODE----------------------------*/
+
+
+/*------------------RESPONSIVE PAGE WITH MAX-WIDTH 1200PX-------------------*/
+@media only screen and (min-width:1200px){
+  /*---------------------------MENU----------------------------*/
+  .menu-toggle{
+    display: none;
   }
 
-  nav :checked ~ .links {
-     bottom: 0;
+  .mobilhead{
+    display: none;
   }
-  nav .icon-burger {
+
+  .desktop{
+    display: block;
+  }
+}
+/*------------------RESPONSIVE PAGE WITH MIN-WIDTH 1200PX-------------------*/
+
+/*------------------RESPONSIVE PAGE WITH MAX-WIDTH 1200PX-------------------*/
+@media only screen and (max-width:1200px){
+  /*---------------------------SHOWCASE----------------------------*/
+  #showcase .stext{
+    width: 100vw;
+    padding-top: 150px;
+    font-size: 2em;
+    text-align: center;
+  }
+
+    #showcase img{
       display: block;
-  }
-  nav :checked ~ .icon-burger .line:nth-child(1){
-      transform: translateY(10px) rotate(225deg);
-  }
-  nav :checked ~ .icon-burger .line:nth-child(2){
-      opacity: 0;
-  }
-  nav :checked ~ .icon-burger .line:nth-child(3){
-    transform: translateY(-10px) rotate(-225deg);
+      width: 40%;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+
+  /*---------------------------CONTENT----------------------------*/
+  .content{
+    width: 100vw;
+    height: auto;
   }
 
+  #app .appimg{
+    display: none;
+  }
+
+  #app .mobimg{
+    display: block;
+    float: right;
+  }
 }
+/*------------------END RESPONSIVE PAGE WITH MAX-WIDTH 1200PX-------------------*/
+
+/*------------------RESPONSIVE PAGE WITH MAX-WIDTH 800PX-------------------*/
+@media screen and (max-width: 800px){
+  /*---------SHOWCASE----------*/
+  #showcase {
+   margin: auto;
+   padding-top: 10px;
+   width: 100vw;
+   height: auto;
+   padding-bottom: 15%;
+ }
+
+ #showcase img{
+   max-width: 70%;
+   float: none;
+ }
+
+ #showcase .stext{
+   width: 100vw;
+   padding-top:27%;
+   padding-right: 2%;
+   font-size: 1.6em;
+   text-align: center;
+ }
+
+h1{
+  font-size: 1.8em;
+}
+
+ p{
+   font-size: 1.2em;
+ }
+
+ .button{
+   font-size: 1.2em;
+ }
+
+  /*---------THE APP----------*/
+  .app .appimg{
+    display: none;
+  }
+
+  .app .mobimg{
+    display: block;
+  }
+
+  .app .mobimg img{
+    max-width: 100%;
+    height: auto;
+    float: right;
+  }
+
+  /*---------------------------FOOTER----------------------------*/
+  footer{
+    height: 45vh;
+    width: 100vw;
+    position: relative;
+    margin-right: 5vw;
+    margin-left: 5vw;
+    margin-top: 10%;
+  }
+
+  footer .footerboxes{
+    height: 35vh;
+    overflow-y: hidden;
+  }
+
+  footer .copyright{
+    display: block;
+    height: 5vh;
+    margin-left: auto;
+    margin-right: 10vw;
+    text-align: center;
+    color: #284140;
+  }
+
+  /*---------FOOTER LEFTBOX----------*/
+  footer .leftbox{
+    width: 30vw;
+    height: 41vh;
+    display: inline-block;
+    border-top: solid 3px #284140;
+  }
+
+  footer .leftbox .footlink a{
+    display: block;
+    margin: 2vh 0 2vh 0;
+    font-weight: bold;
+    color: #284140;
+    font-size: 1.2em;
+    text-decoration:none;
+  }
+
+  footer .leftbox a:hover{
+    color: #284140;
+    text-decoration: underline;
+    text-decoration-style: solid 3px;
+    text-decoration-color: #284140;
+  }
+
+  .fa-arrow-up{
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    padding-top: 3px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    background-color: #284140;
+    border-radius: 30%;
+    margin: 0;
+  }
+
+  footer .leftbox .icons{
+  display: inline-block;
+  margin: 0;
+
+  }
+
+  footer .icons a{
+    font-size: 0.5em;
+    overflow: hidden:
+    color: #284140;
+    display: inline-block;
+
+  }
+
+  /*---------FOOTER MIDDLEBOX----------*/
+  footer .middlebox{
+    width: 30vw;
+    height: 45vh;
+    display: inline-block;
+    align-content: center;
+    align-self: center;
+    text-align: center;
+  }
+
+  footer .middlebox a{
+    text-decoration: none;
+  }
+
+  footer .middlebox .icons{
+    display: none;
+  }
+
+  footer .middlebox img{
+    max-height: 35px;
+  }
+
+  .vertical{
+    display: block;
+    border-left: 3px solid #284140;
+    height: 20vh;
+    position: absolute;
+    left: 45vw;
+  }
+
+  /*---------FOOTER RIGHTBOX----------*/
+  footer .rightbox{
+    width: 30vw;
+    height: 41vh;
+  }
+
+  footer .rightbox h3{
+    font-size: 1.2em;
+  }
+
+  footer .rightbox .about p{
+    font-size: 0.8em;
+    padding-right: 10px;
+  }
+
+  /*---------------------------END FOOTER----------------------------*/
+}
+/*------------------END RESPONSIVE PAGE WITH MAX-WIDTH 800PX-------------------*/

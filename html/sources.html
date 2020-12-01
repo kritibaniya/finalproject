@@ -1,67 +1,593 @@
 <!DOCTYPE html>
-<html lang="en"
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="sources.css">
-    <link href= fonts?>
+    <link rel="stylesheet" type="text/css" href="../css/sources.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>Sources</title>
-    <link rel="icon" type="image/png" href="https://cdn.dribbble.com/users/1848142/screenshots/5066599/sharing-plate.jpg">
+    <link rel="icon" type="image/png" href=../bilder/logo/Favicon.png>
   </head>
 
-  <body>
-  <!--NAVBAR-->
+<body>
+  <!--HEADER-->
+    <header>
+      <div class="mobilhead">
+        <a href="index.html">
+          <img src="../bilder/logo/HvitLogo.jpg" alt="White Neat logo">
+        </a>
+      </div>
+        <a href="#main-menu"
+      id="main-menu-toggle"
+      class="menu-toggle">
+     <span class="fa fa-bars"></span>
+   </a>
+   <nav id="main-menu" class="main-menu" >
+     <a href="#main-menu-toggle"
+        id="main-menu-close"
+        class="menu-close">
+       <span class="fa fa-close"></span>
+     </a>
+     <ul >
+      <li> <a href="problem.html">Problem</a> </li>
+        <li> <a href="solution.html">Solution</a> </li>
+         <li> <a href="app.html">The App</a> </li>
+         <li> <a href="future.html">Our Future</a> </li>
+         <li class="close" > <a href="#main-menu-toggle"
+          class="backdrop"
+          tabindex="0">Close</a> </li>
+       </ul>
+
+   </nav>
+  <a href="#main-menu-toggle"
+      class="backdrop"
+      tabindex="-1"></a>
+
+  <!--DESKTOP HEADER-->
+  <div class="desktop">
+  <div class="leftbox">
     <nav>
-      <input id="nav-toggle" type="checkbox">
-        <div id="logo1">
-            <img src="images/logo.png" alt="Logo alt">
-            <a href="#showcase"> Title </a>
-        </div>
-        <div id="logo2">
-            <img src="images/logo.png" alt="Logo alt">
-            <a href="#showcase"> Small title </a>
-        </div>
-
-        <ul class="links">
-          <li> <a href="#problem">Our Idea</a> </li>
-          <li> <a href="#soultion">Website Design</a> </li>
-          <li> <a href="#app">About us</a> </li>
-        </ul>
-      
-        <label for="nav-toggle" class="icon-burger">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
-        </label>
+      <ul>
+        <li> <a href="problem.html">Problem</a> </li>
+        <li> <a href="solution.html">Solution</a> </li>
+      </ul>
     </nav>
+  </div>
 
-  <!--INNHOLD-->
-      <main>
-        <div class="container">
-          <div id="information" class="content">
-            <h2>Information</h2>
-              <p> 
-              </p>
+  <div class="middlebox">
+    <a href="index.html"> <img src="../bilder/logo/HvitLogo.jpg"
+      alt="White Neat logo"> </a>
+  </div>
+
+  <div class="rightbox">
+    <nav>
+      <ul>
+        <li> <a href="app.html">The App</a> </li>
+        <li> <a href="future.html">Our Future</a> </li>
+      </ul>
+    </nav>
+  </div>
+</div>
+    </header>
+    <!--END HEADER-->
+
+  <!--MAIN-->
+    <main>
+      <div class = "container">
+
+        <!---SIDE NAVBAR--->
+        <div class = "side-nav">
+          <ul>
+            <li> <h1> Sources </h1> </li>
+            <li> <a href=#information>Information</a> </li>
+            <li> <a href=#graphics>Graphics</a> </li>
+            <li> <a href=#help>Help/Inspiration</a> </li>
+            <li> <a href=#tools>Tools</a></li>
+          </ul>
+        </div>
+        <!---END SIDE NAVBAR--->
+
+        <!---CONTENT--->
+        <div class = "content">
+          <div id = "information" class="info">
+            <h2 > Information </h2>
+
+              <ul class = list>
+                <li id = "source1"> <b>[source 1]</b> - on problem webpage </li>
+                <li> <em> Website title: </em> United Nation - Department of Economic and Social Affairs - Sustainable Development </li>
+                <li> <em> Author: </em> Unknown </li>
+                <li> <em> Published: </em> Unknown </li>
+                <li> <em> Webpage title: </em> Ensure sustainable consumption and production patterns </li>
+                <li> <em> Available at: </em> <a href="https://www.matsentralen.no/matsvinn" target="_blank"> https://www.matsentralen.no/matsvinn </a> </li>
+                <li> <em> Retrieved: </em> 22.11.2020 </li>
+              </ul>
+
+                <ul class = list>
+                  <li id = "source2"> <b>[source 2]</b> - on problem webpage </li>
+                  <li> <em> Website title: </em> The World Counts </li>
+                  <li> <em> Author: </em> Unknown </li>
+                  <li> <em> Published: </em> Unknown </li>
+                  <li> <em> Webpage title: </em> People who died from hunger </li>
+                  <li> <em> Available at: </em> <a href="https://www.theworldcounts.com/challenges/people-and-poverty/hunger-and-obesity/how-many-people-die-from-hunger-each-year/story" target="_blank"> https://www.theworldcounts.com/challenges/people-and-poverty/hunger-and-obesity/how-many-people-die-from-hunger-each-year/story </a> </li>
+                  <li> <em> Retrieved: </em> 21.11.2020 </li>
+                </ul>
+
+                <ul class = list>
+                  <li id = "source3"> <b>[source 3]</b> - on problem webpage </li>
+                  <li> <em> Website title: </em> UNDP </li>
+                  <li> <em> Author: </em> Unknown </li>
+                  <li> <em> Published: </em> Unknown </li>
+                  <li> <em> Webpage title: </em> Goal 12: Responsible consumption and production </li>
+                  <li> <em> Available at: </em> <a href="https://www.undp.org/content/undp/en/home/sustainable-development-goals/goal-12-responsible-consumption-and-production.html" target="_blank"> https://www.undp.org/content/undp/en/home/sustainable-development-goals/goal-12-responsible-consumption-and-production.html </a> </li>
+                  <li> <em> Retrieved: </em> 19.11.2020 </li>
+                </ul>
+
+                  <ul class = list>
+                    <li id = "source4"> <b>[source 4]</b> - on solution webpage </li>
+                    <li> <em> Website title: </em> Matsentralen </li>
+                    <li> <em> Author: </em> Unknown </li>
+                    <li> <em> Published: </em> Unknown </li>
+                    <li> <em> Webpage title: </em> Matsvinn </li>
+                    <li> <em> Available at: </em> <a href="https://www.matsentralen.no/matsvinn" target="_blank"> https://www.matsentralen.no/matsvinn </a> </li>
+                    <li> <em> Location: </em> 5th paragraph - Matsvinn i Norge </li>
+                    <li> <em> Retrieved: </em> 21.11.2020 </li>
+                  </ul>
+
+                  <ul class = list>
+                    <li id = "source5"> <b>[source 5]</b> - on solution webpage </li>
+                    <li> <em> Website title: </em> Cleveland Clinic </li>
+                    <li> <em> Author: </em> Mental Health </li>
+                    <li> <em> Published: </em> 28.10.2020 </li>
+                    <li> <em> Webpage title: </em> Why Giving Is Good for Your Health </li>
+                    <li> <em> Available at: </em> <a href="https://www.matsentralen.no/matsvinn" target="_blank"> https://www.matsentralen.no/matsvinn </a> </li>
+                    <li> <em> Location: </em> 2nd paragraph </li>
+                    <li> <em> Retrieved: </em> 21.11.2020 </li>
+                  </ul>
+
+                  <ul class = list>
+                    <li id = "source6"> <b>[source 6]</b> - on FAQ webpage </li>
+                    <li> <em> Website title: </em> Matvett </li>
+                    <li> <em> Author: </em> Unknown </li>
+                    <li> <em> Published: </em> Unknown</li>
+                    <li> <em> Webpage title: </em> SE, LUKT OG SMAK PÅ MATEN </li>
+                    <li> <em> Available at: </em> <a href="https://www.matvett.no/aktuelt/se-lukt-smak" target="_blank"> https://www.matvett.no/aktuelt/se-lukt-smak </a> </li>
+                    <li> <em> Location: </em> 4th paragraph </li>
+                    <li> <em> Retrieved: </em> 21.11.2020 </li>
+                  </ul>
+
+                  <ul class = list>
+                    <li id = "source7"> <b>[source 7]</b> - on FAQ webpage </li>
+                    <li> <em> Website title: </em> bankID - bedrift </li>
+                    <li> <em> Author: </em> Unknown </li>
+                    <li> <em> Published: </em> Unknown </li>
+                    <li> <em> Webpage title: </em> BANKID TIL DIN BEDRIFT </li>
+                    <li> <em> Available at: </em> <a href="https://www.bankid.no/bedrift/" target="_blank"> https://www.bankid.no/bedrift/ </a> </li>
+                    <li> <em> Retrieved: </em> 19.11.2020 </li>
+                  </ul>
+          </div>
+          <div id = "graphics" class="info2">
+            <h2> Graphics </h2>
+                <ul class = list>
+                  <li> <b>[image 1]</b> - on homepage </li>
+                  <li> <em> Location on our page: </em> The mobile and the truck on the showcase </li>
+                  <li> <em> Artist: </em> Manroop Kaur </li>
+                </ul>
+
+                <ul class = list>
+                  <li> <b>[image 2]</b> - on homepage  </li>
+                  <li> <em> Location on our page: </em> The girl on the showcase  </li>
+                  <li> <em> Website Title: </em> PaymentsJournal </li>
+                  <li> <em> Artists: </em> Pete Reville </li>
+                  <li> <em> Published: </em> 02.03.2020 </li>
+                  <li> <em> Webpage Title: </em> Defining Growth in Mobile Payments </li>
+                  <li> <em> Webpage Link: </em> <a href="https://www.paymentsjournal.com/defining-growth-in-mobile-payments/" target="_blank"> https://www.paymentsjournal.com/defining-growth-in-mobile-payments/ </a> </li>
+                  <li> <em> Image Address: </em> <a href="https://www.paymentsjournal.com/wp-content/uploads/2020/03/mobile-payments-concept-illustration_114360-1243.jpg" target="_blank"> https://www.paymentsjournal.com/wp-content/uploads/2020/03/mobile-payments-concept-illustration_114360-1243.jpg </a> </li>
+                  <li> <em> Location on website: </em> 1st picture on the webpage. </li>
+                  <li> <em> Retrieved: </em> 12.11.2020 </li>
+                  <li> <em> Edited by: </em> Manroop Kaur </li>
+                </ul>
+
+                <ul class = list>
+                  <li> <b>[image 3]</b> - on homepage  </li>
+                  <li> <em> Location on our page: </em> Beside the third paragraph (the app)  </li>
+                  <li> <em> Website Title: </em> Behanse </li>
+                  <li> <em> Artists: </em> Behnamian Reza, Elahe Baloochi, Shahryar Taghipour </li>
+                  <li> <em> Published: </em> 27.08.2019 </li>
+                  <li> <em> Webpage Title: </em> Charity Graphic Motion </li>
+                  <li> <em> Webpage Link: </em> <a href="https://www.behance.net/gallery/84675563/Charity-Graphic-Motion?fbclid=IwAR0hrzUkdmyqSYrEOufQszWHBDeuSdF2MPgz2nGi0s21QMln7D7b038S60o" target="_blank">https://www.behance.net/gallery/84675563/Charity-Graphic-Motion?fbclid=IwAR0hrzUkdmyqSYrEOufQszWHBDeuSdF2MPgz2nGi0s21QMln7D7b038S60o </a> </li>
+                  <li> <em> Image Address: </em> <a href="https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/19691b84675563.5d64c25212fdc.jpg" target="_blank"> https://mir-s3-cdn-cf.behance.net/project_modules/1400_opt_1/19691b84675563.5d64c25212fdc.jpg </a> </li>
+                  <li> <em> Location on website: </em> 2nd picture on the webpage. </li>
+                  <li> <em> Retrieved: </em> 12.11.2020 </li>
+                  <li> <em> Edited by: </em> Manroop Kaur </li>
+                </ul>
+
+                <ul class = list>
+                  <li> <b>[image 4]</b> - on problem webpage  </li>
+                  <li> <em> Location on our page: </em> On the showcase  </li>
+                  <li> <em> Website Title: </em> freepik </li>
+                  <li> <em> Artists: </em> pch.vector </li>
+                  <li> <em> Published: </em> Unknown</li>
+                  <li> <em> Webpage Title: </em> Waste sorting </li>
+                  <li> <em> Webpage Link: </em> <a href="https://www.freepik.com/free-vector/waste-sorting-concept_9652124.htm" target="_blank">https://www.freepik.com/free-vector/waste-sorting-concept_9652124.htm </a> </li>
+                  <li> <em> Image Address: </em> <a href="https://image.freepik.com/free-vector/waste-sorting-concept_74855-7934.jpg" target="_blank"> https://image.freepik.com/free-vector/waste-sorting-concept_74855-7934.jpg </a> </li>
+                  <li> <em> Location on website: </em> 2nd picture on the webpage. </li>
+                  <li> <em> Retrieved: </em> 12.11.2020 </li>
+                  <li> <em> Edited by: </em> Manroop Kaur </li>
+                </ul>
+
+                <ul class = list>
+                  <li> <b>[image 5]</b> - on problem webpage  </li>
+                  <li> <em> Location on our page: </em> Beside the first paragraph (UN's sustainable development goal)  </li>
+                  <li> <em> Website Title: </em> United Nations - Department of Economic and Social Affairs - Statistics Division </li>
+                  <li> <em> Artists: </em> Unknown </li>
+                  <li> <em> Published: </em> Unknown </li>
+                  <li> <em> Webpage Title: </em> Goal 12: Ensure sustainable consumption and production patterns </li>
+                  <li> <em> Webpage Link: </em> <a href="https://unstats.un.org/sdgs/report/2016/goal-12/" target="_blank">https://unstats.un.org/sdgs/report/2016/goal-12/ </a> </li>
+                  <li> <em> Image Address: </em> <a href="https://unstats.un.org/sdgs/assets/img/sliders/Goal-12-header.jpg" target="_blank"> https://unstats.un.org/sdgs/assets/img/sliders/Goal-12-header.jpg </a> </li>
+                  <li> <em> Location on website: </em> First picture on the header. </li>
+                  <li> <em> Retrieved: </em> 11.11.2020 </li>
+                </ul>
+
+              <ul class = list>
+                <li> <b>[video 1]</b> - on problem webpage </li>
+                <li> <em> Location on our page: </em> Beside the second paragraph (Why we chose this problem?)  </li>
+                <li> <em> Website Title: </em> YouTube </li>
+                <li> <em> Owner: </em> Food and Agriculture Organization of the United Nations </li>
+                <li> <em> Published: </em> 11.09.2013 </li>
+                <li> <em> Webpage Title: </em> Food wastage footprint </li>
+                <li> <em> Webpage Link: </em> <a href="https://youtu.be/IoCVrkcaH6Q" target="_blank"> https://youtu.be/IoCVrkcaH6Q </a> </li>
+                <li> <em> Retrieved: </em> 17.11.2020 </li>
+              </ul>
+
+              <ul class = list>
+                <li> <b>[image 6]</b> - on problem webpage  </li>
+                <li> <em> Location on our page: </em> Beside the third paragraph (the app)  </li>
+                <li> <em> Artists: </em> Kriti Baniya </li>
+              </ul>
+
+
+            <ul class = list>
+              <li> <b>[image 7]</b> - on solution webpage  </li>
+              <li> <em> Location on our page: </em> On the showcase  </li>
+              <li> <em> Website Title: </em> VectorStock </li>
+              <li> <em> Artist: </em> drawlab19 </li>
+              <li> <em> Published: </em> Unknown </li>
+              <li> <em> Webpage Title: </em> Siblings relationship kids sharing delicious vector image </li>
+              <li> <em> Webpage Link: </em> <a href="https://www.vectorstock.com/royalty-free-vector/siblings-relationship-kids-sharing-delicious-vector-24977533" target="_blank"> https://www.vectorstock.com/royalty-free-vector/siblings-relationship-kids-sharing-delicious-vector-24977533 </a> </li>
+              <li> <em> Image Address: </em> <a href="https://cdn4.vectorstock.com/i/1000x1000/75/33/siblings-relationship-kids-sharing-delicious-vector-24977533.jpg?fbclid=IwAR0X9s9iQ9KZWd1-zgnOZep7408zhaF4oOZzVgpWmEjh9rs9H1rGpJvEEos" target="_blank"> https://cdn4.vectorstock.com/i/1000x1000/75/33/siblings-relationship-kids-sharing-delicious-vector-24977533.jpg?fbclid=IwAR0X9s9iQ9KZWd1-zgnOZep7408zhaF4oOZzVgpWmEjh9rs9H1rGpJvEEos </a> </li>
+              <li> <em> Location: </em> 1st big picture on the webpage. </li>
+              <li> <em> Retrieved: </em> 18.11.2020 </li>
+            </ul>
+
+             <ul class = list>
+                <li> <b>[image 8]</b> - on the app webpage  </li>
+                <li> <em> Location on our page: </em> The girl on the showcase  </li>
+                <li> <em> Website Title: </em> freepik </li>
+                <li> <em> Artists: </em> stories </li>
+                <li> <em> Published: </em> Unknown </li>
+                <li> <em> Webpage Title: </em> Booking concept illustration </li>
+                <li> <em> Webpage Link: </em> <a href="https://www.freepik.com/free-vector/booking-concept-illustration_7504541.htm?fbclid=IwAR1fxC9q9gXzLY9JomgsjYVePzS1e2oRs6vZy5lHeoErU99uG2oy6aJ601w#page=5&query=Apps&position=28" target="_blank"> https://www.freepik.com/free-vector/booking-concept-illustration_7504541.htm?fbclid=IwAR1fxC9q9gXzLY9JomgsjYVePzS1e2oRs6vZy5lHeoErU99uG2oy6aJ601w#page=5&query=Apps&position=28 </a> </li>
+                <li> <em> Image Address: </em> <a href="https://image.freepik.com/free-vector/booking-concept-illustration_114360-1706.jpg" target="_blank"> https://image.freepik.com/free-vector/booking-concept-illustration_114360-1706.jpg </a> </li>
+                <li> <em> Location on website: </em> 1st picture on the webpage. </li>
+                <li> <em> Retrieved: </em> 15.11.2020 </li>
+                <li> <em> Edited by: </em> Manroop Kaur </li>
+              </ul>-->
+
+            <ul class = list>
+              <li> <b>[image 9]</b> - on the app webpage </li>
+              <li> <em> Location on our page: </em> The mobilephones on the showcase </li>
+              <li> <em> Artist: </em> Manroop Kaur </li>
+            </ul>
+
+              <ul class = list>
+                <li> <b>[all images except showcase]</b> - on the app webpage </li>
+                <li> <em> Location on our page: </em> Beside the first, second, third and fourth paragraph  </li>
+                <li> <em> Artist: </em> Manroop Kaur </li>
+              </ul>
+
+
+                <h3> Images in the screenshots of the app </h3>
+                  <ul class = list>
+                    <li> <b>[image 10]</b> - Chicken Pizza  </li>
+                    <li> <em> Website Title: </em> Jeannie’s Tried and True Recipes </li>
+                    <li> <em> Artist: </em> Jeannie </li>
+                    <li> <em> Published: </em> 21.05.2020 </li>
+                    <li> <em> Webpage Title: </em> BUFFALO CHICKEN PIZZA </li>
+                    <li> <em> Webpage Link: </em> <a href="https://jeanniestriedandtruerecipes.com/buffalo-chicken-wing-pizza/" target="_blank"> https://jeanniestriedandtruerecipes.com/buffalo-chicken-wing-pizza/ </a> </li>
+                    <li> <em> Image Address: </em> https://jeanniestriedandtruerecipes.com/wp-content/uploads/2020/05/Buffalo-Chicken-Pizza-2020-500x500.jpg </li>
+                    <li> <em> Location: </em> 1st picture on the webpage. </li>
+                    <li> <em> Retrieved: </em> 12.11.2020 </li>
+                  </ul>
+
+                  <ul class = list>
+                    <li> <b>[image 11]</b> - Fajitas </li>
+                    <li> <em> Website Title: </em> Jessica Gavin </li>
+                    <li> <em> Artist: </em> Jessica Gavin </li>
+                    <li> <em> Published: </em> 10.06.2020 </li>
+                    <li> <em> Webpage Title: </em> Steak Fajitas </li>
+                    <li> <em> Webpage Link: </em> <a href="https://www.jessicagavin.com/steak-fajitas/" target="_blank"> https://www.jessicagavin.com/steak-fajitas/ </a> </li>
+                    <li> <em> Image Address: </em> <a href="https://www.jessicagavin.com/wp-content/uploads/2020/06/steak-fajitas-8-1024x1536.jpg" target="_blank"> https://www.jessicagavin.com/wp-content/uploads/2020/06/steak-fajitas-8-1024x1536.jpg </a> </li>
+                    <li> <em> Location: </em> 1st picture on the webpage. </li>
+                    <li> <em> Retrieved: </em> 12.11.2020 </li>
+                  </ul>
+
+                  <ul class = list>
+                    <li> <b>[image 12]</b> - Lasagna </li>
+                    <li> <em> Website Title: </em> The Wholesome Dish </li>
+                    <li> <em> Artist: </em> Amanda Finks </li>
+                    <li> <em> Published: </em> 08.06.2018 </li>
+                    <li> <em> Webpage Title: </em> THE BEST CLASSIC LASAGNA </li>
+                    <li> <em> Webpage Link: </em> <a href="https://www.thewholesomedish.com/the-best-classic-lasagna/" target="_blank"> https://www.thewholesomedish.com/the-best-classic-lasagna/ </a> </li>
+                    <li> <em> Image Address: </em> <a href="https://www.thewholesomedish.com/wp-content/uploads/2018/07/Best-Lasagna-550-500x500.jpg" target="_blank"> https://www.thewholesomedish.com/wp-content/uploads/2018/07/Best-Lasagna-550-500x500.jpg </a> </li>
+                    <li> <em> Location: </em> 1st big picture on the webpage. </li>
+                    <li> <em> Retrieved: </em> 12.11.2020 </li>
+                  </ul>
+
+                  <ul class = list>
+                    <li> <b>[image 13]</b> - Fish and Chips </li>
+                    <li> <em> Website Title: </em> BigOven. </li>
+                    <li> <em> Artist: </em> promfh </li>
+                    <li> <em> Published: </em> Unknown </li>
+                    <li> <em> Webpage Title: </em> Fish and Chips </li>
+                    <li> <em> Webpage Link: </em> <a href="https://www.bigoven.com/recipe/fish-and-chips/84938" target="_blank"> https://www.bigoven.com/recipe/fish-and-chips/84938 </a> </li>
+                    <li> <em> Image Address: </em> <a href="https://photos.bigoven.com/recipe/hero/fish-and-chips-3.jpg?h=500&w=500" target="_blank"> https://photos.bigoven.com/recipe/hero/fish-and-chips-3.jpg?h=500&w=500 </a> </li>
+                    <li> <em> Location: </em> 1st picture on the webpage. </li>
+                    <li> <em> Retrieved: </em> 12.11.2020 </li>
+                  </ul>
+
+                  <ul class = list>
+                    <li> <b>[image 14]</b> - Chicken Tikka Masala  </li>
+                    <li> <em> Website Title: </em> Tasty </li>
+                    <li> <em> Artist: </em> Alvin Zhou </li>
+                    <li> <em> Published: </em> Unknown </li>
+                    <li> <em> Webpage Title: </em> Homemade Chicken Tikka Masala </li>
+                    <li> <em> Webpage Link: </em> <a href="https://tasty.co/recipe/homemade-chicken-tikka-masala" target="_blank"> https://tasty.co/recipe/homemade-chicken-tikka-masala </a> </li>
+                    <li> <em> Image Address: </em> <a href="https://img.buzzfeed.com/video-api-prod/assets/d03461e6d185483da8317cf9ee03433e/BFV18861_ChickenTikkaMasala-ThumbA1080.jpg" target="_blank"> https://img.buzzfeed.com/video-api-prod/assets/d03461e6d185483da8317cf9ee03433e/BFV18861_ChickenTikkaMasala-ThumbA1080.jpg </a> </li>
+                    <li> <em> Location: </em> Almost at the end of the video on the right side.  </li>
+                    <li> <em> Retrieved: </em> 12.11.2020 </li>
+                  </ul>
+
+                  <ul class = list>
+                    <li> <b>[all the images]</b> - as profile pictures  </li>
+                    <li> <em> Taken: </em> By ourselves.  </li>
+                  </ul>
+
+                  <ul class = list>
+                    <li> <b>[image 15]</b> - on future webpage </li>
+                    <li> <em> Location on our page: </em> On the showcase </li>
+                    <li> <em> Website Title: </em> dreamstime </li>
+                    <li> <em> Artist: </em> Studiostockcreator </li>
+                    <li> <em> Published: </em> Unknown </li>
+                    <li> <em> Webpage Title: </em> People Wait In A Queue To Electronic Locker. Characters Pick up And Send Parcels By Self Service Post Terminal Machine. </li>
+                    <li> <em> Webpage Link: </em> <a href="https://www.dreamstime.com/people-wait-queue-to-electronic-locker-characters-pick-up-send-parcels-self-service-post-terminal-machine-standing-image174612880" target="_blank"> https://www.dreamstime.com/people-wait-queue-to-electronic-locker-characters-pick-up-send-parcels-self-service-post-terminal-machine-standing-image174612880 </a> </li>
+                    <li> <em> Image Address: </em> <a href="https://thumbs.dreamstime.com/z/people-wait-queue-to-electronic-locker-characters-pick-up-send-parcels-self-service-post-terminal-machine-standing-174612880.jpg" target="_blank"> https://thumbs.dreamstime.com/z/people-wait-queue-to-electronic-locker-characters-pick-up-send-parcels-self-service-post-terminal-machine-standing-174612880.jpg </a> </li>
+                    <li> <em> Location: </em> 1st big picture on the webpage. </li>
+                    <li> <em> Retrieved: </em> 20.11.2020 </li>
+                    <li> <em> Edited by: </em> Momina Hassan </li>
+                  </ul>
+            </div>
+
+      <div id = "help" class="info2">
+        <h2> Help / Inspiration </h2>
+            <ul class = list>
+              <li> <b>[help 1]</b>  </li>
+              <li> <em> Website title: </em> GeeksForGeeks </li>
+              <li> <em> Author: </em> Pranchal Katiyar </li>
+              <li> <em> Published: </em> 19.02.2019 </li>
+              <li> <em> Title: </em> How to make a vertical line using HTML? </li>
+              <li> <em> Webpage Link: </em> <a href="https://www.geeksforgeeks.org/how-to-make-a-vertical-line-using-html/?fbclid=IwAR2DYFol4WDmcpSCJ8KTcWNa0rTvQuq0e3Sx12_4MUCtUJEWtbjstvtJIz0" target="_blank"> https://www.geeksforgeeks.org/how-to-make-a-vertical-line-using-html/?fbclid=IwAR2DYFol4WDmcpSCJ8KTcWNa0rTvQuq0e3Sx12_4MUCtUJEWtbjstvtJIz0 </a> </li>
+              <li> <em> Retrieved: </em> 20.11.2020 </li>
+              <li> <em> Usage: </em> Helped with coding vertical line in the footer. </li>
+            </ul>
+
+            <ul class = list>
+              <li> <b>[help 2]</b>  </li>
+              <li> <em> Website title: </em> Codepen </li>
+              <li> <em> Author: </em> Mark Caron </li>
+              <li> <em> Published: </em> Unknown </li>
+              <li> <em> Title: </em> Pure CSS Hamburger Menu without JavaScript </li>
+              <li> <em> Webpage Link: </em> <a href="https://codepen.io/markcaron/pen/pPZVWO" target="_blank"> https://codepen.io/markcaron/pen/pPZVWO </a> </li>
+              <li> <em> Retrieved: </em> 23.11.2020 </li>
+              <li> <em> Usage: </em> Helped with coding an accessible hamburger menu. </li>
+            </ul>
+
+            <ul class = list>
+              <li> <b>[help 2]</b>  </li>
+              <li> <em> Website title: </em> w3schools.com </li>
+              <li> <em> Author: </em> Unknown </li>
+              <li> <em> Published: </em> Unknown </li>
+              <li> <em> Title: </em> CSS Buttons </li>
+              <li> <em> Webpage Link: </em> <a href="https://www.w3schools.com/csS/css3_buttons.asp?fbclid=IwAR3AKZKGpDAZRPnZpw9O808KuFpHu4rUcs2nM0NWCTmw8iNQ5wwT2vLKnDI" target="_blank"> https://www.w3schools.com/csS/css3_buttons.asp?fbclid=IwAR3AKZKGpDAZRPnZpw9O808KuFpHu4rUcs2nM0NWCTmw8iNQ5wwT2vLKnDI </a> </li>
+              <li> <em> Retrieved: </em> 17.11.2020 </li>
+              <li> <em> Usage: </em> Helped with coding read more buttons on the homepage. </li>
+            </ul>
+
+            <ul class = list>
+              <li> <b>[help 3]</b>  </li>
+              <li> <em> Wesite title: </em> YouTube </li>
+              <li> <em> Owner: </em> MinzCode </li>
+              <li> <em> Published: </em> 20.03.2020 </li>
+              <li> <em> Page title: </em> Responsive Fixed Navigation Bar - Only HTML, CSS </li>
+              <li> <em> Webpage Link: </em> <a href="https://youtu.be/S-JyJCVx_4Y" target="_blank"> https://youtu.be/S-JyJCVx_4Y </a> </li>
+              <li> <em> Retrieved: </em> 18.11.2020 </li>
+              <li> <em> Usage: </em> Helped with coding a responsive navigation bar. </li>
+            </ul>
+
+            <ul class = list>
+              <li> <b>[help 4]</b>  </li>
+              <li> <em> Wesite title: </em> Mendeley </li>
+              <li> <em> Auhtor: </em> Unknown </li>
+              <li> <em> Published: </em> Unknown </li>
+              <li> <em> Page title: </em> How To Cite a Website </li>
+              <li> <em> Webpage Link: </em> <a href="https://www.mendeley.com/guides/web-citation-guide" target="_blank"> https://www.mendeley.com/guides/web-citation-guide</a> </li>
+              <li> <em> Retrieved: </em> 17.11.2020 </li>
+              <li> <em> Usage: </em> Helped with citing the sources. </li>
+            </ul>
+            <br>
+        </div>
+
+        <div id = "tools" class="info2">
+        <h2> Tools </h2>
+            <ul class = list>
+              <li> <b>[tool 1]</b>  </li>
+              <li> <em> Tool Name: </em> Canva </li>
+              <li> <em> Webpage Link: </em> <a href="https://www.canva.com/nb_no/" target="_blank"> https://www.canva.com/nb_no/ </a> </li>
+              <li> <em> Usage: </em> Used to design the favicon and the logo. </li>
+              <li> <em> Used by: </em> Manroop Kaur </li>
+              <li> <em> Requirements: </em> Anyone can use it, but you must have an account. We used the version which is free. </li>
+            </ul>
+
+            <ul class = list>
+              <li> <b>[tool 2]</b>  </li>
+              <li> <em> Tool Name: </em> Font Awesome </li>
+              <li> <em> Title: </em> ? </li>
+              <li> <em> Webpage Link: </em> <a href="https://fontawesome.com/icons?d=gallery" target="_blank"> https://fontawesome.com/icons?d=gallery </a> </li>
+              <li> <em> Font link: </em> <a href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" target="_blank"> https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css </a> </li>
+              <li> <em> Usage: </em> Used the font link to get social media icons/logos </li>
+              <li> <em> Retrieved: </em> 18.11.2020 </li>
+              <li> <em> Requirements: </em> Anyone can use it? </li>
+            </ul>
+
+            <ul class = list>
+              <li> <b>[tool 3]</b>  </li>
+              <li> <em> Tool Name: </em> Google Fonts </li>
+              <li> <em> Designer: </em> Claus Eggers Sørensen </li>
+              <li> <em> Published: </em> November 2017 </li>
+              <li> <em> Title: </em> Playfair Display </li>
+              <li> <em> Webpage Link: </em> <a href="https://fonts.google.com/specimen/Playfair+Display?query=pl" target="_blank"> https://fonts.google.com/specimen/Playfair+Display?query=pl </a> </li>
+              <li> <em> Font Link: </em> <a href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" target="_blank"> https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap </a> </li>
+              <li> <em> Usage: </em> Used the font link to get Merriweather font. </li>
+              <li> <em> Retrieved: </em> 18.11.2020 </li>
+              <li> <em> Requirements: </em> Anyone can use it. </li>
+            </ul>
+
+            <ul class = list>
+              <li> <b>[tool 4]</b>  </li>
+              <li> <em> Tool Name: </em> Google Fonts </li>
+              <li> <em> Designer: </em> Sorkin Type </li>
+              <li> <em> Published: </em> Unknown </li>
+              <li> <em> Title: </em> Merriweather </li>
+              <li> <em> Webpage Link: </em> <a href="https://fonts.google.com/specimen/Merriweather?query=Merr" target="_blank"> https://fonts.google.com/specimen/Merriweather?query=Merr </a> </li>
+              <li> <em> Font link: </em> <a href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" target="_blank"> https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap </a> </li>
+              <li> <em> Usage: </em> Used the font link to get Merriweather font. </li>
+              <li> <em> Requirements: </em> Anyone can use it. </li>
+            </ul>
+
+            <ul class = list>
+              <li> <b>[tool 5]</b>  </li>
+              <li> <em> Tool Name: </em> Procreate </li>
+              <li> <em> Company: </em> Savage Interactive Pty Ltd </li>
+              <li> <em> Website Link: </em> <a href="https://apps.apple.com/us/app/procreate/id425073498" target="_blank"> https://apps.apple.com/us/app/procreate/id425073498 </a> </li>
+              <li> <em> Usage: </em> Used to design the animation by hand. </li>
+              <li> <em> Used by: </em> Manroop Kaur </li>
+              <li> <em> Requirements: </em> This app is available only on the App Store for iPad and costs $9.99. </li>
+            </ul>
+
+            <ul class = list>
+              <li> <b>[tool 6]</b>  </li>
+              <li> <em> Tool Name: </em> Wondershare Mockitt </li>
+              <li> <em> Company: </em> Wondershare </li>
+              <li> <em> Website Link: </em> <a href="https://mockitt.wondershare.com/?_ga=2.185165481.1007764325.1606603568-290124153.1606603568" target="_blank"> https://mockitt.wondershare.com/?_ga=2.185165481.1007764325.1606603568-290124153.1606603568 </a> </li>
+              <li> <em> Usage: </em> Used to design the screenshots of the app. </li>
+              <li> <em> Used by: </em> Manroop Kaur </li>
+              <li> <em> Requirements: </em> Anyone can use it, but you must have an account. </li>
+            </ul>
+          </div>
+        </div>
+        <!---END CONTENT--->
+
+      </div>
+    <main>
+    <!---END MAIN--->
+
+
+    <!--FOOTER-->
+    <footer>
+
+          <div class="footerboxes">
+            <!--LEFT-BOX IN THE FOOTER-->
+           <div class="leftbox">
+             <div class="footlink">
+               <a href="sources.html">Sources</a>
+               <a href="faq.html">FAQ</a>
+               <a  href="#showcase"><i class="fa fa-arrow-up"
+                alt="Back to the top arrow icon pointing upwards" aria-hidden="true"></i></a>
+             </div>
+             <!--SOCIAL MEDIA ICONS IN THE FOOTER-->
+             <div class="icons">
+                <a href="https://www.instagram.com" target="_blank">
+                  <i class="fa fa-instagram" alt="green instagram logo icon"
+                  aria-hidden="true"></i></a>
+                <a href="https://www.facebook.com" target="_blank">
+                  <i class="fa fa-facebook-official" alt="green facebook logo icon"
+                   aria-hidden="true"></i></a>
+                <a href="https://www.snapchat.com" target="_blank">
+                  <i class="fa fa-snapchat-square" alt="green snapchat logo icon"
+                  aria-hidden="true"></i></a>
+                <a href="https://www.youtube.com" target="_blank">
+                  <i class="fa fa-youtube-play" alt="green youtube logo icon"
+                  aria-hidden="true"></i></a>
+            </div>
+            <!--END SOCIAL MEDIA ICONS IN THE FOOTER-->
+           </div>
+
+           <!--END LEFT-BOX IN THE FOOTER-->
+
+
+           <!--MIDDLE-BOX IN THE FOOTER-->
+           <div class="middlebox">
+             <a href="index.html"> <img src="../bilder/logo/GrønnLogo.png"
+               alt="green neat logo"> </a>
+
+             <!--SOCIAL MEDIA ICONS IN THE FOOTER-->
+             <div class="icons">
+                <a href="https://www.instagram.com" target="_blank">
+                  <i class="fa fa-instagram" alt=" green instagram logo icon"
+                  aria-hidden="true"></i></a>
+                <a href="https://www.facebook.com" target="_blank">
+                  <i class="fa fa-facebook-official" alt="green facebook logo icon"
+                  aria-hidden="true"></i></a>
+                <a href="https://www.snapchat.com" target="_blank">
+                  <i class="fa fa-snapchat-square" alt="green snapchat logo icon"
+                  aria-hidden="true"></i></a>
+                <a href="https://www.youtube.com" target="_blank">
+                  <i class="fa fa-youtube-play" alt="green youtube logo icon"
+                  aria-hidden="true"></i></a>
+              </div>
+              <!--END SOCIAL MEDIA ICONS IN THE FOOTER-->
+
+              <!--CODE FOR VERTICAL LINE-->
+              <div class=" vertical"></div>
+              <!--END CODE FOR VERTICAL LINE-->
+
+           </div>
+           <!--END MIDDLE-BOX IN THE FOOTER-->
+
+
+           <!--RIGHT-BOX IN THE FOOTER-->
+           <div class="rightbox">
+
+             <!--ABOUT IN THE FOOTER-->
+             <div class="about">
+               <h3>About</h3>
+               <br>
+               <p>We are The Neat! Our job is to keep the earth tidy and neat.
+                  Don’t waste your food and time, join us!</p>
+             </div>
+             <!--END ABOUT IN THE FOOTER-->
+
+          </div>
+          <!--END RIGHT-BOX IN THE FOOTER-->
           </div>
 
-          <div id="images" class="content">
-            <h2>Images</h2>
-              <p>
-              </p>
+          <div class="copyright">
+            <p> Copyright © 2020 The Neat </p>
           </div>
-        </div>
-      </main>
 
-  <!--FOOTER-->
-      <footer>
-        <div id="sources">
-        </div>
-        <div id="logo1f">
-        </div>
-        <div id="FAQ">
-        </div>        
-        <p> Copyright © Logo </p>
-      </footer>
-   
+    </footer>
+    <!--END FOOTER-->
+
   </body>
 </html>

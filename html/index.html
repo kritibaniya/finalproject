@@ -1,77 +1,238 @@
 <!DOCTYPE html>
-<html lang="en"
+<html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link href= fonts?>
-    <title>Tittel</title>
-    <link rel="icon" type="image/png" href="https://cdn.dribbble.com/users/1848142/screenshots/5066599/sharing-plate.jpg">
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>NEAT</title>
+    <link rel="icon" type="image/png" href=../bilder/logo/Favicon.png>
+
   </head>
-
   <body>
-  <!--NAVBAR-->
-    <nav>
-      <input id="nav-toggle" type="checkbox">
-        <div id="logo1">
-            <img src="images/logo.png" alt="Logo alt">
-            <a href="#showcase"> Title </a>
-        </div>
-        <div id="logo2">
-            <img src="images/logo.png" alt="Logo alt">
-            <a href="#showcase"> Small title </a>
-        </div>
+    <!--HEADER-->
+    <header>
+      <div class="mobilhead">
+        <a href="index.html">
+          <img src="../bilder/logo/HvitLogo.jpg" alt="White Neat logo">
+        </a>
+      </div>
 
-        <ul class="links">
-          <li> <a href="#problem">Problem</a> </li>
-          <li> <a href="#soultion">Solution</a> </li>
-          <li> <a href="#app">The app</a> </li>
+      <a href="#main-menu" id="main-menu-toggle" class="menu-toggle">
+        <span class="fa fa-bars"></span>
+      </a>
+
+      <nav id="main-menu" class="main-menu" >
+        <a href="#main-menu-toggle" id="main-menu-close" class="menu-close">
+          <span class="fa fa-close"></span>
+        </a>
+        <ul>
+         <li> <a href="problem.html">Problem</a> </li>
+         <li> <a href="solution.html">Solution</a> </li>
+         <li> <a href="app.html">The App</a> </li>
+         <li> <a href="future.html">Our Future</a> </li>
+         <li class="close">
+           <a href="#main-menu-toggle" class="backdrop" tabindex="0">
+             Close
+          </a>
+        </li>
+       </ul>
+
+   </nav>
+   <a href="#main-menu-toggle" class="backdrop" tabindex="-1"></a>
+
+    <!--DESKTOP HEADER-->
+    <div class="desktop">
+    <div class="leftbox">
+      <nav>
+        <ul>
+          <li> <a href="problem.html">Problem</a> </li>
+          <li> <a href="solution.html">Solution</a> </li>
         </ul>
-      
-        <label for="nav-toggle" class="icon-burger">
-          <div class="line"></div>
-          <div class="line"></div>
-          <div class="line"></div>
-        </label>
-    </nav>
+      </nav>
+    </div>
 
-  <!--INNHOLD-->
-      <main>
-        <div class="container">
-          <div id="showcase">
-            <h1> Slogan/Proverb? </h1>
-          </div>
+    <div class="middlebox">
+      <a href="index.html">
+        <img src="../bilder/logo/HvitLogo.jpg" alt="White Neat logo">
+      </a>
+    </div>
 
-          <div id="problem" class="content">
-            <h2>The problem</h2>
-              <p> 
-              </p>
+    <div class="rightbox">
+      <nav>
+        <ul>
+          <li> <a href="app.html">The App</a> </li>
+          <li> <a href="future.html">Our Future</a> </li>
+        </ul>
+      </nav>
+    </div>
+    </div>
+  </header>
+  <!-- END HEADER -->
 
-          </div>
 
-          <div id="solution" class="content">
-            <h2>Our Solution</h2>
-              <p>
-              </p>
-          </div>
+<!-- CONTENT -->
+  <!--SHOWCASE-->
+  <div id="showcase">
+    <p class="stext">
+      What if we found a way to reduce <b>food waste</b>?
+      <br> Would <b>you</b> be willing to contribute?
+    </p>
+    <img src="../bilder/homepage/Showcase.png"
+      alt="Woman standing on the left side. On her right,
+      there is a mobile display of the neat app and food truck behind it.">
+  </div>
 
-          <div id="app" class="content">
-            <h2>The app</h2>
-              <p> 
-              </p>
-          </div>
+  <!--PROBLEM-->
+  <div class="content">
+    <h1>Problem</h1>
+    <p>Identifying a problem is not as easy as we think it is. A lot of time
+      people are even finding solutions to problems that does not even exist.
+      It is not the case this time. Food waste is a real and existing issue
+      which is getting out of control every single day. We humans have created
+      a mess that has a lot of negative impact and bad consequences. Crew of
+      The Neat have done some research about why we should cut down wasting of
+      valuable food. Click on read more to gather some knowledge on the
+      importance of not throwing your food.
+    </p><br>
+    <!--READ MORE BUTTON-->
+    <a href="problem.html" class="button"><span>Read more</span></a>
+  </div>
+
+  <!--SOLUTION-->
+  <div class="content">
+    <h1>Solution</h1>
+      <p>Do you have extra food left at home, and the food waste is their
+        next destination? Share it! Give it to your neighbour, your friends,
+        to your fellow citizens, and that, with The Neat! Help us reduce food
+        waste together, with cooperation and friendship.
+      </p><br>
+      <!--READ MORE BUTTON-->
+      <a href="solution.html" class="button"><span>Read more</span></a>
+  </div>
+
+    <!--THE APP-->
+    <div class="content" id="app">
+      <h1>The App</h1>
+      <!--IMAGE FOR LARGER SCREEN-->
+      <div class="appimg">
+        <img src="../bilder/homepage/Theapp.jpg"
+        alt="Hand holding a mobilephone with the neat app on its display">
+      </div>
+      <br>
+      <p>The Neat, the app that will make sharing food easier, as well as reduce
+        food waste. Use the app to share food with those near you, instead of
+        throwing it away. On the app you can find lists of food near you, and
+        you can even upload your own dishes, or any other groceries. You can
+        even find our foodtrucks on the app where you can pick up more food. </p>
+        <br>
+        <!--READ MORE BUTTON-->
+        <a href="app.html" class="button"><span>Read more</span></a>
+
+        <!--IMAGE FOR SMALLSCREEN-->
+        <div class="mobimg">
+          <img src="../bilder/homepage/Theapp.jpg" alt="Hand holding a mobilephone with the neat app on its display">
         </div>
-      </main>
+    </div>
 
-      <footer>
-        <div id="sources">
+    <!--OUR FUTURE-->
+    <div class="content">
+      <h1>Our Next Step</h1>
+      <p>Even though we just started this project, we are already thinking about the future.
+        We want to develop our idea and make it more accessible for each and everyone.
+        Our vision towards this project is very big and we want to make a change! </p>
+        <br>
+        <!--READ MORE BUTTON-->
+        <a href="future.html" class="button"><span>Read more</span></a>
+    </div>
+<!--END CONTENT-->
+
+<!--FOOTER-->
+<footer>
+    <div class="footerboxes">
+      <!--LEFT-BOX IN THE FOOTER-->
+     <div class="leftbox">
+       <div class="footlink">
+         <a href="sources.html">Sources</a>
+         <a href="faq.html">FAQ</a>
+         <a  href="#showcase"><i class="fa fa-arrow-up"
+          alt="Back to the top arrow icon pointing upwards" aria-hidden="true"></i></a>
+       </div>
+       <!--SOCIAL MEDIA ICONS IN THE FOOTER-->
+       <div class="icons">
+          <a href="https://www.instagram.com" target="_blank">
+            <i class="fa fa-instagram" alt="green instagram logo icon"
+            aria-hidden="true"></i></a>
+          <a href="https://www.facebook.com" target="_blank">
+            <i class="fa fa-facebook-official" alt="green facebook logo icon"
+             aria-hidden="true"></i></a>
+          <a href="https://www.snapchat.com" target="_blank">
+            <i class="fa fa-snapchat-square" alt="green snapchat logo icon"
+            aria-hidden="true"></i></a>
+          <a href="https://www.youtube.com" target="_blank">
+            <i class="fa fa-youtube-play" alt="green youtube logo icon"
+            aria-hidden="true"></i></a>
+      </div>
+      <!--END SOCIAL MEDIA ICONS IN THE FOOTER-->
+     </div>
+
+     <!--END LEFT-BOX IN THE FOOTER-->
+
+
+     <!--MIDDLE-BOX IN THE FOOTER-->
+     <div class="middlebox">
+       <a href="index.html"> <img src="../bilder/logo/GrønnLogo.png"
+         alt="green neat logo"> </a>
+
+       <!--SOCIAL MEDIA ICONS IN THE FOOTER-->
+       <div class="icons">
+          <a href="https://www.instagram.com" target="_blank">
+            <i class="fa fa-instagram" alt=" green instagram logo icon"
+            aria-hidden="true"></i></a>
+          <a href="https://www.facebook.com" target="_blank">
+            <i class="fa fa-facebook-official" alt="green facebook logo icon"
+            aria-hidden="true"></i></a>
+          <a href="https://www.snapchat.com" target="_blank">
+            <i class="fa fa-snapchat-square" alt="green snapchat logo icon"
+            aria-hidden="true"></i></a>
+          <a href="https://www.youtube.com" target="_blank">
+            <i class="fa fa-youtube-play" alt="green youtube logo icon"
+            aria-hidden="true"></i></a>
         </div>
-        <div id="logo1f">
-        </div>
-        <div id="FAQ">
-        </div>        
-        <p> Copyright © Logo </p>
-      </footer>
-   
-  </body>
+        <!--END SOCIAL MEDIA ICONS IN THE FOOTER-->
+
+        <!--CODE FOR VERTICAL LINE-->
+        <div class=" vertical"></div>
+        <!--END CODE FOR VERTICAL LINE-->
+
+     </div>
+     <!--END MIDDLE-BOX IN THE FOOTER-->
+
+
+     <!--RIGHT-BOX IN THE FOOTER-->
+     <div class="rightbox">
+
+       <!--ABOUT IN THE FOOTER-->
+       <div class="about">
+         <h3>About</h3>
+         <br>
+         <p>We are The Neat! Our job is to keep the earth tidy and neat.
+            Don’t waste your food and time, join us!</p>
+       </div>
+       <!--END ABOUT IN THE FOOTER-->
+     </div>
+    <!--END RIGHT-BOX IN THE FOOTER-->
+    </div>
+
+    <div class="copyright">
+      <p> Copyright © 2020 The Neat </p>
+    </div>
+
+</footer>
+<!--END FOOTER-->
+
+
+</body>
 </html>

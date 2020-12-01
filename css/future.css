@@ -21,28 +21,23 @@ body{
   margin: 0;
   color: black;
 }
+
 a:focus {
   border: 2px solid #c65f39;
   overflow-y: hidden;
 }
 
-
 h1{
-  font-size: 2.3em;
-  line-height: 1.6;
   color: #284040;
-}
-
-h2{
   font-size: 2em;
-  color: #284040;
+  line-height: 1.6;
 }
 
 p{
-font-size: 1.2em;
-line-height: 1.6;
+  font-size: 1.2em;
+  font-weight: normal;
+  line-height: 1.6;
 }
-
 
 /*-------------------HEADER--------------------*/
 header{
@@ -58,9 +53,8 @@ header{
 }
 
 nav{
- display: inline-block;
+  display: inline-block;
 }
-
 /*---------LOGO----------*/
 .mobilhead{
   display: inline-block;
@@ -301,10 +295,8 @@ nav a:hover{
 }
 /*---------END NAVBAR----------*/
 /*---------------------------END HEADER----------------------------*/
-/*-------END RESPONSIVE HEADER WITH NAVBAR------------*/
 
-
-/*------------------MAIN PART OF BODY-------------------*/
+/*---------------------------MAIN PART OF BODY----------------------------*/
 /*---------SHOWCASE----------*/
 #showcase{
  width: 100vw;
@@ -315,11 +307,11 @@ nav a:hover{
 
 #showcase img{
   display: block;
-  max-width: 25%;
+  max-width: 40%;
   height: auto;
-  padding-top: 5vh;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 30px;
 }
 
 #showcase p{
@@ -329,8 +321,7 @@ nav a:hover{
 
 #showcase .stext{
   width: 100vw;
-  padding: 10% 3% 0 0;
-  padding-top: 10%;
+  padding-top: 150px;
   text-align: center;
 }
 
@@ -339,74 +330,12 @@ nav a:hover{
   font-weight: normal;
 }
 
-/*---------.PROBLEM-CONTENT----------*/
-.problem-content{
-  margin: 0 10vw 10vh 10vw;
+/*---------#CONTENT----------*/
+.content{
+  width: 100vw;
+  height: auto;
+  padding: 5vh 10vw;
 }
-
-.problem-content ul li {
-  font-size: 1.2em;
-  line-height: 1.6em;
-  padding-top: 2vh;
-}
-
-a{
-  color: #c65f39;
-  text-decoration: none;
-}
-
-a:hover{
-  color: #284040;
-  text-decoration: underline;
-  text-decoration-style: solid 3px;
-  transition: all ease 0.5s;
-}
-
-a:visited{
-  color: #c65f39;
-}
-
-[class*="col-"]{
-  float: left;
-  /*border: 1px solid grey;*/
-  margin-top: 10vh;
-}
-
-[class*="col-"] h1{
-  font-size:2em;
-  padding-bottom: 3vh;
-  color: #284040;
-}
-
-.col-small-10 {width: 10%}
-.col-small-20 {width: 20%;}
-.col-small-30 {width: 30%;}
-.col-small-40 {width: 40%;}
-.col-small-50 {width: 50%;}
-.col-small-60 {width: 60%;}
-.col-small-70 {width: 70%;}
-.col-small-80 {width: 80%;}
-.col-small-90 {width: 90%;}
-.col-small-100 {width: 100%;}
-
-
-.col-small-40 img{
-  padding: 5vw;
-  max-width: 100%;
-  display: block;
-  margin-right: auto;
-  margin-left: auto;
-  text-align: center;
-}
-
-.col-small-40 iframe{
-  padding: 0 5vw;
-
-  width: 100%;
-  height: 300px;
-  border: none;
-}
-
 /*------------------END MAIN PART OF BODY-------------------*/
 
 /*---------------------------FOOTER----------------------------*/
@@ -539,8 +468,7 @@ footer .rightbox h3{
 footer .rightbox p{
   font-size: 1.2em;
 }
-
-/*---------------------------END FOOTER----------------------------*/
+/*------------------END FOOTER-------------------*/
 /*---------------------------END OF DESKTOP CODE----------------------------*/
 
 /*------------------RESPONSIVE PAGE WITH MAX-WIDTH 1200PX-------------------*/
@@ -562,226 +490,196 @@ footer .rightbox p{
 
 /*------------------RESPONSIVE PAGE WITH MAX-WIDTH 1200PX-------------------*/
 @media only screen and (max-width:1200px){
+  /*---------------------------CONTENT----------------------------*/
+  .content{
+    width: 100vw;
+    height: auto;
+  }
+
   /*---------------------------SHOWCASE----------------------------*/
+  #showcase{
+    height: auto;
+  }
   #showcase .stext{
+    width: 100vw;
     padding-top: 150px;
     font-size: 2em;
+    text-align: center;
   }
 
     #showcase img{
       display: block;
-      max-width: 20%;
+      width: 40%;
       height: auto;
       margin-left: auto;
       margin-right: auto;
     }
-  /*---------------------------CONTENT----------------------------*/
-  .col-tall-10 {width: 10%;}
-  .col-tall-20 {width: 20%;}
-  .col-tall-30 {width: 30%;}
-  .col-tall-40 {width: 40%;}
-  .col-tall-50 {width: 50%;}
-  .col-tall-60 {width: 60%;}
-  .col-tall-70 {width: 70%;}
-  .col-tall-80 {width: 80%;}
-  .col-tall-90 {width: 90%;}
-  .col-tall-100 {width: 100%;}
-/*
-  .col-small-40 img{
-    padding: 2vw 2vw 2vw 2vw;
-    max-width: 100%;
-  }*/
-  .col-small-40 iframe{
-    margin-left: 2vw;
-    width: 100%;
-    height: 300px;
-    border: none;
-  }
 }
 /*------------------END RESPONSIVE PAGE WITH MAX-WIDTH 1200PX-------------------*/
 
 /*------------------RESPONSIVE PAGE WITH MAX-WIDTH 800PX-------------------*/
 @media screen and (max-width: 800px){
 
-   p{
-     font-size: 1em;
-   }
+  h1{
+    font-size: 1.6em;
+  }
 
-h2{
-  font-size: 1.4em;
-}
-
-   .problem-content ul li {
-     font-size: 1em;
-   }
-/*---------------------------SHOWCASE----------------------------*/
-#showcase {
- margin: auto;
- padding-top: 10px;
- width: 100vw;
- height: auto;
- padding-bottom: 50px;
-}
-
-#showcase img{
- max-width: 40%;
- float: none;
-}
-
-#showcase .stext{
- width: 100vw;
- padding-top: 150px;
- font-size: 1.5em;
- text-align: center;
-}
-
-
- /*---------------------------CONTENT----------------------------*/
- [class*="col-"]{
-     margin-top: 50px;
-   }
-   [class*="col-"] h1{
-     font-size:1.6em;
-   }
-
- .col-half-10 { width: 10%}
- .col-half-20 {width: 20%;}
- .col-half-30 {width: 30%;}
- .col-half-40 {width: 40%;}
- .col-half-50 {width: 50%;}
- .col-half-60 {width: 60%;}
- .col-half-70 {width: 70%;}
- .col-half-80 {width: 80%;}
- .col-half-90 {width: 90%;}
- .col-half-100 {width: 100%;}
-
- .col-half-100 iframe {
+  p{
+    font-size: 1em;
+  }
+  /*---------SHOWCASE----------*/
+  #showcase {
+   margin: auto;
+   padding-top: 10px;
    width: 100vw;
-   height: 40vh;
+   height: auto;
+   padding-bottom: 15%;
  }
 
- /*---------------------------FOOTER----------------------------*/
- footer{
-   height: 45vh;
+ #showcase img{
+   width: 100%;
+   float: none;
+ }
+
+ #showcase .stext{
    width: 100vw;
-   position: relative;
-   margin-right: 5vw;
-   margin-left: 5vw;
-   margin-top: 10%;
- }
-
- footer .footerboxes{
-   height: 35vh;
-   overflow-y: hidden;
- }
-
- footer .copyright{
-   display: block;
-   height: 5vh;
-   margin-left: auto;
-   margin-right: 10vw;
-   text-align: center;
-   color: #284140;
- }
-
- /*---------FOOTER LEFTBOX----------*/
- footer .leftbox{
-   width: 30vw;
-   height: 41vh;
-   display: inline-block;
-   border-top: solid 3px #284140;
- }
-
- footer .leftbox .footlink a{
-   display: block;
-   margin: 2vh 0 2vh 0;
-   font-weight: bold;
-   color: #284140;
-   font-size: 1.2em;
-   text-decoration:none;
- }
-
- footer .leftbox a:hover{
-   color: #284140;
-   text-decoration: underline;
-   text-decoration-style: solid 3px;
-   text-decoration-color: #284140;
- }
-
- .fa-arrow-up{
-   color: #fff;
-   width: 30px;
-   height: 30px;
-   padding: 0;
-   padding-top: 3px;
-   cursor: pointer;
-   text-align: center;
-   text-decoration: none;
-   outline: none;
-   background-color: #284140;
-   border-radius: 30%;
-   margin: 0;
- }
-
- footer .leftbox .icons{
- display: inline-block;
- margin: 0;
-
- }
-
- footer .icons a{
-   font-size: 0.5em;
-   overflow: hidden:
-   color: #284140;
-   display: inline-block;
-
- }
-
- /*---------FOOTER MIDDLEBOX----------*/
- footer .middlebox{
-   width: 30vw;
-   height: 45vh;
-   display: inline-block;
-   align-content: center;
-   align-self: center;
+   padding-top:27%;
+   font-size: 1.6em;
    text-align: center;
  }
 
- footer .middlebox a{
-   text-decoration: none;
- }
+  /*---------THE APP----------*/
+  .app .appimg{
+    display: none;
+  }
 
- footer .middlebox .icons{
-   display: none;
- }
+  .mobimg{
+    display: block;
+    background-color: red;
+  }
 
- footer .middlebox img{
-   max-height: 35px;
- }
+  /*---------------------------FOOTER----------------------------*/
+  footer{
+    height: 45vh;
+    width: 100vw;
+    position: relative;
+    margin-right: 5vw;
+    margin-left: 5vw;
+    margin-top: 10%;
+  }
 
- .vertical{
-   display: block;
-   border-left: 3px solid #284140;
-   height: 20vh;
-   position: absolute;
-   left: 45vw;
- }
+  footer .footerboxes{
+    height: 35vh;
+    overflow-y: hidden;
+  }
 
- /*---------FOOTER RIGHTBOX----------*/
- footer .rightbox{
-   width: 30vw;
-   height: 41vh;
- }
+  footer .copyright{
+    display: block;
+    height: 5vh;
+    margin-left: auto;
+    margin-right: 10vw;
+    text-align: center;
+    color: #284140;
+  }
 
- footer .rightbox h3{
-   font-size: 1.2em;
- }
+  /*---------FOOTER LEFTBOX----------*/
+  footer .leftbox{
+    width: 30vw;
+    height: 41vh;
+    display: inline-block;
+    border-top: solid 3px #284140;
+  }
 
- footer .rightbox .about p{
-   font-size: 0.8em;
-   padding-right: 10px;
- }
+  footer .leftbox .footlink a{
+    display: block;
+    margin: 2vh 0 2vh 0;
+    font-weight: bold;
+    color: #284140;
+    font-size: 1.2em;
+    text-decoration:none;
+  }
 
- /*---------------------------END FOOTER----------------------------*/
+  footer .leftbox a:hover{
+    color: #284140;
+    text-decoration: underline;
+    text-decoration-style: solid 3px;
+    text-decoration-color: #284140;
+  }
+
+  .fa-arrow-up{
+    color: #fff;
+    width: 30px;
+    height: 30px;
+    padding: 0;
+    padding-top: 3px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    background-color: #284140;
+    border-radius: 30%;
+    margin: 0;
+  }
+
+  footer .leftbox .icons{
+  display: inline-block;
+  margin: 0;
+
+  }
+
+  footer .icons a{
+    font-size: 0.5em;
+    overflow: hidden:
+    color: #284140;
+    display: inline-block;
+
+  }
+
+  /*---------FOOTER MIDDLEBOX----------*/
+  footer .middlebox{
+    width: 30vw;
+    height: 45vh;
+    display: inline-block;
+    align-content: center;
+    align-self: center;
+    text-align: center;
+  }
+
+  footer .middlebox a{
+    text-decoration: none;
+  }
+
+  footer .middlebox .icons{
+    display: none;
+  }
+
+  footer .middlebox img{
+    max-height: 35px;
+  }
+
+  .vertical{
+    display: block;
+    border-left: 3px solid #284140;
+    height: 20vh;
+    position: absolute;
+    left: 45vw;
+  }
+
+  /*---------FOOTER RIGHTBOX----------*/
+  footer .rightbox{
+    width: 30vw;
+    height: 41vh;
+  }
+
+  footer .rightbox h3{
+    font-size: 1.2em;
+  }
+
+  footer .rightbox .about p{
+    font-size: 0.8em;
+    padding-right: 10px;
+  }
+
+  /*---------------------------END FOOTER----------------------------*/
 }
-/*------------------END RESPONSIVE PAGE WITH MAX-WIDTH 800PX-------------------*/
+  /*------------------END RESPONSIVE PAGE WITH MAX-WIDTH 800PX-------------------*/
