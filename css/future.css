@@ -281,24 +281,26 @@ nav a:hover{
 #showcase{
  width: 100vw;
  height: 100vh;
- padding-left: 10vw;
- padding-right: 5vw;
  background-color: #e0ebeb;
  overflow-y: hidden;
 }
 
 #showcase img{
-  float: right;
-  right: 0;
-  max-width: 50%;
+  display: block;
+  max-width: 30%;
   height: auto;
-  padding-top: 30vh;
+  margin: 5% auto;
 }
 
 #showcase p{
-  margin-top: 25%;
   font-size: 3em;
   color: #284040;
+}
+
+#showcase .stext{
+  width: 100vw;
+  padding-top: 10%;
+  text-align: center;
 }
 
 #showcase b{
@@ -465,13 +467,22 @@ footer .rightbox h3{
   }
 
   /*---------------------------SHOWCASE----------------------------*/
-  #showcase img{
-     margin-top: 40%;
-    width: 40vw;
+  #showcase{
+    height: auto;
   }
-  #showcase p{
-    width: 35vw;
+  #showcase .stext{
+    width: 100vw;
+    padding-top: 15%;
+    font-size: 3em;
+    text-align: center;
   }
+
+    #showcase img{
+      display: block;
+      max-width: 40%;
+      height: auto;
+      margin: 5% auto;
+    }
 }
 /*------------------END RESPONSIVE PAGE WITH MAX-WIDTH 1200PX-------------------*/
 
@@ -481,18 +492,24 @@ footer .rightbox h3{
     font-size: 1.4em;
   }
   /*---------SHOWCASE----------*/
-  #showcase img{
-    margin-top: 40%;
-  }
-
-  #showcase p{
-    width: 35vw;
-  }
-
   #showcase {
+   margin: auto;
    padding-top: 10px;
    width: 100vw;
-   height: 100vh;
+   height: auto;
+   padding-bottom: 15%;
+ }
+
+ #showcase img{
+   max-width: 70%;
+   float: none;
+ }
+
+ #showcase .stext{
+   width: 100vw;
+   padding-top: 30%;
+   font-size: 2.1em;
+   text-align: center;
  }
 
   /*---------THE APP----------*/

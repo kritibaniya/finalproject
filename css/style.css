@@ -78,11 +78,6 @@ nav{
   padding: 1em;
 }
 
-/*.menu-toggle:hover,
-.menu-toggle:focus {
-  color:blue ;
-}*/
-
 .main-menu {
   position: absolute;
   display: none;
@@ -281,31 +276,33 @@ nav a:hover{
 #showcase{
  width: 100vw;
  height: 100vh;
- padding-left: 10vw;
- padding-right: 5vw;
  background-color: #e0ebeb;
  overflow-y: hidden;
 }
 
 #showcase img{
-  float: right;
-  right: 0;
-  max-width: 80%;
+  display: block;
+  max-width: 30%;
   height: auto;
-  padding-top: 20vh;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #showcase p{
-  margin-top: 25%;
   font-size: 3em;
   color: #284040;
+}
+
+#showcase .stext{
+  width: 100vw;
+  padding-top: 10%;
+  text-align: center;
 }
 
 #showcase b{
   color: #c65f39;
   font-weight: normal;
 }
-
 /*---------#CONTENT----------*/
 .content{
   width: 100vw;
@@ -514,13 +511,20 @@ footer .rightbox h3{
 /*------------------RESPONSIVE PAGE WITH MAX-WIDTH 1200PX-------------------*/
 @media only screen and (max-width:1200px){
   /*---------------------------SHOWCASE----------------------------*/
-  #showcase img{
-    max-width: 60%;
-    padding-top: 20vh;
+  #showcase .stext{
+    width: 100vw;
+    padding-top: 15%;
+    font-size: 3em;
+    text-align: center;
   }
-  #showcase p{
-    font-size: 1.6em;
-    padding-top: 15vh;
+
+    #showcase img{
+      display: block;
+      max-width: 40%;
+      height: auto;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
 
   /*---------------------------CONTENT----------------------------*/
@@ -540,15 +544,18 @@ footer .rightbox h3{
    width: 100vw;
    height: auto;
    padding-bottom: 15%;
+ }
 
- }
  #showcase img{
-   padding-top: 20vh;
-   max-width: 60%;
+   max-width: 70%;
+   float: none;
  }
- #showcase p{
-   font-size: 1.2em;
-   padding-top: 15vh;
+
+ #showcase .stext{
+   width: 100vw;
+   padding-top: 20%;
+   font-size: 2.1em;
+   text-align: center;
  }
 
   /*---------THE APP----------*/
