@@ -295,12 +295,14 @@ nav a:hover{
   color: #284040;
 }
 
-#showcase c{
+#showcase b{
+  font-weight: normal;
   color: #e36802;
 }
 
-#showcase d{
+#showcase em{
   color: #d23014;
+  font-style: normal;
 }
 
 .showcase-img{
