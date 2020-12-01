@@ -363,6 +363,22 @@ nav a:hover{
 #content:nth-child(even){
   background-color: #eee3dd;
 }
+
+#content a{
+  color: #c65f39;
+  text-decoration: none;
+}
+
+#content a:hover{
+  color: #284040;
+  text-decoration: underline;
+  text-decoration-style: solid 3px;
+  transition: all ease 0.5s;
+}
+
+#content a:visited{
+  color: #c65f39;
+}
 /*------------------END MAIN PART OF BODY-------------------*/
 
 /*---------------------------FOOTER----------------------------*/
